@@ -1,0 +1,187 @@
+\doxysection{nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder Class Reference}
+\hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder}{}\label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+
+
+Inheritance diagram for nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a19e291b7cac9f123265ef372185b3276}{\+\_\+\+\_\+init\+\_\+\_}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+NXOpen.\+Session \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a86e5ed4f14ff02838ed691dcfad01455}{session}} = \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part_a2a10201a310a4447dc86abcd500c5132}{Part.\+session}}()
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part}{Part}} \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f32bfc7b17a79a88cbe4563d1985ef3}{work\+\_\+part}} = \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part_a79c794302e0add4dd4e90ec782f4036a}{Part.\+work\+\_\+part}}()
+\item 
+NXOpen.\+Builder \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_adf7c26c20d7fe0b811ebf243a79c6449}{builder}} = None
+\item 
+int \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_ab41191bd54c865324f5e6b7eed079d3f}{undo\+\_\+mark\+\_\+id}} = None
+\item 
+str \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a9cfbcd8653321ee2ea97da977a25aad8}{undo\+\_\+mark\+\_\+name}} = "{}"{}
+\item 
+float \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a01c0a13dc636e605abadcf7dacd143d2}{distance\+\_\+tolerance}} = self.\+work\+\_\+part.\+to\+\_\+nx.\+Preferences.\+Modeling.\+Distance\+Tolerance\+Data
+\item 
+float \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a29db4474e89ee010a187bfc485505ca5}{chaining\+\_\+tolerance}} = 0.\+95\texorpdfstring{$\ast$}{*}self.\+distance\+\_\+tolerance
+\item 
+float \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a1ac229acdae09e869ac006fc8d7a75b3}{angle\+\_\+tolerance}} = self.\+work\+\_\+part.\+to\+\_\+nx.\+Preferences.\+Modeling.\+Angle\+Tolerance\+Data
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a53636559a5a898c910c0719ccd0ca39e}{\+\_\+destroy}} (self)
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a90997bdb4a75fd0bb2a2428f24182b4f}{\+\_\+set\+\_\+undo\+\_\+mark}} (self)
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a3929990ffe572d43989cc7c466d8d1fc}{\+\_\+undo\+\_\+mark}} (self)
+\item 
+None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f2ce6c4def9674082c04b47a6138c82}{\+\_\+validate\+\_\+tolerance}} (self, float tolerance)
+\end{DoxyCompactItemize}
+
+
+\label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-constructors}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a19e291b7cac9f123265ef372185b3276}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a19e291b7cac9f123265ef372185b3276} 
+nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-func-members}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a53636559a5a898c910c0719ccd0ca39e}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!\_destroy@{\_destroy}}
+\index{\_destroy@{\_destroy}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{\_destroy()}{\_destroy()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a53636559a5a898c910c0719ccd0ca39e} 
+nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+destroy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a53636559a5a898c910c0719ccd0ca39e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a90997bdb4a75fd0bb2a2428f24182b4f}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!\_set\_undo\_mark@{\_set\_undo\_mark}}
+\index{\_set\_undo\_mark@{\_set\_undo\_mark}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{\_set\_undo\_mark()}{\_set\_undo\_mark()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a90997bdb4a75fd0bb2a2428f24182b4f} 
+nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+set\+\_\+undo\+\_\+mark (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a90997bdb4a75fd0bb2a2428f24182b4f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a3929990ffe572d43989cc7c466d8d1fc}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!\_undo\_mark@{\_undo\_mark}}
+\index{\_undo\_mark@{\_undo\_mark}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{\_undo\_mark()}{\_undo\_mark()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a3929990ffe572d43989cc7c466d8d1fc} 
+nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+undo\+\_\+mark (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a3929990ffe572d43989cc7c466d8d1fc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f2ce6c4def9674082c04b47a6138c82}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!\_validate\_tolerance@{\_validate\_tolerance}}
+\index{\_validate\_tolerance@{\_validate\_tolerance}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{\_validate\_tolerance()}{\_validate\_tolerance()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f2ce6c4def9674082c04b47a6138c82} 
+ None nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+validate\+\_\+tolerance (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{tolerance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the caller graph for this function:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f2ce6c4def9674082c04b47a6138c82_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-variable-members}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a1ac229acdae09e869ac006fc8d7a75b3}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!angle\_tolerance@{angle\_tolerance}}
+\index{angle\_tolerance@{angle\_tolerance}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{angle\_tolerance}{angle\_tolerance}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a1ac229acdae09e869ac006fc8d7a75b3} 
+float nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+angle\+\_\+tolerance = self.\+work\+\_\+part.\+to\+\_\+nx.\+Preferences.\+Modeling.\+Angle\+Tolerance\+Data}
+
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_adf7c26c20d7fe0b811ebf243a79c6449}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!builder@{builder}}
+\index{builder@{builder}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_adf7c26c20d7fe0b811ebf243a79c6449} 
+NXOpen.\+Builder nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+builder = None}
+
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a29db4474e89ee010a187bfc485505ca5}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!chaining\_tolerance@{chaining\_tolerance}}
+\index{chaining\_tolerance@{chaining\_tolerance}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{chaining\_tolerance}{chaining\_tolerance}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a29db4474e89ee010a187bfc485505ca5} 
+float nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+chaining\+\_\+tolerance = 0.\+95\texorpdfstring{$\ast$}{*}self.\+distance\+\_\+tolerance}
+
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a01c0a13dc636e605abadcf7dacd143d2}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!distance\_tolerance@{distance\_tolerance}}
+\index{distance\_tolerance@{distance\_tolerance}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{distance\_tolerance}{distance\_tolerance}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a01c0a13dc636e605abadcf7dacd143d2} 
+float nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+distance\+\_\+tolerance = self.\+work\+\_\+part.\+to\+\_\+nx.\+Preferences.\+Modeling.\+Distance\+Tolerance\+Data}
+
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a86e5ed4f14ff02838ed691dcfad01455}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!session@{session}}
+\index{session@{session}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{session}{session}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a86e5ed4f14ff02838ed691dcfad01455} 
+NXOpen.\+Session nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+session = \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part_a2a10201a310a4447dc86abcd500c5132}{Part.\+session}}()}
+
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_ab41191bd54c865324f5e6b7eed079d3f}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!undo\_mark\_id@{undo\_mark\_id}}
+\index{undo\_mark\_id@{undo\_mark\_id}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{undo\_mark\_id}{undo\_mark\_id}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_ab41191bd54c865324f5e6b7eed079d3f} 
+nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+undo\+\_\+mark\+\_\+id = None}
+
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a9cfbcd8653321ee2ea97da977a25aad8}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!undo\_mark\_name@{undo\_mark\_name}}
+\index{undo\_mark\_name@{undo\_mark\_name}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{undo\_mark\_name}{undo\_mark\_name}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a9cfbcd8653321ee2ea97da977a25aad8} 
+nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+undo\+\_\+mark\+\_\+name = "{}"{}}
+
+\Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f32bfc7b17a79a88cbe4563d1985ef3}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}!work\_part@{work\_part}}
+\index{work\_part@{work\_part}!nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
+\doxysubsubsection{\texorpdfstring{work\_part}{work\_part}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f32bfc7b17a79a88cbe4563d1985ef3} 
+\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part}{Part}} nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+work\+\_\+part = \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part_a79c794302e0add4dd4e90ec782f4036a}{Part.\+work\+\_\+part}}()}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+D/\+\+Shashi/\+nx-\/toolkit/\+src/\+nxopenkit/\+features/\doxymbox{\hyperlink{base__builder_8py}{base\+\_\+builder.\+py}}\end{DoxyCompactItemize}

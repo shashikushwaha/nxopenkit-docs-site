@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['boolean_0',['boolean',['../classnxopenkit_1_1features_1_1block__builder_1_1_block_builder.html#aa502a3cc2aac4e52a45a662938de90ae',1,'nxopenkit.features.block_builder.BlockBuilder.boolean()'],['../classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder.html#a133bfe43960891a35c67bc0f0af6c5f8',1,'nxopenkit.features.cylinder_builder.CylinderBuilder.boolean()'],['../classnxopenkit_1_1features_1_1extrude__builder_1_1_extrude_builder.html#a19a99335a17e2cee132fbbda86975f4d',1,'nxopenkit.features.extrude_builder.ExtrudeBuilder.boolean()'],['../classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder.html#acbe440febe90bd7fd9ba4abe4883ad28',1,'nxopenkit.features.revolve_builder.RevolveBuilder.boolean()'],['../classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder.html#a9dbe84cd8b6827c0fcc25cc3441eb45a',1,'nxopenkit.features.sphere_builder.SphereBuilder.boolean()']]],
+  ['builder_5foperation_1',['builder_operation',['../namespacenxopenkit_1_1core_1_1__decorators.html#a2569b95ec540a490963e616660a7b689',1,'nxopenkit::core::_decorators']]]
+];

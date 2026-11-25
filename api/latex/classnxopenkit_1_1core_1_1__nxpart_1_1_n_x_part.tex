@@ -1,0 +1,340 @@
+\doxysection{nxopenkit.\+core.\+\_\+nxpart.\+NXPart Class Reference}
+\hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part}{}\label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+
+
+Collaboration diagram for nxopenkit.\+core.\+\_\+nxpart.\+NXPart:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+NXOpen.\+Xform \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a9339e96a11f496d98c8d4b498455f462}{create\+\_\+by\+\_\+yz\+\_\+dir}} (NXOpen.\+Point origin, NXOpen.\+Direction y\+\_\+dir, NXOpen.\+Direction z\+\_\+dir)
+\item 
+NXOpen.\+Xform \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a922be6f45ef9e0c2db7c1a3c31a7ecc9}{create\+\_\+by\+\_\+plane\+\_\+y\+\_\+dir}} (NXOpen.\+Point origin, NXOpen.\+Displayable\+Object plane, NXOpen.\+Direction y\+\_\+dir, bool flip\+\_\+y\+\_\+dir=False, bool flip\+\_\+z\+\_\+dir=False)
+\item 
+NXOpen.\+Xform \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a35f4d156d4b58d32f48b799e3597daa9}{create\+\_\+by\+\_\+plane\+\_\+x\+\_\+dir}} (NXOpen.\+Point origin, NXOpen.\+Displayable\+Object plane, NXOpen.\+Direction x\+\_\+dir, bool flip\+\_\+x\+\_\+dir=False, bool flip\+\_\+z\+\_\+dir=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a1bcbe680491ae308f31afb41809b3aba}{save}} ()
+\item 
+NXOpen.\+Part \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab84a0e38a3ca2be83896649c8953f334}{open\+\_\+part}} (file\+Path)
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac8b6fdfd677f7a5851e3ede5559fee9b}{save\+\_\+as}} (str file, Optional\+[bool]\+ delete\+Existing\+File=True)
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a5269edad95e2586e1ccf570953ced81c}{close\+\_\+all}} ()
+\item 
+List\+[NXOpen.\+Body] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac908393c032b6bb0da883a8c0248c3ba}{get\+\_\+bodies}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Face] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a2fc7060599fc7bed7e4f861701cd7f16}{get\+\_\+faces}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Edge] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a853ec4fb59cf39fe46e5d29e479e2a3a}{get\+\_\+edges}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Point] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a8daaf1677b9a7b67f08d2b9b4f748c6a}{get\+\_\+points}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Displayable\+Object] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a1cb0f891e09a2d8f961cf2cfa874be57}{get\+\_\+displayable\+\_\+objects}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Features.\+Feature] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_abc7847b3673d62f019c5bd5c89d2ff9d}{get\+\_\+features}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Curve] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a287b4f0ec97929c11f110d7ef73b4c87}{get\+\_\+curves}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Datum\+Plane] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac068688cf532bd03786d1629ac38446b}{get\+\_\+datum\+\_\+planes}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Coordinate\+System] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a71728ec39b2cb2bc7adb23bbb8dfbba1}{get\+\_\+datum\+\_\+csys}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Datum\+Axis] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_afe68cbab0346c1b7dbbb33e96b8789c2}{get\+\_\+datum\+\_\+axes}} (Optional\+[str]\+ name=None)
+\item 
+List\+[NXOpen.\+Curve] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aecfc014c46f592e8db850aa3a05d3872}{get\+\_\+connected\+\_\+curves}} (NXOpen.\+Curve seed\+\_\+curve, Optional\+[Sequence\+[NXOpen.\+Curve]\+]\+ all\+\_\+curves=None)
+\item 
+List\+[NXOpen.\+Edge] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a0d623827d9eab0a412a08f224b2456a1}{get\+\_\+connected\+\_\+edges}} (NXOpen.\+Edge seed\+\_\+edge, Optional\+[Sequence\+[NXOpen.\+Edge]\+]\+ all\+\_\+edges=None, float gap\+\_\+tolerance=0.\+001)
+\item 
+List\+[NXOpen.\+Edge] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a7fb2316965fb94bad8ae329949093c37}{get\+\_\+tangent\+\_\+edges}} (NXOpen.\+Edge seed\+\_\+curve, NXOpen.\+Edge end\+\_\+edge=NXOpen.\+Edge.\+Null, bool is\+\_\+from\+\_\+seed\+\_\+start=False, float angle\+\_\+tolerance=0.\+5, bool destroy\+\_\+section=True)
+\item 
+List\+[NXOpen.\+Curve] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aab3ee62fe9ed537daedaa0b8a90ee74f}{get\+\_\+tangent\+\_\+curves}} (NXOpen.\+Curve seed\+\_\+curve, Optional\+[Sequence\+[NXOpen.\+Curve]\+]\+ all\+\_\+curves=None)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ad5cefc463b90d6579199b76b99754b27}{create\+\_\+direction\+\_\+from\+\_\+vector}} (NXOpen.\+Point3d origin, NXOpen.\+Vector3d vector, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_abb188cc6b4d97e9b92c9c5f6faff671d}{create\+\_\+direction\+\_\+from\+\_\+line}} (NXOpen.\+Line line, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a69a2cc4f1131fb67e410d7d7c123ba5c}{create\+\_\+direction\+\_\+from\+\_\+edge}} (NXOpen.\+IBase\+Curve edge, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ae6171b9f318242c7da1b1aabd4ad31c4}{create\+\_\+direction\+\_\+from\+\_\+conic}} (NXOpen.\+Conic conic, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_af245e56659fc1643742bc6a64b224e49}{create\+\_\+direction\+\_\+from\+\_\+axis}} (NXOpen.\+Datum\+Axis axis, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a7cbab092bfda19b47f131d2f221f0c8a}{create\+\_\+direction\+\_\+from\+\_\+face\+\_\+normal}} (NXOpen.\+IParameterized\+Surface face, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a6f9d38bad3fa4756de566d8fe9dc6181}{create\+\_\+direction\+\_\+from\+\_\+face\+\_\+uv}} (NXOpen.\+Face face, NXOpen.\+Scalar u\+\_\+val, NXOpen.\+Scalar v\+\_\+val, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aff16b8fdffa6b1e4c24bf598ceb0b25f}{create\+\_\+direction\+\_\+from\+\_\+plane\+\_\+normal}} (NXOpen.\+IBase\+Plane plane, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a58c5fd6e35e283ad15cfe552ce638b4f}{create\+\_\+direction\+\_\+from\+\_\+sketch\+\_\+normal}} (NXOpen.\+Sketch sketch, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_af557293d55b4296284edb5de8f72b8a3}{create\+\_\+direction\+\_\+from\+\_\+points}} (NXOpen.\+Point start\+\_\+point, NXOpen.\+Point end\+\_\+point, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab7ad9a155d5fdb863ccd52d7d7714be9}{create\+\_\+direction\+\_\+from\+\_\+control\+\_\+points}} (NXOpen.\+Routing.\+Control\+Point start\+\_\+point, NXOpen.\+Routing.\+Control\+Point end\+\_\+point, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aa55dac87a1991b861861e0b616a0b84d}{create\+\_\+direction\+\_\+from\+\_\+curve\+\_\+parameter}} (NXOpen.\+IBase\+Curve curve, NXOpen.\+Scalar parameter, NXOpen.\+Direction.\+On\+Curve\+Option option, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab1491433a73b0d967101266ba9f0323b}{create\+\_\+direction\+\_\+from\+\_\+curve\+\_\+point}} (NXOpen.\+IBase\+Curve curve, NXOpen.\+Point point, NXOpen.\+Direction.\+On\+Curve\+Option option, sense=NXOpen.\+Sense.\+Forward, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a29233338f8831bb2141c7bfa343ed47e}{create\+\_\+direction\+\_\+from\+\_\+transform}} (NXOpen.\+Direction direction, NXOpen.\+Xform xform, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Direction \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac2e0a40fe7b17028bb26635f229eacb6}{create\+\_\+direction\+\_\+from\+\_\+combine}} (NXOpen.\+Direction direction1, NXOpen.\+Direction direction2, NXOpen.\+Smart\+Object.\+Update\+Option update\+\_\+option=NXOpen.\+Smart\+Object.\+Update\+Option.\+Within\+Modeling)
+\item 
+NXOpen.\+Xform \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a49c6c4eac1fd0ebe99e3a46e83fcffb1}{create\+\_\+by\+\_\+xy\+\_\+vector}} (NXOpen.\+Point3d origin, NXOpen.\+Vector3d x\+\_\+vector, NXOpen.\+Vector3d y\+\_\+vector)
+\item 
+NXOpen.\+Xform \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_afbb7e8043f90e5a7f90c0cef76457116}{create\+\_\+by\+\_\+xz\+\_\+dir}} (NXOpen.\+Point origin, NXOpen.\+Direction x\+\_\+dir, NXOpen.\+Direction z\+\_\+dir)
+\item 
+NXOpen.\+Xform \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a0fb721645c368ab7fa2511407282a509}{create\+\_\+by\+\_\+three\+\_\+planes}} (NXOpen.\+IPlane\+For\+Xform\+By\+Three\+Planes plane1, NXOpen.\+IPlane\+For\+Xform\+By\+Three\+Planes plane2, NXOpen.\+IPlane\+For\+Xform\+By\+Three\+Planes plane3)
+\end{DoxyCompactItemize}
+
+
+\label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_doc-func-members}
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a5269edad95e2586e1ccf570953ced81c}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!close\_all@{close\_all}}
+\index{close\_all@{close\_all}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{close\_all()}{close\_all()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a5269edad95e2586e1ccf570953ced81c} 
+nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+close\+\_\+all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a35f4d156d4b58d32f48b799e3597daa9}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_by\_plane\_x\_dir@{create\_by\_plane\_x\_dir}}
+\index{create\_by\_plane\_x\_dir@{create\_by\_plane\_x\_dir}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_by\_plane\_x\_dir()}{create\_by\_plane\_x\_dir()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a35f4d156d4b58d32f48b799e3597daa9} 
+ NXOpen.\+Xform nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+by\+\_\+plane\+\_\+x\+\_\+dir (\begin{DoxyParamCaption}\item[{NXOpen.\+Point}]{origin}{, }\item[{NXOpen.\+Displayable\+Object}]{plane}{, }\item[{NXOpen.\+Direction}]{x\+\_\+dir}{, }\item[{bool }]{flip\+\_\+x\+\_\+dir}{ = {\ttfamily False}, }\item[{bool }]{flip\+\_\+z\+\_\+dir}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a922be6f45ef9e0c2db7c1a3c31a7ecc9}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}}
+\index{create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_by\_plane\_y\_dir()}{create\_by\_plane\_y\_dir()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a922be6f45ef9e0c2db7c1a3c31a7ecc9} 
+ NXOpen.\+Xform nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+by\+\_\+plane\+\_\+y\+\_\+dir (\begin{DoxyParamCaption}\item[{NXOpen.\+Point}]{origin}{, }\item[{NXOpen.\+Displayable\+Object}]{plane}{, }\item[{NXOpen.\+Direction}]{y\+\_\+dir}{, }\item[{bool }]{flip\+\_\+y\+\_\+dir}{ = {\ttfamily False}, }\item[{bool }]{flip\+\_\+z\+\_\+dir}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a0fb721645c368ab7fa2511407282a509}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_by\_three\_planes@{create\_by\_three\_planes}}
+\index{create\_by\_three\_planes@{create\_by\_three\_planes}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_by\_three\_planes()}{create\_by\_three\_planes()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a0fb721645c368ab7fa2511407282a509} 
+ NXOpen.\+Xform nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+by\+\_\+three\+\_\+planes (\begin{DoxyParamCaption}\item[{NXOpen.\+IPlane\+For\+Xform\+By\+Three\+Planes}]{plane1}{, }\item[{NXOpen.\+IPlane\+For\+Xform\+By\+Three\+Planes}]{plane2}{, }\item[{NXOpen.\+IPlane\+For\+Xform\+By\+Three\+Planes}]{plane3}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a49c6c4eac1fd0ebe99e3a46e83fcffb1}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_by\_xy\_vector@{create\_by\_xy\_vector}}
+\index{create\_by\_xy\_vector@{create\_by\_xy\_vector}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_by\_xy\_vector()}{create\_by\_xy\_vector()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a49c6c4eac1fd0ebe99e3a46e83fcffb1} 
+ NXOpen.\+Xform nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+by\+\_\+xy\+\_\+vector (\begin{DoxyParamCaption}\item[{NXOpen.\+Point3d}]{origin}{, }\item[{NXOpen.\+Vector3d}]{x\+\_\+vector}{, }\item[{NXOpen.\+Vector3d}]{y\+\_\+vector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_afbb7e8043f90e5a7f90c0cef76457116}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_by\_xz\_dir@{create\_by\_xz\_dir}}
+\index{create\_by\_xz\_dir@{create\_by\_xz\_dir}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_by\_xz\_dir()}{create\_by\_xz\_dir()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_afbb7e8043f90e5a7f90c0cef76457116} 
+ NXOpen.\+Xform nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+by\+\_\+xz\+\_\+dir (\begin{DoxyParamCaption}\item[{NXOpen.\+Point}]{origin}{, }\item[{NXOpen.\+Direction}]{x\+\_\+dir}{, }\item[{NXOpen.\+Direction}]{z\+\_\+dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a9339e96a11f496d98c8d4b498455f462}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_by\_yz\_dir@{create\_by\_yz\_dir}}
+\index{create\_by\_yz\_dir@{create\_by\_yz\_dir}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_by\_yz\_dir()}{create\_by\_yz\_dir()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a9339e96a11f496d98c8d4b498455f462} 
+ NXOpen.\+Xform nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+by\+\_\+yz\+\_\+dir (\begin{DoxyParamCaption}\item[{NXOpen.\+Point}]{origin}{, }\item[{NXOpen.\+Direction}]{y\+\_\+dir}{, }\item[{NXOpen.\+Direction}]{z\+\_\+dir}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_af245e56659fc1643742bc6a64b224e49}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_axis@{create\_direction\_from\_axis}}
+\index{create\_direction\_from\_axis@{create\_direction\_from\_axis}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_axis()}{create\_direction\_from\_axis()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_af245e56659fc1643742bc6a64b224e49} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+axis (\begin{DoxyParamCaption}\item[{NXOpen.\+Datum\+Axis}]{axis}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac2e0a40fe7b17028bb26635f229eacb6}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_combine@{create\_direction\_from\_combine}}
+\index{create\_direction\_from\_combine@{create\_direction\_from\_combine}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_combine()}{create\_direction\_from\_combine()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac2e0a40fe7b17028bb26635f229eacb6} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+combine (\begin{DoxyParamCaption}\item[{NXOpen.\+Direction}]{direction1}{, }\item[{NXOpen.\+Direction}]{direction2}{, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ae6171b9f318242c7da1b1aabd4ad31c4}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_conic@{create\_direction\_from\_conic}}
+\index{create\_direction\_from\_conic@{create\_direction\_from\_conic}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_conic()}{create\_direction\_from\_conic()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ae6171b9f318242c7da1b1aabd4ad31c4} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+conic (\begin{DoxyParamCaption}\item[{NXOpen.\+Conic}]{conic}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab7ad9a155d5fdb863ccd52d7d7714be9}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_control\_points@{create\_direction\_from\_control\_points}}
+\index{create\_direction\_from\_control\_points@{create\_direction\_from\_control\_points}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_control\_points()}{create\_direction\_from\_control\_points()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab7ad9a155d5fdb863ccd52d7d7714be9} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+control\+\_\+points (\begin{DoxyParamCaption}\item[{NXOpen.\+Routing.\+Control\+Point}]{start\+\_\+point}{, }\item[{NXOpen.\+Routing.\+Control\+Point}]{end\+\_\+point}{, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aa55dac87a1991b861861e0b616a0b84d}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_curve\_parameter@{create\_direction\_from\_curve\_parameter}}
+\index{create\_direction\_from\_curve\_parameter@{create\_direction\_from\_curve\_parameter}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_curve\_parameter()}{create\_direction\_from\_curve\_parameter()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aa55dac87a1991b861861e0b616a0b84d} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+curve\+\_\+parameter (\begin{DoxyParamCaption}\item[{NXOpen.\+IBase\+Curve}]{curve}{, }\item[{NXOpen.\+Scalar}]{parameter}{, }\item[{NXOpen.\+Direction.\+On\+Curve\+Option}]{option}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab1491433a73b0d967101266ba9f0323b}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_curve\_point@{create\_direction\_from\_curve\_point}}
+\index{create\_direction\_from\_curve\_point@{create\_direction\_from\_curve\_point}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_curve\_point()}{create\_direction\_from\_curve\_point()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab1491433a73b0d967101266ba9f0323b} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+curve\+\_\+point (\begin{DoxyParamCaption}\item[{NXOpen.\+IBase\+Curve}]{curve}{, }\item[{NXOpen.\+Point}]{point}{, }\item[{NXOpen.\+Direction.\+On\+Curve\+Option}]{option}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a69a2cc4f1131fb67e410d7d7c123ba5c}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_edge@{create\_direction\_from\_edge}}
+\index{create\_direction\_from\_edge@{create\_direction\_from\_edge}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_edge()}{create\_direction\_from\_edge()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a69a2cc4f1131fb67e410d7d7c123ba5c} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+edge (\begin{DoxyParamCaption}\item[{NXOpen.\+IBase\+Curve}]{edge}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a7cbab092bfda19b47f131d2f221f0c8a}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_face\_normal@{create\_direction\_from\_face\_normal}}
+\index{create\_direction\_from\_face\_normal@{create\_direction\_from\_face\_normal}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_face\_normal()}{create\_direction\_from\_face\_normal()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a7cbab092bfda19b47f131d2f221f0c8a} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+face\+\_\+normal (\begin{DoxyParamCaption}\item[{NXOpen.\+IParameterized\+Surface}]{face}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a6f9d38bad3fa4756de566d8fe9dc6181}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_face\_uv@{create\_direction\_from\_face\_uv}}
+\index{create\_direction\_from\_face\_uv@{create\_direction\_from\_face\_uv}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_face\_uv()}{create\_direction\_from\_face\_uv()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a6f9d38bad3fa4756de566d8fe9dc6181} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+face\+\_\+uv (\begin{DoxyParamCaption}\item[{NXOpen.\+Face}]{face}{, }\item[{NXOpen.\+Scalar}]{u\+\_\+val}{, }\item[{NXOpen.\+Scalar}]{v\+\_\+val}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_abb188cc6b4d97e9b92c9c5f6faff671d}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_line@{create\_direction\_from\_line}}
+\index{create\_direction\_from\_line@{create\_direction\_from\_line}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_line()}{create\_direction\_from\_line()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_abb188cc6b4d97e9b92c9c5f6faff671d} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+line (\begin{DoxyParamCaption}\item[{NXOpen.\+Line}]{line}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aff16b8fdffa6b1e4c24bf598ceb0b25f}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_plane\_normal@{create\_direction\_from\_plane\_normal}}
+\index{create\_direction\_from\_plane\_normal@{create\_direction\_from\_plane\_normal}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_plane\_normal()}{create\_direction\_from\_plane\_normal()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aff16b8fdffa6b1e4c24bf598ceb0b25f} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+plane\+\_\+normal (\begin{DoxyParamCaption}\item[{NXOpen.\+IBase\+Plane}]{plane}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_af557293d55b4296284edb5de8f72b8a3}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_points@{create\_direction\_from\_points}}
+\index{create\_direction\_from\_points@{create\_direction\_from\_points}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_points()}{create\_direction\_from\_points()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_af557293d55b4296284edb5de8f72b8a3} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+points (\begin{DoxyParamCaption}\item[{NXOpen.\+Point}]{start\+\_\+point}{, }\item[{NXOpen.\+Point}]{end\+\_\+point}{, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a58c5fd6e35e283ad15cfe552ce638b4f}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_sketch\_normal@{create\_direction\_from\_sketch\_normal}}
+\index{create\_direction\_from\_sketch\_normal@{create\_direction\_from\_sketch\_normal}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_sketch\_normal()}{create\_direction\_from\_sketch\_normal()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a58c5fd6e35e283ad15cfe552ce638b4f} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+sketch\+\_\+normal (\begin{DoxyParamCaption}\item[{NXOpen.\+Sketch}]{sketch}{, }\item[{}]{sense}{ = {\ttfamily NXOpen.Sense.Forward}, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a29233338f8831bb2141c7bfa343ed47e}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_transform@{create\_direction\_from\_transform}}
+\index{create\_direction\_from\_transform@{create\_direction\_from\_transform}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_transform()}{create\_direction\_from\_transform()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a29233338f8831bb2141c7bfa343ed47e} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+transform (\begin{DoxyParamCaption}\item[{NXOpen.\+Direction}]{direction}{, }\item[{NXOpen.\+Xform}]{xform}{, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ad5cefc463b90d6579199b76b99754b27}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!create\_direction\_from\_vector@{create\_direction\_from\_vector}}
+\index{create\_direction\_from\_vector@{create\_direction\_from\_vector}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{create\_direction\_from\_vector()}{create\_direction\_from\_vector()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ad5cefc463b90d6579199b76b99754b27} 
+ NXOpen.\+Direction nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+create\+\_\+direction\+\_\+from\+\_\+vector (\begin{DoxyParamCaption}\item[{NXOpen.\+Point3d}]{origin}{, }\item[{NXOpen.\+Vector3d}]{vector}{, }\item[{NXOpen.\+Smart\+Object.\+Update\+Option }]{update\+\_\+option}{ = {\ttfamily NXOpen.SmartObject.UpdateOption.WithinModeling}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac908393c032b6bb0da883a8c0248c3ba}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_bodies@{get\_bodies}}
+\index{get\_bodies@{get\_bodies}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_bodies()}{get\_bodies()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac908393c032b6bb0da883a8c0248c3ba} 
+ List\+[NXOpen.\+Body]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+bodies (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aecfc014c46f592e8db850aa3a05d3872}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_connected\_curves@{get\_connected\_curves}}
+\index{get\_connected\_curves@{get\_connected\_curves}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_connected\_curves()}{get\_connected\_curves()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aecfc014c46f592e8db850aa3a05d3872} 
+ List\+[NXOpen.\+Curve]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+connected\+\_\+curves (\begin{DoxyParamCaption}\item[{NXOpen.\+Curve}]{seed\+\_\+curve}{, }\item[{Optional\+[Sequence\+[NXOpen.\+Curve]\+]\+ }]{all\+\_\+curves}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a0d623827d9eab0a412a08f224b2456a1}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_connected\_edges@{get\_connected\_edges}}
+\index{get\_connected\_edges@{get\_connected\_edges}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_connected\_edges()}{get\_connected\_edges()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a0d623827d9eab0a412a08f224b2456a1} 
+ List\+[NXOpen.\+Edge]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+connected\+\_\+edges (\begin{DoxyParamCaption}\item[{NXOpen.\+Edge}]{seed\+\_\+edge}{, }\item[{Optional\+[Sequence\+[NXOpen.\+Edge]\+]\+ }]{all\+\_\+edges}{ = {\ttfamily None}, }\item[{float }]{gap\+\_\+tolerance}{ = {\ttfamily 0.001}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a287b4f0ec97929c11f110d7ef73b4c87}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_curves@{get\_curves}}
+\index{get\_curves@{get\_curves}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_curves()}{get\_curves()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a287b4f0ec97929c11f110d7ef73b4c87} 
+ List\+[NXOpen.\+Curve]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+curves (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_afe68cbab0346c1b7dbbb33e96b8789c2}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_datum\_axes@{get\_datum\_axes}}
+\index{get\_datum\_axes@{get\_datum\_axes}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_datum\_axes()}{get\_datum\_axes()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_afe68cbab0346c1b7dbbb33e96b8789c2} 
+ List\+[NXOpen.\+Datum\+Axis]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+datum\+\_\+axes (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a71728ec39b2cb2bc7adb23bbb8dfbba1}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_datum\_csys@{get\_datum\_csys}}
+\index{get\_datum\_csys@{get\_datum\_csys}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_datum\_csys()}{get\_datum\_csys()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a71728ec39b2cb2bc7adb23bbb8dfbba1} 
+ List\+[NXOpen.\+Coordinate\+System]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+datum\+\_\+csys (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac068688cf532bd03786d1629ac38446b}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_datum\_planes@{get\_datum\_planes}}
+\index{get\_datum\_planes@{get\_datum\_planes}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_datum\_planes()}{get\_datum\_planes()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac068688cf532bd03786d1629ac38446b} 
+ List\+[NXOpen.\+Datum\+Plane]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+datum\+\_\+planes (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a1cb0f891e09a2d8f961cf2cfa874be57}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_displayable\_objects@{get\_displayable\_objects}}
+\index{get\_displayable\_objects@{get\_displayable\_objects}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_displayable\_objects()}{get\_displayable\_objects()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a1cb0f891e09a2d8f961cf2cfa874be57} 
+ List\+[NXOpen.\+Displayable\+Object]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+displayable\+\_\+objects (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a853ec4fb59cf39fe46e5d29e479e2a3a}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_edges@{get\_edges}}
+\index{get\_edges@{get\_edges}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_edges()}{get\_edges()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a853ec4fb59cf39fe46e5d29e479e2a3a} 
+ List\+[NXOpen.\+Edge]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+edges (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a2fc7060599fc7bed7e4f861701cd7f16}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_faces@{get\_faces}}
+\index{get\_faces@{get\_faces}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_faces()}{get\_faces()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a2fc7060599fc7bed7e4f861701cd7f16} 
+ List\+[NXOpen.\+Face]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+faces (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_abc7847b3673d62f019c5bd5c89d2ff9d}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_features@{get\_features}}
+\index{get\_features@{get\_features}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_features()}{get\_features()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_abc7847b3673d62f019c5bd5c89d2ff9d} 
+ List\+[NXOpen.\+Features.\+Feature]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+features (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a8daaf1677b9a7b67f08d2b9b4f748c6a}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_points@{get\_points}}
+\index{get\_points@{get\_points}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_points()}{get\_points()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a8daaf1677b9a7b67f08d2b9b4f748c6a} 
+ List\+[NXOpen.\+Point]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+points (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aab3ee62fe9ed537daedaa0b8a90ee74f}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_tangent\_curves@{get\_tangent\_curves}}
+\index{get\_tangent\_curves@{get\_tangent\_curves}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_tangent\_curves()}{get\_tangent\_curves()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_aab3ee62fe9ed537daedaa0b8a90ee74f} 
+ List\+[NXOpen.\+Curve]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+tangent\+\_\+curves (\begin{DoxyParamCaption}\item[{NXOpen.\+Curve}]{seed\+\_\+curve}{, }\item[{Optional\+[Sequence\+[NXOpen.\+Curve]\+]\+ }]{all\+\_\+curves}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a7fb2316965fb94bad8ae329949093c37}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!get\_tangent\_edges@{get\_tangent\_edges}}
+\index{get\_tangent\_edges@{get\_tangent\_edges}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{get\_tangent\_edges()}{get\_tangent\_edges()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a7fb2316965fb94bad8ae329949093c37} 
+ List\+[NXOpen.\+Edge]\+ nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+get\+\_\+tangent\+\_\+edges (\begin{DoxyParamCaption}\item[{NXOpen.\+Edge}]{seed\+\_\+curve}{, }\item[{NXOpen.\+Edge }]{end\+\_\+edge}{ = {\ttfamily NXOpen.Edge.Null}, }\item[{bool }]{is\+\_\+from\+\_\+seed\+\_\+start}{ = {\ttfamily False}, }\item[{float }]{angle\+\_\+tolerance}{ = {\ttfamily 0.5}, }\item[{bool }]{destroy\+\_\+section}{ = {\ttfamily True}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab84a0e38a3ca2be83896649c8953f334}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!open\_part@{open\_part}}
+\index{open\_part@{open\_part}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{open\_part()}{open\_part()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ab84a0e38a3ca2be83896649c8953f334} 
+ NXOpen.\+Part nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+open\+\_\+part (\begin{DoxyParamCaption}\item[{}]{file\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a1bcbe680491ae308f31afb41809b3aba}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!save@{save}}
+\index{save@{save}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_a1bcbe680491ae308f31afb41809b3aba} 
+nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac8b6fdfd677f7a5851e3ede5559fee9b}\index{nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}!save\_as@{save\_as}}
+\index{save\_as@{save\_as}!nxopenkit.core.\_nxpart.NXPart@{nxopenkit.core.\_nxpart.NXPart}}
+\doxysubsubsection{\texorpdfstring{save\_as()}{save\_as()}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1__nxpart_1_1_n_x_part_ac8b6fdfd677f7a5851e3ede5559fee9b} 
+nxopenkit.\+core.\+\_\+nxpart.\+NXPart.\+save\+\_\+as (\begin{DoxyParamCaption}\item[{str}]{file}{, }\item[{Optional\+[bool]\+ }]{delete\+Existing\+File}{ = {\ttfamily True}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+D/\+\+Shashi/\+nx-\/toolkit/\+src/\+nxopenkit/\+core/\doxymbox{\hyperlink{__nxpart_8py}{\+\_\+nxpart.\+py}}\end{DoxyCompactItemize}

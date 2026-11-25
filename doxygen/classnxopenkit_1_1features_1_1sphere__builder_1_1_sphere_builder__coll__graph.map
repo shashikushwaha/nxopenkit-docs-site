@@ -1,0 +1,17 @@
+<map id="nxopenkit.features.sphere_builder.SphereBuilder" name="nxopenkit.features.sphere_builder.SphereBuilder">
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,1212,166,1505"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder.html" title=" " alt="" coords="5,971,167,1077"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,1090,89,1213,84,1212,86,1095"/>
+<area shape="poly" id="edge8_Node000002_Node000002" title=" " alt="" coords="166,993,186,1003,194,1024,191,1037,184,1046,180,1044,186,1035,188,1024,182,1007,167,998"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1features_1_1builder_1_1_builder.html" title=" " alt="" coords="158,597,321,704"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,720,110,972,105,970,213,715"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html" title=" " alt="" coords="317,885,466,1163"/>
+<area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="243,701,258,780,269,821,285,860,294,872,306,884,309,890,304,890,301,887,290,876,281,863,264,823,253,781,243,706"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="352,871,340,838,306,768,273,706,273,701,311,765,345,836,357,872"/>
+<area shape="rect" id="Node000005" href="$classnxopenkit_1_1core_1_1part_1_1_part.html" title=" " alt="" coords="346,488,496,813"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="409,810,406,870,401,868,407,815"/>
+<area shape="rect" id="Node000006" href="$classnxopenkit_1_1core_1_1named__object_1_1_named_object.html" title=" " alt="" coords="352,289,490,439"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="421,451,423,489,418,488,420,456"/>
+<area shape="rect" id="Node000007" href="$classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html" title=" " alt="" coords="352,5,490,240"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="421,252,423,290,418,289,420,257"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="nxopenkit.features.builder.Builder" name="nxopenkit.features.builder.Builder">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1235,169,1341"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html" title=" " alt="" coords="156,885,306,1163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,1172,118,1236,113,1233,147,1176"/>
+<area shape="rect" id="Node000006" href="$classnxopenkit_1_1features_1_1builder_1_1_builder.html" title=" " alt="" coords="193,1235,357,1341"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="248,1175,255,1210,261,1236,256,1234,250,1211,245,1180"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1core_1_1part_1_1_part.html" title=" " alt="" coords="156,488,306,813"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,810,234,869,229,868,231,816"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1core_1_1named__object_1_1_named_object.html" title=" " alt="" coords="162,289,300,439"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="232,451,234,488,229,488,231,456"/>
+<area shape="rect" id="Node000005" href="$classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html" title=" " alt="" coords="162,5,300,240"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="231,252,234,290,229,289,231,257"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="264,1234,256,1182,259,1177,269,1236"/>
+</map>

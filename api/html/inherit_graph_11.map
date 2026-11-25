@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html" title=" " alt="" coords="5,339,166,381"/>
+<area shape="rect" id="Node000001" href="$classnxopenkit_1_1features_1_1builder_1_1_builder.html" title=" " alt="" coords="214,339,388,381"/>
+<area shape="poly" id="edge24_Node000000_Node000001" title=" " alt="" coords="180,358,215,359,211,361,183,362"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder.html" title=" " alt="" coords="436,339,608,381"/>
+<area shape="poly" id="edge25_Node000001_Node000002" title=" " alt="" coords="403,357,438,359,433,361,405,363"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1features_1_1block__builder_1_1_block_builder.html" title=" " alt="" coords="698,5,862,48"/>
+<area shape="poly" id="edge26_Node000002_Node000003" title=" " alt="" coords="527,322,540,264,564,193,581,156,602,120,626,87,655,58,675,45,700,36,696,39,677,49,658,62,630,91,606,123,586,159,569,195,545,266,532,324"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder.html" title=" " alt="" coords="691,72,869,115"/>
+<area shape="poly" id="edge27_Node000002_Node000004" title=" " alt="" coords="532,322,549,277,575,224,610,170,631,146,655,124,693,106,689,110,658,129,635,150,614,173,579,226,554,279,536,325"/>
+<area shape="rect" id="Node000005" href="$classnxopenkit_1_1features_1_1composite__curve__builder_1_1_composite_curve_builder.html" title=" " alt="" coords="656,139,904,181"/>
+<area shape="poly" id="edge28_Node000002_Node000005" title=" " alt="" coords="540,324,586,256,618,221,655,191,680,180,675,183,658,196,622,225,590,260,544,327"/>
+<area shape="rect" id="Node000006" href="$classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder.html" title=" " alt="" coords="691,205,869,248"/>
+<area shape="poly" id="edge29_Node000002_Node000006" title=" " alt="" coords="556,326,601,290,655,258,693,245,689,247,658,262,605,295,559,330"/>
+<area shape="rect" id="Node000007" href="$classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder.html" title=" " alt="" coords="677,272,883,315"/>
+<area shape="poly" id="edge30_Node000002_Node000007" title=" " alt="" coords="621,332,697,314,692,316,623,337"/>
+<area shape="rect" id="Node000008" href="$classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder.html" title=" " alt="" coords="672,339,888,381"/>
+<area shape="poly" id="edge31_Node000002_Node000008" title=" " alt="" coords="623,357,675,359,670,361,624,363"/>
+<area shape="rect" id="Node000009" href="$classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder.html" title=" " alt="" coords="670,405,890,448"/>
+<area shape="poly" id="edge32_Node000002_Node000009" title=" " alt="" coords="622,383,697,404,692,405,622,388"/>
+<area shape="rect" id="Node000010" href="$classnxopenkit_1_1features_1_1extrude__builder_1_1_extrude_builder.html" title=" " alt="" coords="692,472,868,515"/>
+<area shape="poly" id="edge33_Node000002_Node000010" title=" " alt="" coords="558,389,605,425,658,458,695,474,690,474,655,462,601,430,557,394"/>
+<area shape="rect" id="Node000011" href="$classnxopenkit_1_1features_1_1point__builder_1_1_point_builder.html" title=" " alt="" coords="700,539,860,581"/>
+<area shape="poly" id="edge34_Node000002_Node000011" title=" " alt="" coords="543,392,590,460,622,495,658,524,702,547,697,546,655,529,618,499,586,464,541,397"/>
+<area shape="rect" id="Node000012" href="$classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder.html" title=" " alt="" coords="693,605,867,648"/>
+<area shape="poly" id="edge35_Node000002_Node000012" title=" " alt="" coords="535,394,554,441,579,494,614,547,635,570,658,591,695,613,690,612,655,596,631,574,610,550,575,496,549,443,533,399"/>
+<area shape="rect" id="Node000013" href="$classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder.html" title=" " alt="" coords="694,672,866,715"/>
+<area shape="poly" id="edge36_Node000002_Node000013" title=" " alt="" coords="531,395,545,454,569,525,586,561,606,597,630,629,658,658,675,670,697,681,691,680,673,674,655,662,626,633,602,600,581,564,564,527,540,456,528,399"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="nxopenkit.features.base_builder.BaseBuilder._validate_tolerance" name="nxopenkit.features.base_builder.BaseBuilder._validate_tolerance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="262,64,422,123"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder.html#a697eb749df92b2e03025fbe576fe599d" title=" " alt="" coords="6,5,213,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,67,187,51,186,46,250,65"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1features_1_1extrude__builder_1_1_extrude_builder.html#afc13317b0c30109f3118c67359dc3282" title=" " alt="" coords="7,72,212,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,94,213,96,212,91,249,93"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder.html#a2db68efac8c09df2871c19add219a323" title=" " alt="" coords="5,139,214,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,120,187,141,186,135,244,121"/>
+</map>

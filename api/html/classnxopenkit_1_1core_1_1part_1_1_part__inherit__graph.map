@@ -1,0 +1,7 @@
+<map id="nxopenkit.core.part.Part" name="nxopenkit.core.part.Part">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,485,155,811"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1core_1_1named__object_1_1_named_object.html" title=" " alt="" coords="11,288,150,437"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,450,83,486,78,485,80,455"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html" title=" " alt="" coords="11,5,150,240"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,252,83,288,78,288,80,258"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="nxopenkit.features.block_builder.BlockBuilder" name="nxopenkit.features.block_builder.BlockBuilder">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,683,181,971"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder.html" title=" " alt="" coords="12,528,174,635"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,647,96,683,91,683,93,652"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1features_1_1builder_1_1_builder.html" title=" " alt="" coords="12,373,175,480"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,492,96,529,91,528,93,498"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html" title=" " alt="" coords="18,5,168,325"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,338,96,374,91,374,93,343"/>
+</map>

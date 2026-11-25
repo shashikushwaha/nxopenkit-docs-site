@@ -1,0 +1,11 @@
+<map id="nxopenkit.core.direction.Direction" name="nxopenkit.core.direction.Direction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="106,901,259,1264"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object.html" title=" " alt="" coords="5,595,170,723"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,734,145,901,139,902,104,740"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1core_1_1named__object_1_1_named_object.html" title=" " alt="" coords="18,289,157,439"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,451,90,595,85,595,87,456"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html" title=" " alt="" coords="18,5,157,240"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,252,90,289,85,289,88,258"/>
+<area shape="rect" id="Node000005" href="$classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html" title=" " alt="" coords="195,488,359,829"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="240,826,229,886,224,884,238,831"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="nxopenkit.features.base_builder.BaseBuilder._set_undo_mark" name="nxopenkit.features.base_builder.BaseBuilder._set_undo_mark">
+<area shape="rect" id="Node000001" title=" " alt="" coords="305,189,465,248"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1composite__curve__builder_1_1_composite_curve_builder.html#a42d43c7ce2c6a065e9b1f2b9c75a6201" title=" " alt="" coords="5,29,257,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="346,178,305,139,255,102,235,91,234,86,258,98,308,135,351,178"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder.html#a1a77ab1cea9be1ed96926b6331c666bf" title=" " alt="" coords="26,136,236,195"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="287,200,237,190,236,185,292,198"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder.html#a4f46cfb7be46a6d54ca8facfa222bb97" title=" " alt="" coords="19,243,243,301"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="287,240,244,251,242,246,292,238"/>
+<area shape="rect" id="Node000005" href="$classnxopenkit_1_1features_1_1point__builder_1_1_point_builder.html#a124c0956f6ab9cd1d2c9a76ecbfc6a78" title=" " alt="" coords="51,349,211,408"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="338,256,258,316,195,351,192,347,255,311,333,259"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="171,16,157,11,131,8,109,10,94,15,87,21,87,29,81,29,82,19,91,10,108,5,131,3,158,5,175,14"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="171,123,157,117,131,115,109,117,94,121,87,128,87,136,81,135,82,125,91,117,108,111,131,109,158,112,176,121"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="170,229,157,224,131,221,109,223,94,228,87,234,87,243,81,242,82,232,91,223,108,218,131,216,158,219,176,228"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="170,335,157,331,131,328,109,330,94,335,87,341,86,350,82,348,82,339,91,330,108,325,131,323,158,325,176,335"/>
+</map>

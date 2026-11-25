@@ -1,0 +1,9 @@
+<map id="nxopenkit.features.extrude_builder.ExtrudeBuilder" name="nxopenkit.features.extrude_builder.ExtrudeBuilder">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,683,170,981"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder.html" title=" " alt="" coords="7,528,168,635"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,647,90,683,85,682,87,653"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1features_1_1builder_1_1_builder.html" title=" " alt="" coords="6,373,170,480"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,492,90,529,85,528,87,498"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html" title=" " alt="" coords="13,5,162,325"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,338,90,374,85,374,87,343"/>
+</map>

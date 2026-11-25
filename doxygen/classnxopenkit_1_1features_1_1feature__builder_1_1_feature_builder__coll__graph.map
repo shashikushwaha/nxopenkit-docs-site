@@ -1,0 +1,18 @@
+<map id="nxopenkit.features.feature_builder.FeatureBuilder" name="nxopenkit.features.feature_builder.FeatureBuilder">
+<area shape="rect" id="Node000001" title=" " alt="" coords="363,1256,525,1363"/>
+<area shape="rect" id="Node000002" href="$classnxopenkit_1_1features_1_1builder_1_1_builder.html" title=" " alt="" coords="194,597,358,704"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,710,408,745,448,786,484,833,512,884,544,979,551,1019,553,1058,549,1097,540,1138,508,1233,494,1258,491,1254,503,1231,535,1136,544,1096,548,1058,546,1020,539,980,507,886,480,836,444,790,404,749,366,715"/>
+<area shape="rect" id="Node000003" href="$classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html" title=" " alt="" coords="37,885,187,1163"/>
+<area shape="poly" id="edge6_Node000003_Node000002" title=" " alt="" coords="246,706,183,838,170,871,165,869,178,836,248,701"/>
+<area shape="rect" id="Node000007" href="$classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder.html" title=" " alt="" coords="211,971,373,1077"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="280,717,293,971,287,971,278,721"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="195,885,197,883,209,875,220,872,229,868,238,860,257,823,269,782,275,741,278,706,280,701,280,741,274,783,262,825,242,863,232,873,222,877,211,880,201,887,200,888"/>
+<area shape="rect" id="Node000004" href="$classnxopenkit_1_1core_1_1part_1_1_part.html" title=" " alt="" coords="5,488,155,813"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="79,811,84,861,85,869,80,868,79,862,78,816"/>
+<area shape="rect" id="Node000005" href="$classnxopenkit_1_1core_1_1named__object_1_1_named_object.html" title=" " alt="" coords="11,289,150,439"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="80,451,83,488,78,488,80,456"/>
+<area shape="rect" id="Node000006" href="$classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html" title=" " alt="" coords="11,5,150,240"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="80,252,83,289,78,289,80,258"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="322,1075,411,1241,405,1241,319,1079"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="372,991,392,1002,400,1024,397,1038,390,1049,386,1045,392,1036,394,1024,388,1006,373,996"/>
+</map>
