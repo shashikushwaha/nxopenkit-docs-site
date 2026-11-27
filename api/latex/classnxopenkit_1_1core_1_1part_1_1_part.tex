@@ -30,7 +30,7 @@ NXOpen.\+Part \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part_a0b88
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3}{\+\_\+\+\_\+init\+\_\+\_}} (self, NXOpen.\+NXObject nxobject)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -97,6 +97,10 @@ List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wrap an NX part and provide part-level object-collection operations.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1part_1_1_part_doc-constructors}
 \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -106,7 +110,15 @@ List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_aabb089b37e9ff6af97290e386bc8b211} 
 nxopenkit.\+core.\+part.\+Part.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Part}]{nx\+Open\+Part}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a part wrapper.
+
+Args:
+    nxOpenPart (NXOpen.Part): Underlying NX Open part.
+
+Returns:
+    None: The wrapper is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -131,91 +143,204 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_aa2737d6f4f49b524d734f281a9d9b20c} 
 nxopenkit.\+core.\+part.\+Part.\+close\+\_\+all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a5e6e54252aa3961dae1fd634b5732e08}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_bodies@{get\_bodies}}
+\begin{DoxyVerb}Close all open NX parts according to NX close behavior.
+
+Returns:
+    None: Open parts are closed.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a5e6e54252aa3961dae1fd634b5732e08}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_bodies@{get\_bodies}}
 \index{get\_bodies@{get\_bodies}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_bodies()}{get\_bodies()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a5e6e54252aa3961dae1fd634b5732e08} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+bodies (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_aa20192c406d64c1b634c55a490d9d792}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_curves@{get\_curves}}
+\begin{DoxyVerb}Get bodies in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Body]: Matching body wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_aa20192c406d64c1b634c55a490d9d792}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_curves@{get\_curves}}
 \index{get\_curves@{get\_curves}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_curves()}{get\_curves()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_aa20192c406d64c1b634c55a490d9d792} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+curves (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a8b77512a5c0cc327870ca5a5360f43fe}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_datum\_axes@{get\_datum\_axes}}
+\begin{DoxyVerb}Get curves in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Curve]: Matching curve wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a8b77512a5c0cc327870ca5a5360f43fe}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_datum\_axes@{get\_datum\_axes}}
 \index{get\_datum\_axes@{get\_datum\_axes}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_datum\_axes()}{get\_datum\_axes()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a8b77512a5c0cc327870ca5a5360f43fe} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis}{Datum\+Axis}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+datum\+\_\+axes (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_adc71a53466767dc5c52058807ffe9182}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_datum\_csys@{get\_datum\_csys}}
+\begin{DoxyVerb}Get datum axes in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[DatumAxis]: Matching datum-axis wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_adc71a53466767dc5c52058807ffe9182}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_datum\_csys@{get\_datum\_csys}}
 \index{get\_datum\_csys@{get\_datum\_csys}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_datum\_csys()}{get\_datum\_csys()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_adc71a53466767dc5c52058807ffe9182} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system}{Coordinate\+System}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+datum\+\_\+csys (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a920eb589702a38516885c207f48a793b}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_datum\_planes@{get\_datum\_planes}}
+\begin{DoxyVerb}Get coordinate systems in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[CoordinateSystem]: Matching coordinate-system wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a920eb589702a38516885c207f48a793b}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_datum\_planes@{get\_datum\_planes}}
 \index{get\_datum\_planes@{get\_datum\_planes}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_datum\_planes()}{get\_datum\_planes()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a920eb589702a38516885c207f48a793b} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__plane_1_1_datum_plane}{Datum\+Plane}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+datum\+\_\+planes (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a55a2fed634449c2b7c412c1bf70931a6}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_displayable\_objects@{get\_displayable\_objects}}
+\begin{DoxyVerb}Get datum planes in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[DatumPlane]: Matching datum-plane wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a55a2fed634449c2b7c412c1bf70931a6}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_displayable\_objects@{get\_displayable\_objects}}
 \index{get\_displayable\_objects@{get\_displayable\_objects}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_displayable\_objects()}{get\_displayable\_objects()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a55a2fed634449c2b7c412c1bf70931a6} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object}{Displayable\+Object}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+displayable\+\_\+objects (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_abbb7b94f03b26fea154bbea118f25b46}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_edges@{get\_edges}}
+\begin{DoxyVerb}Get displayable objects in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[DisplayableObject]: Matching displayable-object wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_abbb7b94f03b26fea154bbea118f25b46}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_edges@{get\_edges}}
 \index{get\_edges@{get\_edges}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_edges()}{get\_edges()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_abbb7b94f03b26fea154bbea118f25b46} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1edge_1_1_edge}{Edge}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+edges (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a0f3f24b4d9035d9ffabf49f09d5125df}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_faces@{get\_faces}}
+\begin{DoxyVerb}Get edges in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Edge]: Matching edge wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a0f3f24b4d9035d9ffabf49f09d5125df}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_faces@{get\_faces}}
 \index{get\_faces@{get\_faces}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_faces()}{get\_faces()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a0f3f24b4d9035d9ffabf49f09d5125df} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1face_1_1_face}{Face}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+faces (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a8b0b395d16b470552558a74a4e45dea3}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_features@{get\_features}}
+\begin{DoxyVerb}Get faces in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Face]: Matching face wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a8b0b395d16b470552558a74a4e45dea3}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_features@{get\_features}}
 \index{get\_features@{get\_features}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_features()}{get\_features()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a8b0b395d16b470552558a74a4e45dea3} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1feature_1_1_feature}{Feature}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+features (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_aa201d09c9a9f7a09c80cd218615cb73f}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_points@{get\_points}}
+\begin{DoxyVerb}Get features in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Feature]: Matching feature wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_aa201d09c9a9f7a09c80cd218615cb73f}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!get\_points@{get\_points}}
 \index{get\_points@{get\_points}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{get\_points()}{get\_points()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_aa201d09c9a9f7a09c80cd218615cb73f} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}]\+ nxopenkit.\+core.\+part.\+Part.\+get\+\_\+points (\begin{DoxyParamCaption}\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_acfeb236d3e50e40ccff9851c2cb18477}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!open\_part@{open\_part}}
+\begin{DoxyVerb}Get points in the active work part.
+
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Point]: Matching point wrappers.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_acfeb236d3e50e40ccff9851c2cb18477}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!open\_part@{open\_part}}
 \index{open\_part@{open\_part}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{open\_part()}{open\_part()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_acfeb236d3e50e40ccff9851c2cb18477} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part}{Part}} nxopenkit.\+core.\+part.\+Part.\+open\+\_\+part (\begin{DoxyParamCaption}\item[{}]{file\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_adf3479ac9f7ce04b632deb5187d6e6df}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!save@{save}}
+\begin{DoxyVerb}Open a part file and return a wrapper.
+
+Args:
+    filePath (str): Path to the NX part file.
+
+Returns:
+    Part: Wrapper for the opened part.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_adf3479ac9f7ce04b632deb5187d6e6df}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!save@{save}}
 \index{save@{save}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{save()}{save()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_adf3479ac9f7ce04b632deb5187d6e6df} 
 nxopenkit.\+core.\+part.\+Part.\+save (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_adb54d9b97550368e84732fe414afdcd7}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!save\_as@{save\_as}}
+\begin{DoxyVerb}Save the active work part.
+
+Returns:
+    None: The work part is saved.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_adb54d9b97550368e84732fe414afdcd7}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!save\_as@{save\_as}}
 \index{save\_as@{save\_as}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{save\_as()}{save\_as()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_adb54d9b97550368e84732fe414afdcd7} 
 nxopenkit.\+core.\+part.\+Part.\+save\+\_\+as (\begin{DoxyParamCaption}\item[{str}]{file}{, }\item[{Optional\+[bool]\+ }]{delete\+Existing\+File}{ = {\ttfamily True}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a2a10201a310a4447dc86abcd500c5132}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!session@{session}}
+\begin{DoxyVerb}Save the active work part to a new file.
+
+Args:
+    file (str): Destination part filename.
+    deleteExistingFile (bool, optional): Delete an existing destination
+        file before saving. Defaults to True.
+
+Returns:
+    None: The part is saved to the destination.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a2a10201a310a4447dc86abcd500c5132}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!session@{session}}
 \index{session@{session}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{session()}{session()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a2a10201a310a4447dc86abcd500c5132} 
  NXOpen.\+Session nxopenkit.\+core.\+part.\+Part.\+session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\begin{DoxyVerb}Get the active NX Open session.
 
+Returns:
+    NXOpen.Session: Active NX session.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object_a1f7f4fac6a45c719e376b2d090683243}{nxopenkit.\+core.\+tagged\+\_\+object.\+Tagged\+Object}}.
 
@@ -225,7 +350,12 @@ Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a0b880cd637565cc21ee33356917909a0} 
  NXOpen.\+Part nxopenkit.\+core.\+part.\+Part.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX Open part.
 
+Returns:
+    NXOpen.Part: Wrapped NX Open part.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a6255c685e841def0240dc4bb6d32a99c}{nxopenkit.\+core.\+named\+\_\+object.\+Named\+Object}}.
 
@@ -235,13 +365,26 @@ Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a31b91a496078bb94f174524b2e243bdd} 
  NXOpen.\+UF.\+UFSession nxopenkit.\+core.\+part.\+Part.\+uf\+\_\+session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a79c794302e0add4dd4e90ec782f4036a}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!work\_part@{work\_part}}
+\begin{DoxyVerb}Get the active NX UF session.
+
+Returns:
+    NXOpen.UF.UFSession: Active UF session.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1part_1_1_part_a79c794302e0add4dd4e90ec782f4036a}\index{nxopenkit.core.part.Part@{nxopenkit.core.part.Part}!work\_part@{work\_part}}
 \index{work\_part@{work\_part}!nxopenkit.core.part.Part@{nxopenkit.core.part.Part}}
 \doxysubsubsection{\texorpdfstring{work\_part()}{work\_part()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1part_1_1_part_a79c794302e0add4dd4e90ec782f4036a} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part}{Part}} nxopenkit.\+core.\+part.\+Part.\+work\+\_\+part (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\begin{DoxyVerb}Get the active NX work part.
 
+Returns:
+    Part: Wrapper for the active work part.
+
+Raises:
+    ValueError: If no work part is available.
+\end{DoxyVerb}
+ 
 
 The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 

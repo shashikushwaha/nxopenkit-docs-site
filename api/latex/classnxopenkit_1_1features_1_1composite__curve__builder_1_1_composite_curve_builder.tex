@@ -127,6 +127,9 @@ Args:
     start_connector: Optional starting connector for the section.
     end_connector: Optional ending connector for the section.
     help_point: Point used to help resolve section selection ambiguity.
+
+Returns:
+    None: The composite curve builder is initialized.
 \end{DoxyVerb}
  Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
@@ -153,7 +156,28 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1composite__curve__builder_1_1_composite_curve_builder_a72d95bf918154304c3a2fdc4970a43ec} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1composite__curve__builder_1_1_composite_curve_builder}{Composite\+Curve\+Builder}}  nxopenkit.\+features.\+composite\+\_\+curve\+\_\+builder.\+Composite\+Curve\+Builder.\+advance\+\_\+curve\+\_\+fit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Geometric\+Utilities.\+Curve\+Fit\+Data.\+Join }]{join\+\_\+method}{ = {\ttfamily NXOpen.GeometricUtilities.CurveFitData.Join.No}, }\item[{NXOpen.\+Geometric\+Utilities.\+Curve\+Fit\+Data.\+Method }]{method}{ = {\ttfamily NXOpen.GeometricUtilities.CurveFitData.Method.DegreeAndTolerance}, }\item[{float }]{tolerance}{ = {\ttfamily 0.001}, }\item[{int }]{degree}{ = {\ttfamily 3}, }\item[{int }]{mininum\+\_\+degree}{ = {\ttfamily 3}, }\item[{int }]{maximum\+\_\+degree}{ = {\ttfamily 6}, }\item[{int }]{segments}{ = {\ttfamily 3}, }\item[{int }]{max\+\_\+segements}{ = {\ttfamily 6}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1composite__curve__builder_1_1_composite_curve_builder_ac047c78b938f62a0ef0bf707def67927}\index{nxopenkit.features.composite\_curve\_builder.CompositeCurveBuilder@{nxopenkit.features.composite\_curve\_builder.CompositeCurveBuilder}!create\_by\_connected\_curves@{create\_by\_connected\_curves}}
+\begin{DoxyVerb}Configure advanced curve fitting for the composite curve.
+
+Args:
+    join_method (NXOpen.GeometricUtilities.CurveFitData.Join, optional):
+        Curve join behavior. Defaults to no joining.
+    method (NXOpen.GeometricUtilities.CurveFitData.Method, optional):
+        Curve-fitting method. Defaults to degree-and-tolerance fitting.
+    tolerance (float, optional): Maximum fitting tolerance. Defaults to 0.001.
+    degree (int, optional): Initial fitting degree. Defaults to 3.
+    mininum_degree (int, optional): Minimum allowed fitting degree.
+        Defaults to 3.
+    maximum_degree (int, optional): Maximum allowed fitting degree.
+        Defaults to 6.
+    segments (int, optional): Initial number of fitting segments.
+        Defaults to 3.
+    max_segements (int, optional): Maximum number of fitting segments.
+        Defaults to 6.
+
+Returns:
+    CompositeCurveBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1composite__curve__builder_1_1_composite_curve_builder_ac047c78b938f62a0ef0bf707def67927}\index{nxopenkit.features.composite\_curve\_builder.CompositeCurveBuilder@{nxopenkit.features.composite\_curve\_builder.CompositeCurveBuilder}!create\_by\_connected\_curves@{create\_by\_connected\_curves}}
 \index{create\_by\_connected\_curves@{create\_by\_connected\_curves}!nxopenkit.features.composite\_curve\_builder.CompositeCurveBuilder@{nxopenkit.features.composite\_curve\_builder.CompositeCurveBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_connected\_curves()}{create\_by\_connected\_curves()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1composite__curve__builder_1_1_composite_curve_builder_ac047c78b938f62a0ef0bf707def67927} 

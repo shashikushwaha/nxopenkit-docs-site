@@ -37,7 +37,7 @@ NXOpen.\+Curve \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve_a7
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3}{\+\_\+\+\_\+init\+\_\+\_}} (self, NXOpen.\+NXObject nxobject)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -81,6 +81,17 @@ List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}}] 
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represent a displayable NX curve with creation helpers.
+
+Args:
+    nxCurve: Underlying NX Open curve object.
+
+Returns:
+    Curve: A wrapper around the NX Open curve.
+\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1curve_1_1_curve_doc-constructors}
 \Hypertarget{classnxopenkit_1_1core_1_1curve_1_1_curve_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -90,7 +101,15 @@ List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}}] 
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1curve_1_1_curve_ac1ab6010a0edd8d088dfffc234f3e966} 
 nxopenkit.\+core.\+curve.\+Curve.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nx\+Curve}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a curve wrapper.
+
+Args:
+    nxCurve: Underlying NX Open curve object.
+
+Returns:
+    None: The curve wrapper is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -115,25 +134,57 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1curve_1_1_curve_a263c90dac1ccd2a8e5380aa808192221} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}} nxopenkit.\+core.\+curve.\+Curve.\+create\+\_\+composite\+\_\+curve (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}},Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}]\+]}]{curves\+\_\+edges}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}} }]{help\+\_\+point}{ = {\ttfamily \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}(0,~0,~0)}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1core_1_1curve_1_1_curve_afc63aca0006350fb92e4fc50294d1d6a}\index{nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}!get\_connected\_curves@{get\_connected\_curves}}
+\begin{DoxyVerb}Create a smart composite curve from one or more curves or edges.
+
+Args:
+    curves_edges (ICurve or Sequence[ICurve]): Curve or edge objects to
+        combine. A sequence forms a composite curve.
+    help_point (Point3d, optional): Point used to select the intended
+        section position. Defaults to the origin.
+
+Returns:
+    Curve: Newly created NX Open smart composite curve wrapper.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1curve_1_1_curve_afc63aca0006350fb92e4fc50294d1d6a}\index{nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}!get\_connected\_curves@{get\_connected\_curves}}
 \index{get\_connected\_curves@{get\_connected\_curves}!nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}}
 \doxysubsubsection{\texorpdfstring{get\_connected\_curves()}{get\_connected\_curves()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1curve_1_1_curve_afc63aca0006350fb92e4fc50294d1d6a} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}}]\+ nxopenkit.\+core.\+curve.\+Curve.\+get\+\_\+connected\+\_\+curves (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}}]{seed\+\_\+curve}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1curve_1_1_curve_aa8b8de2eb456b0a1ebdffdfc5db9488d}\index{nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}!get\_tangent\_curves@{get\_tangent\_curves}}
+\begin{DoxyVerb}Find curves connected to a seed curve.
+
+Args:
+    seed_curve (ICurve): Curve or edge used as the traversal seed.
+
+Returns:
+    List[Curve]: Curves connected to the seed curve.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1curve_1_1_curve_aa8b8de2eb456b0a1ebdffdfc5db9488d}\index{nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}!get\_tangent\_curves@{get\_tangent\_curves}}
 \index{get\_tangent\_curves@{get\_tangent\_curves}!nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}}
 \doxysubsubsection{\texorpdfstring{get\_tangent\_curves()}{get\_tangent\_curves()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1curve_1_1_curve_aa8b8de2eb456b0a1ebdffdfc5db9488d} 
  List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}}]\+ nxopenkit.\+core.\+curve.\+Curve.\+get\+\_\+tangent\+\_\+curves (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}}}]{seed\+\_\+curve}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1curve_1_1_curve_a7020f209bf89d6a663a310a416f9f7f6}\index{nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}!to\_nx@{to\_nx}}
+\begin{DoxyVerb}Find curves tangent to a seed curve.
+
+Args:
+    seed_curve (Curve): Curve used as the tangent-search seed.
+
+Returns:
+    List[Curve]: Curves tangent to the seed curve.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1curve_1_1_curve_a7020f209bf89d6a663a310a416f9f7f6}\index{nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}!to\_nx@{to\_nx}}
 \index{to\_nx@{to\_nx}!nxopenkit.core.curve.Curve@{nxopenkit.core.curve.Curve}}
 \doxysubsubsection{\texorpdfstring{to\_nx()}{to\_nx()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1curve_1_1_curve_a7020f209bf89d6a663a310a416f9f7f6} 
  NXOpen.\+Curve nxopenkit.\+core.\+curve.\+Curve.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX Open curve object.
 
+Returns:
+    NXOpen.Curve: Wrapped NX Open curve instance.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object_a0ecc225d2b39ea403b7182a5d69b00f9}{nxopenkit.\+core.\+displayable\+\_\+object.\+Displayable\+Object}}.
 
@@ -141,7 +192,8 @@ Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__o
 
 Reimplemented in \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1line_1_1_line_a79cf79b648155eb2887607bedcb39802}{nxopenkit.\+core.\+line.\+Line}}.
 
-Here is the caller graph for this function:\nopagebreak
+Here is the caller graph for this function:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

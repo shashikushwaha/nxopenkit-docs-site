@@ -95,7 +95,7 @@ Tuple\+[int, int] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1uf__manager_1_1
 
 
 \doxysubsection{Detailed Description}
-\begin{DoxyVerb}Convenience wrappers for commonly used NX 2007 UF methods.\end{DoxyVerb}
+\begin{DoxyVerb}Convenience wrappers for commonly used NX 2007 UF session methods.\end{DoxyVerb}
  
 
 \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_doc-func-members}
@@ -107,241 +107,563 @@ Tuple\+[int, int] \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1uf__manager_1_1
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ad2ef21f92a628129d6bb649a93fa4a29} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+aligned\+\_\+bounding\+\_\+box (\begin{DoxyParamCaption}\item[{}]{object\+\_\+arg}{, }\item[{}]{csys\+\_\+tag}{, }\item[{}]{expand}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ab7afff66e570383fea552977ddc91763}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_arc\_data@{ask\_arc\_data}}
+\begin{DoxyVerb}Ask for a coordinate-system-aligned bounding box.
+
+        Args:
+            object_arg: NX object tag or argument.
+            csys_tag: Coordinate-system tag.
+            expand: Expansion value.
+
+        Returns:
+            Any: Aligned bounding-box coordinates.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ab7afff66e570383fea552977ddc91763}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_arc\_data@{ask\_arc\_data}}
 \index{ask\_arc\_data@{ask\_arc\_data}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_arc\_data()}{ask\_arc\_data()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ab7afff66e570383fea552977ddc91763} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+arc\+\_\+data (\begin{DoxyParamCaption}\item[{}]{curve\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a943c6ef016d3561789d8874998dc38e4}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_body\_edges@{ask\_body\_edges}}
+\begin{DoxyVerb}Ask for arc geometry data.
+
+        Args:
+            curve_tag: NX arc or curve tag.
+
+        Returns:
+            Any: NX arc data.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a943c6ef016d3561789d8874998dc38e4}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_body\_edges@{ask\_body\_edges}}
 \index{ask\_body\_edges@{ask\_body\_edges}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_body\_edges()}{ask\_body\_edges()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a943c6ef016d3561789d8874998dc38e4} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+body\+\_\+edges (\begin{DoxyParamCaption}\item[{}]{body}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a4893d374478912099b6885560fefeeec}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_body\_faces@{ask\_body\_faces}}
+\begin{DoxyVerb}Get a body's edge tags.
+
+        Args:
+            body: NX body tag.
+
+        Returns:
+            Any: Edge tags belonging to the body.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a4893d374478912099b6885560fefeeec}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_body\_faces@{ask\_body\_faces}}
 \index{ask\_body\_faces@{ask\_body\_faces}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_body\_faces()}{ask\_body\_faces()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a4893d374478912099b6885560fefeeec} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+body\+\_\+faces (\begin{DoxyParamCaption}\item[{}]{body\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7da0473cb675f849760f13b7e5f88994}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_body\_type@{ask\_body\_type}}
+\begin{DoxyVerb}Get a body's face tags.
+
+        Args:
+            body_tag: NX body tag.
+
+        Returns:
+            Any: Face tags belonging to the body.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7da0473cb675f849760f13b7e5f88994}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_body\_type@{ask\_body\_type}}
 \index{ask\_body\_type@{ask\_body\_type}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_body\_type()}{ask\_body\_type()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7da0473cb675f849760f13b7e5f88994} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+body\+\_\+type (\begin{DoxyParamCaption}\item[{}]{body\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2beaaf16c8694b2518433a9f6939a3d9}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_bounding\_box@{ask\_bounding\_box}}
+\begin{DoxyVerb}Ask for a body's type.
+
+        Args:
+            body_tag: NX body tag.
+
+        Returns:
+            Any: NX body type.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2beaaf16c8694b2518433a9f6939a3d9}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_bounding\_box@{ask\_bounding\_box}}
 \index{ask\_bounding\_box@{ask\_bounding\_box}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_bounding\_box()}{ask\_bounding\_box()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2beaaf16c8694b2518433a9f6939a3d9} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+bounding\+\_\+box (\begin{DoxyParamCaption}\item[{}]{object\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a6f0f93cd350c72fb8994d5b73fa061ca}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_curve\_closed@{ask\_curve\_closed}}
+\begin{DoxyVerb}Ask for an object's bounding box.
+
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Any: Bounding-box coordinates.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a6f0f93cd350c72fb8994d5b73fa061ca}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_curve\_closed@{ask\_curve\_closed}}
 \index{ask\_curve\_closed@{ask\_curve\_closed}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_curve\_closed()}{ask\_curve\_closed()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a6f0f93cd350c72fb8994d5b73fa061ca} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+curve\+\_\+closed (\begin{DoxyParamCaption}\item[{}]{curve\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_aeddd74f678f27f2604f4ae478e21db05}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_curve\_properties@{ask\_curve\_properties}}
+\begin{DoxyVerb}Ask whether a curve is closed.
+
+        Args:
+            curve_tag: NX curve tag.
+
+        Returns:
+            bool: Whether the curve is closed.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_aeddd74f678f27f2604f4ae478e21db05}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_curve\_properties@{ask\_curve\_properties}}
 \index{ask\_curve\_properties@{ask\_curve\_properties}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_curve\_properties()}{ask\_curve\_properties()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_aeddd74f678f27f2604f4ae478e21db05} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+curve\+\_\+properties (\begin{DoxyParamCaption}\item[{}]{curve\+\_\+id}{, }\item[{}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afd291fd9a17df4e13a68b517593fc107}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_display\_color@{ask\_display\_color}}
+\begin{DoxyVerb}Ask for curve properties at a parameter.
+
+        Args:
+            curve_id: NX curve tag.
+            parameter: Curve parameter value.
+
+        Returns:
+            Any: Curve property data.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afd291fd9a17df4e13a68b517593fc107}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_display\_color@{ask\_display\_color}}
 \index{ask\_display\_color@{ask\_display\_color}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_display\_color()}{ask\_display\_color()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afd291fd9a17df4e13a68b517593fc107} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+display\+\_\+color (\begin{DoxyParamCaption}\item[{}]{color\+\_\+number}{, }\item[{}]{color\+\_\+model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a062b302fecda383e1528d1c8dd7b596c}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_edge\_faces@{ask\_edge\_faces}}
+\begin{DoxyVerb}Ask for display color values.
+
+        Args:
+            color_number: NX color number.
+            color_model: NX color model.
+
+        Returns:
+            Any: Requested display color data.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a062b302fecda383e1528d1c8dd7b596c}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_edge\_faces@{ask\_edge\_faces}}
 \index{ask\_edge\_faces@{ask\_edge\_faces}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_edge\_faces()}{ask\_edge\_faces()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a062b302fecda383e1528d1c8dd7b596c} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+edge\+\_\+faces (\begin{DoxyParamCaption}\item[{}]{edge}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_aa188cd036fb4883588acc0c6690a4acd}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_edge\_type@{ask\_edge\_type}}
+\begin{DoxyVerb}Get faces adjacent to an edge.
+
+        Args:
+            edge: NX edge tag.
+
+        Returns:
+            Any: Adjacent face tags.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_aa188cd036fb4883588acc0c6690a4acd}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_edge\_type@{ask\_edge\_type}}
 \index{ask\_edge\_type@{ask\_edge\_type}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_edge\_type()}{ask\_edge\_type()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_aa188cd036fb4883588acc0c6690a4acd} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+edge\+\_\+type (\begin{DoxyParamCaption}\item[{}]{edge\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a9e0c3b7228d078ae38fece8068bc4b79}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_edge\_vertices@{ask\_edge\_vertices}}
+\begin{DoxyVerb}Ask for an edge type.
+
+        Args:
+            edge_id: NX edge tag.
+
+        Returns:
+            Any: NX edge type.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a9e0c3b7228d078ae38fece8068bc4b79}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_edge\_vertices@{ask\_edge\_vertices}}
 \index{ask\_edge\_vertices@{ask\_edge\_vertices}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_edge\_vertices()}{ask\_edge\_vertices()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a9e0c3b7228d078ae38fece8068bc4b79} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+edge\+\_\+vertices (\begin{DoxyParamCaption}\item[{}]{edge\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae8c349979bfbadafdd63e863a546328c}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_exact\_bounding\_box@{ask\_exact\_bounding\_box}}
+\begin{DoxyVerb}Get an edge's vertex tags.
+
+        Args:
+            edge_tag: NX edge tag.
+
+        Returns:
+            Any: Edge vertex tags.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae8c349979bfbadafdd63e863a546328c}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_exact\_bounding\_box@{ask\_exact\_bounding\_box}}
 \index{ask\_exact\_bounding\_box@{ask\_exact\_bounding\_box}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_exact\_bounding\_box()}{ask\_exact\_bounding\_box()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae8c349979bfbadafdd63e863a546328c} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+exact\+\_\+bounding\+\_\+box (\begin{DoxyParamCaption}\item[{}]{object\+\_\+arg}{, }\item[{}]{csys\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae6bd3ad11202be7f2ccdbc6cc5c6646b}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_body@{ask\_face\_body}}
+\begin{DoxyVerb}Ask for an exact coordinate-system-aligned bounding box.
+
+        Args:
+            object_arg: NX object tag or argument.
+            csys_tag: Coordinate-system tag.
+
+        Returns:
+            Any: Exact bounding-box coordinates.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae6bd3ad11202be7f2ccdbc6cc5c6646b}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_body@{ask\_face\_body}}
 \index{ask\_face\_body@{ask\_face\_body}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_face\_body()}{ask\_face\_body()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae6bd3ad11202be7f2ccdbc6cc5c6646b} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+face\+\_\+body (\begin{DoxyParamCaption}\item[{}]{face}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2fe9a24a9225b411b7829a1e45d29deb}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_data@{ask\_face\_data}}
+\begin{DoxyVerb}Get the body containing a face.
+
+        Args:
+            face: NX face tag.
+
+        Returns:
+            Any: Parent body tag.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2fe9a24a9225b411b7829a1e45d29deb}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_data@{ask\_face\_data}}
 \index{ask\_face\_data@{ask\_face\_data}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_face\_data()}{ask\_face\_data()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2fe9a24a9225b411b7829a1e45d29deb} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+face\+\_\+data (\begin{DoxyParamCaption}\item[{}]{face\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a1e9d162104437fe14bbee1ba42589695}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_edges@{ask\_face\_edges}}
+\begin{DoxyVerb}Get detailed data for an NX face.
+
+        Args:
+            face_tag: NX face tag.
+
+        Returns:
+            Any: NX face data.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a1e9d162104437fe14bbee1ba42589695}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_edges@{ask\_face\_edges}}
 \index{ask\_face\_edges@{ask\_face\_edges}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_face\_edges()}{ask\_face\_edges()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a1e9d162104437fe14bbee1ba42589695} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+face\+\_\+edges (\begin{DoxyParamCaption}\item[{}]{face\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7047c28db40cb9ef96273ca2e5fcd868}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_type@{ask\_face\_type}}
+\begin{DoxyVerb}Get an object's edge tags.
+
+        Args:
+            face_tag: NX face tag.
+
+        Returns:
+            Any: Edge tags belonging to the face.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7047c28db40cb9ef96273ca2e5fcd868}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_face\_type@{ask\_face\_type}}
 \index{ask\_face\_type@{ask\_face\_type}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_face\_type()}{ask\_face\_type()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7047c28db40cb9ef96273ca2e5fcd868} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+face\+\_\+type (\begin{DoxyParamCaption}\item[{}]{face}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2b6b9b5678a163d68a35ebea15011cd6}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_line\_data@{ask\_line\_data}}
+\begin{DoxyVerb}Ask for a face type.
+
+        Args:
+            face: NX face tag.
+
+        Returns:
+            Any: NX face type.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2b6b9b5678a163d68a35ebea15011cd6}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_line\_data@{ask\_line\_data}}
 \index{ask\_line\_data@{ask\_line\_data}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_line\_data()}{ask\_line\_data()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a2b6b9b5678a163d68a35ebea15011cd6} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+line\+\_\+data (\begin{DoxyParamCaption}\item[{}]{curve\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a026741470cc8c4c37855c9443573b101}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_matrix\_of\_object@{ask\_matrix\_of\_object}}
+\begin{DoxyVerb}Ask for line geometry data.
+
+        Args:
+            curve_tag: NX line or curve tag.
+
+        Returns:
+            Any: NX line data.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a026741470cc8c4c37855c9443573b101}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_matrix\_of\_object@{ask\_matrix\_of\_object}}
 \index{ask\_matrix\_of\_object@{ask\_matrix\_of\_object}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_matrix\_of\_object()}{ask\_matrix\_of\_object()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a026741470cc8c4c37855c9443573b101} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+matrix\+\_\+of\+\_\+object (\begin{DoxyParamCaption}\item[{}]{object\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ab2104da3d9e3b89519590865302d56f3}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_minimum\_distance@{ask\_minimum\_distance}}
+\begin{DoxyVerb}Ask for the matrix associated with an object.
+
+        Args:
+            object_id: NX object tag.
+
+        Returns:
+            Any: NX object matrix.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ab2104da3d9e3b89519590865302d56f3}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_minimum\_distance@{ask\_minimum\_distance}}
 \index{ask\_minimum\_distance@{ask\_minimum\_distance}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_minimum\_distance()}{ask\_minimum\_distance()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ab2104da3d9e3b89519590865302d56f3} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+minimum\+\_\+distance (\begin{DoxyParamCaption}\item[{}]{object1}{, }\item[{}]{object2}{, }\item[{}]{guess1\+\_\+given}{, }\item[{}]{guess1}{, }\item[{}]{guess2\+\_\+given}{, }\item[{}]{guess2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_af5c553ebe56e077e624f491e65230dca}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_object\_name@{ask\_object\_name}}
+\begin{DoxyVerb}Ask NX for the minimum distance between two objects.
+
+        Args:
+            object1: First NX object or point input.
+            object2: Second NX object or point input.
+            guess1_given: Whether the first guess is supplied.
+            guess1: Optional first-point guess.
+            guess2_given: Whether the second guess is supplied.
+            guess2: Optional second-point guess.
+
+        Returns:
+            Any: NX minimum-distance result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_af5c553ebe56e077e624f491e65230dca}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_object\_name@{ask\_object\_name}}
 \index{ask\_object\_name@{ask\_object\_name}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_object\_name()}{ask\_object\_name()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_af5c553ebe56e077e624f491e65230dca} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+object\+\_\+name (\begin{DoxyParamCaption}\item[{}]{object\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a501a47cfba979b05872c855a0ff7f9eb}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_object\_status@{ask\_object\_status}}
+\begin{DoxyVerb}Ask for an object's name.
+
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Any: NX object name result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a501a47cfba979b05872c855a0ff7f9eb}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_object\_status@{ask\_object\_status}}
 \index{ask\_object\_status@{ask\_object\_status}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_object\_status()}{ask\_object\_status()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a501a47cfba979b05872c855a0ff7f9eb} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+object\+\_\+status (\begin{DoxyParamCaption}\item[{}]{object\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7b91d2acae21193d7eb87bb7b8ca4c7e}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_object\_type\_and\_subtype@{ask\_object\_type\_and\_subtype}}
+\begin{DoxyVerb}Ask for an object's status.
+
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Any: NX object status value.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7b91d2acae21193d7eb87bb7b8ca4c7e}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_object\_type\_and\_subtype@{ask\_object\_type\_and\_subtype}}
 \index{ask\_object\_type\_and\_subtype@{ask\_object\_type\_and\_subtype}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_object\_type\_and\_subtype()}{ask\_object\_type\_and\_subtype()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7b91d2acae21193d7eb87bb7b8ca4c7e} 
  Tuple\+[int, int]\+ nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+object\+\_\+type\+\_\+and\+\_\+subtype (\begin{DoxyParamCaption}\item[{}]{object\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a37b359208c32980d2cf6dd0441e4d452}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_part\_units@{ask\_part\_units}}
+\begin{DoxyVerb}Ask for an object's type and subtype.
+
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Tuple[int, int]: Object type and subtype values.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a37b359208c32980d2cf6dd0441e4d452}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_part\_units@{ask\_part\_units}}
 \index{ask\_part\_units@{ask\_part\_units}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_part\_units()}{ask\_part\_units()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a37b359208c32980d2cf6dd0441e4d452} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+part\+\_\+units (\begin{DoxyParamCaption}\item[{}]{part\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7f2c20b8e49c840e68f30edf4683b723}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_point\_containment@{ask\_point\_containment}}
+\begin{DoxyVerb}Ask for a part's unit setting.
+
+        Args:
+            part_tag: NX part tag.
+
+        Returns:
+            Any: NX part units.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7f2c20b8e49c840e68f30edf4683b723}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_point\_containment@{ask\_point\_containment}}
 \index{ask\_point\_containment@{ask\_point\_containment}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_point\_containment()}{ask\_point\_containment()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a7f2c20b8e49c840e68f30edf4683b723} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+point\+\_\+containment (\begin{DoxyParamCaption}\item[{}]{point}{, }\item[{}]{body\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a0bcc800b3dc49fd1b141fb0e1f23a659}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_point\_data@{ask\_point\_data}}
+\begin{DoxyVerb}Ask whether a point is contained in a body.
+
+        Args:
+            point: Point coordinates or tag.
+            body_tag: NX body tag.
+
+        Returns:
+            Any: NX point-containment status.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a0bcc800b3dc49fd1b141fb0e1f23a659}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_point\_data@{ask\_point\_data}}
 \index{ask\_point\_data@{ask\_point\_data}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_point\_data()}{ask\_point\_data()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a0bcc800b3dc49fd1b141fb0e1f23a659} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+point\+\_\+data (\begin{DoxyParamCaption}\item[{}]{point\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a5a60099ab102dec8cdf50d57d3b6a096}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_work\_coordinate\_system@{ask\_work\_coordinate\_system}}
+\begin{DoxyVerb}Ask for point geometry data.
+
+        Args:
+            point_tag: NX point tag.
+
+        Returns:
+            Any: NX point data.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a5a60099ab102dec8cdf50d57d3b6a096}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_work\_coordinate\_system@{ask\_work\_coordinate\_system}}
 \index{ask\_work\_coordinate\_system@{ask\_work\_coordinate\_system}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_work\_coordinate\_system()}{ask\_work\_coordinate\_system()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a5a60099ab102dec8cdf50d57d3b6a096} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+work\+\_\+coordinate\+\_\+system (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a24adfaee1defb183028bfc89c8c7aada}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_work\_view@{ask\_work\_view}}
+\begin{DoxyVerb}Ask for the active work coordinate system.
+
+        Returns:
+            Any: NX work coordinate-system tag.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a24adfaee1defb183028bfc89c8c7aada}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!ask\_work\_view@{ask\_work\_view}}
 \index{ask\_work\_view@{ask\_work\_view}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{ask\_work\_view()}{ask\_work\_view()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a24adfaee1defb183028bfc89c8c7aada} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+ask\+\_\+work\+\_\+view (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a126061613b8a09aea743113e405c5440}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!close\_listing\_window@{close\_listing\_window}}
+\begin{DoxyVerb}Ask for the active work view.
+
+        Returns:
+            Any: Active NX work-view tag.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a126061613b8a09aea743113e405c5440}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!close\_listing\_window@{close\_listing\_window}}
 \index{close\_listing\_window@{close\_listing\_window}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{close\_listing\_window()}{close\_listing\_window()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a126061613b8a09aea743113e405c5440} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+close\+\_\+listing\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a588dce8909c95dd5e2bdb80d9c32ee14}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!create\_arc@{create\_arc}}
+\begin{DoxyVerb}Close the NX listing window.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a588dce8909c95dd5e2bdb80d9c32ee14}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!create\_arc@{create\_arc}}
 \index{create\_arc@{create\_arc}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{create\_arc()}{create\_arc()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a588dce8909c95dd5e2bdb80d9c32ee14} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+create\+\_\+arc (\begin{DoxyParamCaption}\item[{NXOpen.\+UF.\+Curve.\+Arc}]{arc\+\_\+coords}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afc133e9cd10b754e10860355149cfb76}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!create\_line@{create\_line}}
+\begin{DoxyVerb}Create an NX arc using UF curve coordinates.
+
+        Args:
+            arc_coords (NXOpen.UF.Curve.Arc): Arc coordinate structure.
+
+        Returns:
+            Any: Created NX arc tag.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afc133e9cd10b754e10860355149cfb76}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!create\_line@{create\_line}}
 \index{create\_line@{create\_line}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{create\_line()}{create\_line()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afc133e9cd10b754e10860355149cfb76} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+create\+\_\+line (\begin{DoxyParamCaption}\item[{NXOpen.\+UF.\+Curve.\+Line}]{line\+\_\+coords}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae45eab01cfd49adafab64c57c09d10f4}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!delete\_object@{delete\_object}}
+\begin{DoxyVerb}Create an NX line using UF curve coordinates.
+
+        Args:
+            line_coords (NXOpen.UF.Curve.Line): Line coordinate structure.
+
+        Returns:
+            Any: Created NX line tag.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae45eab01cfd49adafab64c57c09d10f4}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!delete\_object@{delete\_object}}
 \index{delete\_object@{delete\_object}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{delete\_object()}{delete\_object()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ae45eab01cfd49adafab64c57c09d10f4} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+delete\+\_\+object (\begin{DoxyParamCaption}\item[{}]{object\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a1aaa949696f2349c4d586fa6d133ddce}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!fit\_view@{fit\_view}}
+\begin{DoxyVerb}Delete an NX object.
+
+        Args:
+            object_id: NX object tag or identifier.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a1aaa949696f2349c4d586fa6d133ddce}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!fit\_view@{fit\_view}}
 \index{fit\_view@{fit\_view}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{fit\_view()}{fit\_view()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a1aaa949696f2349c4d586fa6d133ddce} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+fit\+\_\+view (\begin{DoxyParamCaption}\item[{}]{view\+\_\+tag}{, }\item[{}]{fraction}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a9e55b0be5f423f58491d8027e6249b25}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!is\_listing\_window\_open@{is\_listing\_window\_open}}
+\begin{DoxyVerb}Fit a view around a view tag.
+
+        Args:
+            view_tag: NX view tag.
+            fraction: Fit fraction or margin value.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a9e55b0be5f423f58491d8027e6249b25}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!is\_listing\_window\_open@{is\_listing\_window\_open}}
 \index{is\_listing\_window\_open@{is\_listing\_window\_open}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{is\_listing\_window\_open()}{is\_listing\_window\_open()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a9e55b0be5f423f58491d8027e6249b25} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+is\+\_\+listing\+\_\+window\+\_\+open (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a59db40614ba02ef6f18002fe07afcdb9}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!open\_listing\_window@{open\_listing\_window}}
+\begin{DoxyVerb}Ask whether the NX listing window is open.
+
+        Returns:
+            bool: True when the listing window is open.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a59db40614ba02ef6f18002fe07afcdb9}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!open\_listing\_window@{open\_listing\_window}}
 \index{open\_listing\_window@{open\_listing\_window}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{open\_listing\_window()}{open\_listing\_window()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a59db40614ba02ef6f18002fe07afcdb9} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+open\+\_\+listing\+\_\+window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ac9a0dd8c48dcf9601dae626aa833bdc2}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_display\_color@{set\_display\_color}}
+\begin{DoxyVerb}Open the NX listing window.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ac9a0dd8c48dcf9601dae626aa833bdc2}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_display\_color@{set\_display\_color}}
 \index{set\_display\_color@{set\_display\_color}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{set\_display\_color()}{set\_display\_color()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_ac9a0dd8c48dcf9601dae626aa833bdc2} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+set\+\_\+display\+\_\+color (\begin{DoxyParamCaption}\item[{}]{color\+\_\+number}{, }\item[{}]{color\+\_\+model}{, }\item[{}]{color\+\_\+name}{, }\item[{}]{color\+\_\+values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_accadedd7a7f6ac63f6ca44511be37c63}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_object\_blank\_status@{set\_object\_blank\_status}}
+\begin{DoxyVerb}Set an NX display color.
+
+        Args:
+            color_number: NX color number.
+            color_model: NX color model.
+            color_name: Color name.
+            color_values: Color component values.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_accadedd7a7f6ac63f6ca44511be37c63}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_object\_blank\_status@{set\_object\_blank\_status}}
 \index{set\_object\_blank\_status@{set\_object\_blank\_status}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{set\_object\_blank\_status()}{set\_object\_blank\_status()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_accadedd7a7f6ac63f6ca44511be37c63} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+set\+\_\+object\+\_\+blank\+\_\+status (\begin{DoxyParamCaption}\item[{}]{object\+\_\+tag}{, }\item[{}]{blank\+\_\+status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a889bbca013752bb7bedf94995bfe7147}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_object\_name@{set\_object\_name}}
+\begin{DoxyVerb}Set an object's blank/display status.
+
+        Args:
+            object_tag: NX object tag.
+            blank_status: Blank status value.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a889bbca013752bb7bedf94995bfe7147}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_object\_name@{set\_object\_name}}
 \index{set\_object\_name@{set\_object\_name}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{set\_object\_name()}{set\_object\_name()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a889bbca013752bb7bedf94995bfe7147} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+set\+\_\+object\+\_\+name (\begin{DoxyParamCaption}\item[{}]{object\+\_\+tag}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a93621d94aeb0a00568755df263a4a2f8}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_work\_coordinate\_system@{set\_work\_coordinate\_system}}
+\begin{DoxyVerb}Set an object's name.
+
+        Args:
+            object_tag: NX object tag.
+            name (str): Name to assign.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a93621d94aeb0a00568755df263a4a2f8}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!set\_work\_coordinate\_system@{set\_work\_coordinate\_system}}
 \index{set\_work\_coordinate\_system@{set\_work\_coordinate\_system}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{set\_work\_coordinate\_system()}{set\_work\_coordinate\_system()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_a93621d94aeb0a00568755df263a4a2f8} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+set\+\_\+work\+\_\+coordinate\+\_\+system (\begin{DoxyParamCaption}\item[{}]{csys\+\_\+tag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afc0ecb66bd1ddd2562a6c191a4942262}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!write\_listing\_window@{write\_listing\_window}}
+\begin{DoxyVerb}Set the active work coordinate system.
+
+        Args:
+            csys_tag: NX coordinate-system tag.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afc0ecb66bd1ddd2562a6c191a4942262}\index{nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}!write\_listing\_window@{write\_listing\_window}}
 \index{write\_listing\_window@{write\_listing\_window}!nxopenkit.core.uf\_manager.UFManager@{nxopenkit.core.uf\_manager.UFManager}}
 \doxysubsubsection{\texorpdfstring{write\_listing\_window()}{write\_listing\_window()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1uf__manager_1_1_u_f_manager_afc0ecb66bd1ddd2562a6c191a4942262} 
 nxopenkit.\+core.\+uf\+\_\+manager.\+UFManager.\+write\+\_\+listing\+\_\+window (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\begin{DoxyVerb}Write text to the NX listing window.
 
+        Args:
+            text (str): Text to write.
+
+        Returns:
+            Any: NX UF operation result.
+\end{DoxyVerb}
+ 
 
 The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 

@@ -59,7 +59,7 @@ NXOpen.\+Point \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point_a8
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3}{\+\_\+\+\_\+init\+\_\+\_}} (self, NXOpen.\+NXObject nxobject)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -109,7 +109,15 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_ab4a0f911d0e7257987bfe6ec61eeb833} 
 nxopenkit.\+core.\+point.\+Point.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nx\+Point}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a point wrapper.
+
+Args:
+    nxPoint: Underlying NX Open point object.
+
+Returns:
+    None: The wrapper is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -134,7 +142,12 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a06b0be647ff6212f47047c2cbc51c473} 
  \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}  nxopenkit.\+core.\+point.\+Point.\+coordinates (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Get the point coordinates.
+
+Returns:
+    Point3d: Point coordinates in world/model space.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -147,7 +160,14 @@ Here is the call graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a44298c1f04cd67698e644dd54ceb2661} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+at\+\_\+center (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}}]{curve\+\_\+edge}{}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point at the center of a curve or edge.\end{DoxyVerb}
+\begin{DoxyVerb}Create a point at the center of a curve or edge.
+
+Args:
+    curve_edge (ICurve): Source curve or edge.
+
+Returns:
+    Point: Point at the curve or edge center.
+\end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_ac48361c665ae3fbcb85cb956a1506ee1}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!create\_at\_curves\_intersection@{create\_at\_curves\_intersection}}
 \index{create\_at\_curves\_intersection@{create\_at\_curves\_intersection}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
 \doxysubsubsection{\texorpdfstring{create\_at\_curves\_intersection()}{create\_at\_curves\_intersection()}}
@@ -156,8 +176,14 @@ Here is the call graph for this function:\nopagebreak
 
 \begin{DoxyVerb}Create a point where two curves intersect.
 
-Each curve may be a single curve or a sequence forming a composite curve.
-Help points guide NX when choosing the intended intersection.
+Args:
+    curve_edge1 (ICurve or Sequence[ICurve]): First curve or composite curve.
+    curve_edge2 (ICurve or Sequence[ICurve]): Second curve or composite curve.
+    help_point1 (Point or Point3d, optional): First intersection guidance point.
+    help_point2 (Point or Point3d, optional): Second intersection guidance point.
+
+Returns:
+    Point: Newly created intersection point.
 \end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_a6eb3572ccbf27439bbc9a8f2bdda1844}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!create\_at\_faces\_curves\_intersection@{create\_at\_faces\_curves\_intersection}}
 \index{create\_at\_faces\_curves\_intersection@{create\_at\_faces\_curves\_intersection}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
@@ -168,6 +194,15 @@ Help points guide NX when choosing the intended intersection.
 \begin{DoxyVerb}Create a point at the intersection of one or more faces and a curve.
 
 ``help_point1`` and ``help_point2`` guide NX in selecting the intersection.
+
+Args:
+    faces (Face or Sequence[Face]): Source face or faces.
+    curve_edge (ICurve or Sequence[ICurve]): Curve or composite curve.
+    help_point1 (Point or Point3d, optional): First intersection guidance point.
+    help_point2 (Point or Point3d, optional): Second intersection guidance point.
+
+Returns:
+    Point: Newly created intersection point.
 \end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_aa0e564ce871c2a7a3f6db6e026ae96a5}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!create\_at\_plane\_curves\_intersection@{create\_at\_plane\_curves\_intersection}}
 \index{create\_at\_plane\_curves\_intersection@{create\_at\_plane\_curves\_intersection}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
@@ -178,6 +213,15 @@ Help points guide NX when choosing the intended intersection.
 \begin{DoxyVerb}Create a point where a datum plane intersects a curve.
 
 ``help_point1`` and ``help_point2`` guide NX in selecting the intersection.
+
+Args:
+    plane (DatumPlane): Source datum plane.
+    curve_edge (ICurve or Sequence[ICurve]): Curve or composite curve.
+    help_point1 (Point or Point3d, optional): First intersection guidance point.
+    help_point2 (Point or Point3d, optional): Second intersection guidance point.
+
+Returns:
+    Point: Newly created intersection point.
 \end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_abdd9545210944bedf668cedd8d88b65e}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!create\_between\_points@{create\_between\_points}}
 \index{create\_between\_points@{create\_between\_points}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
@@ -185,14 +229,33 @@ Help points guide NX when choosing the intended intersection.
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_abdd9545210944bedf668cedd8d88b65e} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+between\+\_\+points (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point1}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point2}{, }\item[{Double }]{percentage\+\_\+location}{ = {\ttfamily 50}}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point between two points using NX's relative-location value.\end{DoxyVerb}
+\begin{DoxyVerb}Create a point between two points by relative location.
+
+Args:
+    point1 (Point): First endpoint.
+    point2 (Point): Second endpoint.
+    percentage_location (Double, optional): Relative position. Defaults to 50.
+
+Returns:
+    Point: Newly created point.
+\end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_a6134a014058248b634fe3d6a2aaab1d7}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!create\_from\_array@{create\_from\_array}}
 \index{create\_from\_array@{create\_from\_array}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
 \doxysubsubsection{\texorpdfstring{create\_from\_array()}{create\_from\_array()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a6134a014058248b634fe3d6a2aaab1d7} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+from\+\_\+array (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[Double]}]{coordinates}{}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point from a sequence containing its X, Y, and Z coordinates.\end{DoxyVerb}
+\begin{DoxyVerb}Create a point from an exactly three-value coordinate sequence.
+
+Args:
+    coordinates (Sequence[Double]): X, Y, and Z coordinate values.
+
+Returns:
+    Point: Newly created NX point.
+
+Raises:
+    ValueError: If the sequence does not contain exactly three values.
+\end{DoxyVerb}
  Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -206,7 +269,16 @@ Help points guide NX when choosing the intended intersection.
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a5ff3233602936d63db291f60aadcc82f} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+from\+\_\+coordinates (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Double}]{x\+\_\+cor}{, }\item[{Double}]{y\+\_\+cor}{, }\item[{Double     }]{z\+\_\+cor}{}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point from its X, Y, and Z coordinates.\end{DoxyVerb}
+\begin{DoxyVerb}Create a point from X, Y, and Z coordinates.
+
+Args:
+    x_cor (Double): X coordinate.
+    y_cor (Double): Y coordinate.
+    z_cor (Double): Z coordinate.
+
+Returns:
+    Point: Newly created NX point.
+\end{DoxyVerb}
  Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -220,7 +292,14 @@ Help points guide NX when choosing the intended intersection.
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_ae53ffd04b87c25a2880b355782c25dcf} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+from\+\_\+point3d (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{point3d}{}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point from a 3D coordinate value in the work part.\end{DoxyVerb}
+\begin{DoxyVerb}Create a point from a 3D coordinate value.
+
+Args:
+    point3d (Point3d): Coordinates for the new point.
+
+Returns:
+    Point: Newly created NX point.
+\end{DoxyVerb}
  Here is the caller graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -234,17 +313,32 @@ Help points guide NX when choosing the intended intersection.
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a826ca9c3cc44036324fd8cb32231f530} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+offset\+\_\+point (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}}]{vector}{, }\item[{Double}]{offset\+\_\+distance}{}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point offset from ``point`` along ``vector`` by ``offset_distance``.\end{DoxyVerb}
+\begin{DoxyVerb}Create a point offset from another point along a vector.
+
+Args:
+    point (Point): Source point.
+    vector (Vector3d): Offset direction vector.
+    offset_distance (Double): Distance to offset.
+
+Returns:
+    Point: Newly created offset point.
+\end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_a377fdf5fb60e2c06cb07d0a47d91bcf8}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!create\_on\_curve@{create\_on\_curve}}
 \index{create\_on\_curve@{create\_on\_curve}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
 \doxysubsubsection{\texorpdfstring{create\_on\_curve()}{create\_on\_curve()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a377fdf5fb60e2c06cb07d0a47d91bcf8} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+on\+\_\+curve (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}, Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}]\+]}]{curves\+\_\+edges}{, }\item[{Double}]{percentage}{, }\item[{Point\+On\+Curve\+Location\+Option }]{location\+\_\+option}{ = {\ttfamily PointOnCurveLocationOption.PercentArcLength}, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}} }]{help\+\_\+point}{ = {\ttfamily \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}(0,0,0)}}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point at a specified position along one or more connected curves.
+\begin{DoxyVerb}Create a point at a position along one or more connected curves.
 
-``percentage`` and ``location_option`` determine how NX measures the position;
-``help_point`` helps orient a composite curve when multiple curves are supplied.
+Args:
+    curves_edges (ICurve or Sequence[ICurve]): Curve or edge input.
+    percentage (Double): Position percentage along the curve.
+    location_option (PointOnCurveLocationOption, optional): NX position method.
+    help_point (Point3d, optional): Point used to orient composite curves.
+
+Returns:
+    Point: Newly created curve point.
 \end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_a33dde0a565d3724ef8a9afb0b8a0ae46}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!create\_on\_face@{create\_on\_face}}
 \index{create\_on\_face@{create\_on\_face}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
@@ -252,14 +346,28 @@ Help points guide NX when choosing the intended intersection.
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a33dde0a565d3724ef8a9afb0b8a0ae46} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} nxopenkit.\+core.\+point.\+Point.\+create\+\_\+on\+\_\+face (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1face_1_1_face}{Face}}}]{face}{, }\item[{Double }]{u\+\_\+value}{ = {\ttfamily 0.5}, }\item[{Double }]{v\+\_\+value}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Create a point on a face at normalized surface parameters ``u_value`` and ``v_value``.\end{DoxyVerb}
+\begin{DoxyVerb}Create a point on a face at normalized surface parameters.
+
+Args:
+    face (Face): Source face.
+    u_value (Double, optional): Normalized U parameter. Defaults to 0.5.
+    v_value (Double, optional): Normalized V parameter. Defaults to 0.5.
+
+Returns:
+    Point: Newly created point on the face.
+\end{DoxyVerb}
  \Hypertarget{classnxopenkit_1_1core_1_1point_1_1_point_a8af35e4109ae43dca5741f42bbdbe1c2}\index{nxopenkit.core.point.Point@{nxopenkit.core.point.Point}!to\_nx@{to\_nx}}
 \index{to\_nx@{to\_nx}!nxopenkit.core.point.Point@{nxopenkit.core.point.Point}}
 \doxysubsubsection{\texorpdfstring{to\_nx()}{to\_nx()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1point_1_1_point_a8af35e4109ae43dca5741f42bbdbe1c2} 
  NXOpen.\+Point nxopenkit.\+core.\+point.\+Point.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX Open point object.
 
+Returns:
+    NXOpen.Point: Wrapped NX point object.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object_a0ecc225d2b39ea403b7182a5d69b00f9}{nxopenkit.\+core.\+displayable\+\_\+object.\+Displayable\+Object}}.
 

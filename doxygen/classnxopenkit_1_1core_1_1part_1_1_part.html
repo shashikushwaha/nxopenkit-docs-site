@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b880cd637565cc21ee33356917909a0" id="r_a0b880cd637565cc21ee33356917909a0"><td class="memItemLeft">NXOpen.Part&#160;</td><td class="memItemRight"><a class="el" href="#a0b880cd637565cc21ee33356917909a0">to_nx</a> (self)</td></tr>
 <tr class="inherit_header pub_methods_classnxopenkit_1_1core_1_1named__object_1_1_named_object"><td colspan="2">Public Member Functions inherited from <a class="el" href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html">nxopenkit.core.named_object.NamedObject</a></td></tr>
 <tr class="memitem:a91324ac9c89d4e6475872d4c8132f3a3 pub_methods_classnxopenkit_1_1core_1_1named__object_1_1_named_object" id="r_a91324ac9c89d4e6475872d4c8132f3a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a91324ac9c89d4e6475872d4c8132f3a3">__init__</a> (self, NXOpen.NXObject nxobject)</td></tr>
-<tr class="memitem:aeee2a541acf9cfe1299470e0e078a5d1 pub_methods_classnxopenkit_1_1core_1_1named__object_1_1_named_object" id="r_aeee2a541acf9cfe1299470e0e078a5d1"><td class="memItemLeft">str&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#aeee2a541acf9cfe1299470e0e078a5d1">name</a> (self)</td></tr>
+<tr class="memitem:a3caa65aba06e733833812ec8c1dfe1c7 pub_methods_classnxopenkit_1_1core_1_1named__object_1_1_named_object" id="r_a3caa65aba06e733833812ec8c1dfe1c7"><td class="memItemLeft">str&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a3caa65aba06e733833812ec8c1dfe1c7">name</a> (self)</td></tr>
 <tr class="memitem:a194bb2f7e779bee14e8810ee0b5d1f07 pub_methods_classnxopenkit_1_1core_1_1named__object_1_1_named_object" id="r_a194bb2f7e779bee14e8810ee0b5d1f07"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a194bb2f7e779bee14e8810ee0b5d1f07">name</a> (self, value)</td></tr>
 <tr class="inherit_header pub_methods_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object"><td colspan="2">Public Member Functions inherited from <a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html">nxopenkit.core.tagged_object.TaggedObject</a></td></tr>
 <tr class="memitem:aed23025bfe327dd908d5dc40fd578e7a pub_methods_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object" id="r_aed23025bfe327dd908d5dc40fd578e7a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#aed23025bfe327dd908d5dc40fd578e7a">__init__</a> (self, NXOpen.TaggedObject tagged_object)</td></tr>
@@ -180,7 +180,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a31d9cb70bb07c0d16c0d57c0e7468fcc pub_attribs_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object" id="r_a31d9cb70bb07c0d16c0d57c0e7468fcc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#a31d9cb70bb07c0d16c0d57c0e7468fcc">workPart</a> = self.session.Parts.Work</td></tr>
 <tr class="memitem:aa8f161ec1e2eb252c2a0c8efc00579a1 pub_attribs_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object" id="r_aa8f161ec1e2eb252c2a0c8efc00579a1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#aa8f161ec1e2eb252c2a0c8efc00579a1">tagged_object</a> = tagged_object</td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Wrap an NX part and provide part-level object-collection operations.</pre> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aabb089b37e9ff6af97290e386bc8b211" name="aabb089b37e9ff6af97290e386bc8b211"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabb089b37e9ff6af97290e386bc8b211">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -199,7 +200,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Initialize a part wrapper.
+
+Args:
+    nxOpenPart (NXOpen.Part): Underlying NX Open part.
+
+Returns:
+    None: The wrapper is initialized.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1core_1_1part_1_1_part_aabb089b37e9ff6af97290e386bc8b211_cgraph.svg" width="175" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -235,7 +243,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Close all open NX parts according to NX close behavior.
 
+Returns:
+    None: Open parts are closed.
+</pre> 
 </div>
 </div>
 <a id="a5e6e54252aa3961dae1fd634b5732e08" name="a5e6e54252aa3961dae1fd634b5732e08"></a>
@@ -260,7 +272,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get bodies in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Body]: Matching body wrappers.
+</pre> 
 </div>
 </div>
 <a id="aa20192c406d64c1b634c55a490d9d792" name="aa20192c406d64c1b634c55a490d9d792"></a>
@@ -285,7 +304,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get curves in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Curve]: Matching curve wrappers.
+</pre> 
 </div>
 </div>
 <a id="a8b77512a5c0cc327870ca5a5360f43fe" name="a8b77512a5c0cc327870ca5a5360f43fe"></a>
@@ -310,7 +336,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get datum axes in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[DatumAxis]: Matching datum-axis wrappers.
+</pre> 
 </div>
 </div>
 <a id="adc71a53466767dc5c52058807ffe9182" name="adc71a53466767dc5c52058807ffe9182"></a>
@@ -335,7 +368,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get coordinate systems in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[CoordinateSystem]: Matching coordinate-system wrappers.
+</pre> 
 </div>
 </div>
 <a id="a920eb589702a38516885c207f48a793b" name="a920eb589702a38516885c207f48a793b"></a>
@@ -360,7 +400,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get datum planes in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[DatumPlane]: Matching datum-plane wrappers.
+</pre> 
 </div>
 </div>
 <a id="a55a2fed634449c2b7c412c1bf70931a6" name="a55a2fed634449c2b7c412c1bf70931a6"></a>
@@ -385,7 +432,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get displayable objects in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[DisplayableObject]: Matching displayable-object wrappers.
+</pre> 
 </div>
 </div>
 <a id="abbb7b94f03b26fea154bbea118f25b46" name="abbb7b94f03b26fea154bbea118f25b46"></a>
@@ -410,7 +464,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get edges in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Edge]: Matching edge wrappers.
+</pre> 
 </div>
 </div>
 <a id="a0f3f24b4d9035d9ffabf49f09d5125df" name="a0f3f24b4d9035d9ffabf49f09d5125df"></a>
@@ -435,7 +496,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get faces in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Face]: Matching face wrappers.
+</pre> 
 </div>
 </div>
 <a id="a8b0b395d16b470552558a74a4e45dea3" name="a8b0b395d16b470552558a74a4e45dea3"></a>
@@ -460,7 +528,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get features in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Feature]: Matching feature wrappers.
+</pre> 
 </div>
 </div>
 <a id="aa201d09c9a9f7a09c80cd218615cb73f" name="aa201d09c9a9f7a09c80cd218615cb73f"></a>
@@ -485,7 +560,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get points in the active work part.
 
+Args:
+    name (str, optional): Optional wildcard name filter.
+
+Returns:
+    List[Point]: Matching point wrappers.
+</pre> 
 </div>
 </div>
 <a id="acfeb236d3e50e40ccff9851c2cb18477" name="acfeb236d3e50e40ccff9851c2cb18477"></a>
@@ -510,7 +592,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Open a part file and return a wrapper.
 
+Args:
+    filePath (str): Path to the NX part file.
+
+Returns:
+    Part: Wrapper for the opened part.
+</pre> 
 </div>
 </div>
 <a id="adf3479ac9f7ce04b632deb5187d6e6df" name="adf3479ac9f7ce04b632deb5187d6e6df"></a>
@@ -535,7 +624,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Save the active work part.
 
+Returns:
+    None: The work part is saved.
+</pre> 
 </div>
 </div>
 <a id="adb54d9b97550368e84732fe414afdcd7" name="adb54d9b97550368e84732fe414afdcd7"></a>
@@ -564,7 +657,16 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Save the active work part to a new file.
 
+Args:
+    file (str): Destination part filename.
+    deleteExistingFile (bool, optional): Delete an existing destination
+        file before saving. Defaults to True.
+
+Returns:
+    None: The part is saved to the destination.
+</pre> 
 </div>
 </div>
 <a id="a2a10201a310a4447dc86abcd500c5132" name="a2a10201a310a4447dc86abcd500c5132"></a>
@@ -589,7 +691,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the active NX Open session.
 
+Returns:
+    NXOpen.Session: Active NX session.
+</pre> 
 <p>Reimplemented from <a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#a1f7f4fac6a45c719e376b2d090683243">nxopenkit.core.tagged_object.TaggedObject</a>.</p>
 
 </div>
@@ -608,7 +714,11 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the underlying NX Open part.
 
+Returns:
+    NXOpen.Part: Wrapped NX Open part.
+</pre> 
 <p>Reimplemented from <a class="el" href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a6255c685e841def0240dc4bb6d32a99c">nxopenkit.core.named_object.NamedObject</a>.</p>
 
 </div>
@@ -635,7 +745,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the active NX UF session.
 
+Returns:
+    NXOpen.UF.UFSession: Active UF session.
+</pre> 
 </div>
 </div>
 <a id="a79c794302e0add4dd4e90ec782f4036a" name="a79c794302e0add4dd4e90ec782f4036a"></a>
@@ -660,7 +774,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the active NX work part.
 
+Returns:
+    Part: Wrapper for the active work part.
+
+Raises:
+    ValueError: If no work part is available.
+</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

@@ -142,7 +142,7 @@ Collaboration diagram for nxopenkit.core.named_object.NamedObject:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a91324ac9c89d4e6475872d4c8132f3a3" id="r_a91324ac9c89d4e6475872d4c8132f3a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a91324ac9c89d4e6475872d4c8132f3a3">__init__</a> (self, NXOpen.NXObject nxobject)</td></tr>
 <tr class="memitem:a6255c685e841def0240dc4bb6d32a99c" id="r_a6255c685e841def0240dc4bb6d32a99c"><td class="memItemLeft">NXOpen.NXObject&#160;</td><td class="memItemRight"><a class="el" href="#a6255c685e841def0240dc4bb6d32a99c">to_nx</a> (self)</td></tr>
-<tr class="memitem:aeee2a541acf9cfe1299470e0e078a5d1" id="r_aeee2a541acf9cfe1299470e0e078a5d1"><td class="memItemLeft">str&#160;</td><td class="memItemRight"><a class="el" href="#aeee2a541acf9cfe1299470e0e078a5d1">name</a> (self)</td></tr>
+<tr class="memitem:a3caa65aba06e733833812ec8c1dfe1c7" id="r_a3caa65aba06e733833812ec8c1dfe1c7"><td class="memItemLeft">str&#160;</td><td class="memItemRight"><a class="el" href="#a3caa65aba06e733833812ec8c1dfe1c7">name</a> (self)</td></tr>
 <tr class="memitem:a194bb2f7e779bee14e8810ee0b5d1f07" id="r_a194bb2f7e779bee14e8810ee0b5d1f07"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a194bb2f7e779bee14e8810ee0b5d1f07">name</a> (self, value)</td></tr>
 <tr class="inherit_header pub_methods_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object"><td colspan="2">Public Member Functions inherited from <a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html">nxopenkit.core.tagged_object.TaggedObject</a></td></tr>
 <tr class="memitem:aed23025bfe327dd908d5dc40fd578e7a pub_methods_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object" id="r_aed23025bfe327dd908d5dc40fd578e7a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#aed23025bfe327dd908d5dc40fd578e7a">__init__</a> (self, NXOpen.TaggedObject tagged_object)</td></tr>
@@ -159,7 +159,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a31d9cb70bb07c0d16c0d57c0e7468fcc pub_attribs_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object" id="r_a31d9cb70bb07c0d16c0d57c0e7468fcc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#a31d9cb70bb07c0d16c0d57c0e7468fcc">workPart</a> = self.session.Parts.Work</td></tr>
 <tr class="memitem:aa8f161ec1e2eb252c2a0c8efc00579a1 pub_attribs_classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object" id="r_aa8f161ec1e2eb252c2a0c8efc00579a1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#aa8f161ec1e2eb252c2a0c8efc00579a1">tagged_object</a> = tagged_object</td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Expose name access for NX objects.</pre> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91324ac9c89d4e6475872d4c8132f3a3" name="a91324ac9c89d4e6475872d4c8132f3a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91324ac9c89d4e6475872d4c8132f3a3">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -178,7 +179,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Initialize a named NX object wrapper.
+
+Args:
+    nxobject (NXOpen.NXObject): Underlying NX named object.
+
+Returns:
+    None: The wrapper is initialized.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3_cgraph.svg" width="163" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -192,24 +200,28 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aeee2a541acf9cfe1299470e0e078a5d1" name="aeee2a541acf9cfe1299470e0e078a5d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeee2a541acf9cfe1299470e0e078a5d1">&#9670;&#160;</a></span>name() <span class="overload">[1/2]</span></h2>
+<a id="a3caa65aba06e733833812ec8c1dfe1c7" name="a3caa65aba06e733833812ec8c1dfe1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3caa65aba06e733833812ec8c1dfe1c7">&#9670;&#160;</a></span>name() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">str  nxopenkit.core.named_object.NamedObject.name </td>
+          <td class="memname"> str nxopenkit.core.named_object.NamedObject.name </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Get or set the object's NX name.
+
+Returns:
+    str: Current object name.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -232,7 +244,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Set the object's NX name.
+
+Args:
+    value (str): Non-empty name assigned to the object.
+
+Returns:
+    None: The NX object name is updated.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
@@ -254,7 +273,11 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the underlying NX named object.
 
+Returns:
+    NXOpen.NXObject: Wrapped NX named object.
+</pre> 
 <p>Reimplemented from <a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#a070fa430f4e71ab6680f077ea30f5048">nxopenkit.core.tagged_object.TaggedObject</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classnxopenkit_1_1core_1_1body_1_1_body.html#abecb05b91115b73e600e824b1231aae3">nxopenkit.core.body.Body</a>, <a class="el" href="classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system.html#a8829f9a5df0b010411bc9bbafe2ed3c0">nxopenkit.core.coordinate_system.CoordinateSystem</a>, <a class="el" href="classnxopenkit_1_1core_1_1curve_1_1_curve.html#a7020f209bf89d6a663a310a416f9f7f6">nxopenkit.core.curve.Curve</a>, <a class="el" href="classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis.html#aa65d978ab4a34ba4756454cb8c17564f">nxopenkit.core.datum_axis.DatumAxis</a>, <a class="el" href="classnxopenkit_1_1core_1_1datum__plane_1_1_datum_plane.html#aa4a02635da81820bb75654218923ee4a">nxopenkit.core.datum_plane.DatumPlane</a>, <a class="el" href="classnxopenkit_1_1core_1_1direction_1_1_direction.html#aca7777c32faad6c79eb220c33ec5ade9">nxopenkit.core.direction.Direction</a>, <a class="el" href="classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object.html#a0ecc225d2b39ea403b7182a5d69b00f9">nxopenkit.core.displayable_object.DisplayableObject</a>, <a class="el" href="classnxopenkit_1_1core_1_1edge_1_1_edge.html#a8c54998c1017a964439225c6773f067f">nxopenkit.core.edge.Edge</a>, <a class="el" href="classnxopenkit_1_1core_1_1face_1_1_face.html#a3ae0c9b61d24c21936a5805b328bafe4">nxopenkit.core.face.Face</a>, <a class="el" href="classnxopenkit_1_1core_1_1feature_1_1_feature.html#abdad7cf5b060f06082b6df6e574ed0de">nxopenkit.core.feature.Feature</a>, <a class="el" href="classnxopenkit_1_1core_1_1line_1_1_line.html#a79cf79b648155eb2887607bedcb39802">nxopenkit.core.line.Line</a>, <a class="el" href="classnxopenkit_1_1core_1_1part_1_1_part.html#a0b880cd637565cc21ee33356917909a0">nxopenkit.core.part.Part</a>, <a class="el" href="classnxopenkit_1_1core_1_1point_1_1_point.html#a8af35e4109ae43dca5741f42bbdbe1c2">nxopenkit.core.point.Point</a>, <a class="el" href="classnxopenkit_1_1core_1_1sketch_1_1_sketch.html#acac2da1af2d56e155c00b18be1b3d242">nxopenkit.core.sketch.Sketch</a>, and <a class="el" href="classnxopenkit_1_1core_1_1xform_1_1_xform.html#a5d19cfd2229bdbaa2147efec311c7711">nxopenkit.core.xform.Xform</a>.</p>

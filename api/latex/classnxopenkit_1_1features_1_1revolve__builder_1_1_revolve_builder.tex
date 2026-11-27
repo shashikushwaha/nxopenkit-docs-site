@@ -108,6 +108,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX revolve features.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -117,7 +121,19 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_ae0fb8cfd7f90175f8d02cda36a5cd0bf} 
 nxopenkit.\+features.\+revolve\+\_\+builder.\+Revolve\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}]}]{curves}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis}{Datum\+Axis}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}}]{direction}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{axis\+\_\+point}{, }\item[{float \texorpdfstring{$\vert$}{|} str }]{start\+\_\+angle}{ = {\ttfamily 0}, }\item[{float \texorpdfstring{$\vert$}{|} str }]{end\+\_\+angle}{ = {\ttfamily 360}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialize a revolve feature builder.
 
+Args:
+    curves (Sequence[ICurve]): Profile curves to revolve.
+    direction (DatumAxis or Direction or Vector3d): Revolution axis direction.
+    axis_point (Point): Point through which the axis passes.
+    start_angle (float or str, optional): Start angle. Defaults to 0.
+    end_angle (float or str, optional): End angle. Defaults to 360.
+
+Returns:
+    None: The builder is initialized.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_doc-func-members}
 \Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_doc-func-members}
@@ -128,31 +144,76 @@ nxopenkit.\+features.\+revolve\+\_\+builder.\+Revolve\+Builder.\+\_\+\+\_\+init\
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_acbe440febe90bd7fd9ba4abe4883ad28} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder}{Revolve\+Builder}} nxopenkit.\+features.\+revolve\+\_\+builder.\+Revolve\+Builder.\+boolean (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{         NXOpen.\+Geometric\+Utilities.\+Boolean\+Operation.\+Boolean\+Type}]{boolean\+\_\+option}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]}]{boolean\+\_\+target\+\_\+body}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_ab012b9b1d8b4e58971d5c3d92fae5a0f}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!create\_revolve@{create\_revolve}}
+\begin{DoxyVerb}Configure the revolve boolean operation.
+
+Args:
+    boolean_option (NXOpen.GeometricUtilities.BooleanOperation.BooleanType): Boolean operation.
+    boolean_target_body (Sequence[Body]): Target bodies.
+
+Returns:
+    RevolveBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_ab012b9b1d8b4e58971d5c3d92fae5a0f}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!create\_revolve@{create\_revolve}}
 \index{create\_revolve@{create\_revolve}!nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_revolve()}{create\_revolve()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_ab012b9b1d8b4e58971d5c3d92fae5a0f} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder}{Revolve\+Builder}}  nxopenkit.\+features.\+revolve\+\_\+builder.\+Revolve\+Builder.\+create\+\_\+revolve (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}]}]{curves}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis}{Datum\+Axis}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}}]{direction}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{axis\+\_\+point}{, }\item[{float \texorpdfstring{$\vert$}{|} str }]{start\+\_\+angle}{ = {\ttfamily 0}, }\item[{float \texorpdfstring{$\vert$}{|} str }]{end\+\_\+angle}{ = {\ttfamily 360}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_a3d82ef0bb739a9306dabcb421f097803}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!nx\_builder@{nx\_builder}}
+\begin{DoxyVerb}Create a revolve builder from profile curves and revolution axis.
+
+Args:
+    curves (Sequence[ICurve]): Profile curves.
+    direction (DatumAxis or Direction or Vector3d): Revolution axis direction.
+    axis_point (Point): Point on the revolution axis.
+    start_angle (float or str, optional): Start angle.
+    end_angle (float or str, optional): End angle.
+
+Returns:
+    RevolveBuilder: Configured revolve builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_a3d82ef0bb739a9306dabcb421f097803}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!nx\_builder@{nx\_builder}}
 \index{nx\_builder@{nx\_builder}!nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}}
 \doxysubsubsection{\texorpdfstring{nx\_builder()}{nx\_builder()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_a3d82ef0bb739a9306dabcb421f097803} 
  NXOpen.\+Features.\+Revolve\+Builder nxopenkit.\+features.\+revolve\+\_\+builder.\+Revolve\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_af93b8259757ad43285ea406a934d43aa}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!offset@{offset}}
+\begin{DoxyVerb}Get the underlying NX revolve builder.
+
+Returns:
+    NXOpen.Features.RevolveBuilder: Underlying NX builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_af93b8259757ad43285ea406a934d43aa}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!offset@{offset}}
 \index{offset@{offset}!nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}}
 \doxysubsubsection{\texorpdfstring{offset()}{offset()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_af93b8259757ad43285ea406a934d43aa} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder}{Revolve\+Builder}} nxopenkit.\+features.\+revolve\+\_\+builder.\+Revolve\+Builder.\+offset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Geometric\+Utilities.\+Type}]{offset\+\_\+option}{, }\item[{float \texorpdfstring{$\vert$}{|} str}]{end\+\_\+offset}{, }\item[{float \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{start\+\_\+offset}{ = {\ttfamily None}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_a2db68efac8c09df2871c19add219a323}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!settings@{settings}}
+\begin{DoxyVerb}Configure symmetric or nonsymmetric revolve offsets.
+
+Args:
+    offset_option (NXOpen.GeometricUtilities.Type): Offset mode.
+    end_offset (float or str): End offset value.
+    start_offset (float or str, optional): Start offset value.
+
+Returns:
+    RevolveBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_a2db68efac8c09df2871c19add219a323}\index{nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.revolve\_builder.RevolveBuilder@{nxopenkit.features.revolve\_builder.RevolveBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_a2db68efac8c09df2871c19add219a323} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder}{Revolve\+Builder}} nxopenkit.\+features.\+revolve\+\_\+builder.\+Revolve\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Geometric\+Utilities.\+Feature\+Options.\+Body\+Style }]{body\+\_\+type}{ = {\ttfamily NXOpen.GeometricUtilities.FeatureOptions.BodyStyle.Solid}, }\item[{float \texorpdfstring{$\vert$}{|} None }]{tolerance}{ = {\ttfamily None}}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Configure revolve tolerance and body style.
+
+Args:
+    body_type (NXOpen.GeometricUtilities.FeatureOptions.BodyStyle, optional): Body style.
+    tolerance (float, optional): Modeling tolerance.
+
+Returns:
+    RevolveBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

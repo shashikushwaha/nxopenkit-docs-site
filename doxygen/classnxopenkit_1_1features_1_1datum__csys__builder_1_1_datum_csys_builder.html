@@ -185,7 +185,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3929990ffe572d43989cc7c466d8d1fc pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a3929990ffe572d43989cc7c466d8d1fc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a3929990ffe572d43989cc7c466d8d1fc">_undo_mark</a> (self)</td></tr>
 <tr class="memitem:a4f2ce6c4def9674082c04b47a6138c82 pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a4f2ce6c4def9674082c04b47a6138c82"><td class="memItemLeft">None&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a4f2ce6c4def9674082c04b47a6138c82">_validate_tolerance</a> (self, float tolerance)</td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Configure and create NX datum coordinate-system features.</pre> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acc62c6a9fc8463ea712c2e045af6b5ab" name="acc62c6a9fc8463ea712c2e045af6b5ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc62c6a9fc8463ea712c2e045af6b5ab">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -204,7 +205,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Initialize a datum coordinate-system builder.
 
+Args:
+    xform (Xform): Transform defining the coordinate-system orientation.
+
+Returns:
+    None: The builder is initialized.
+
+Raises:
+    Exception: If NX fails to create the datum coordinate system.
+</pre> 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -246,7 +257,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Create a coordinate system aligned with a plane and X direction.
 
+Args:
+    origin (Point): Coordinate-system origin.
+    plane (DisplayableObject): Reference plane.
+    x_dir (Direction): X-axis direction.
+    flip_x_dir (bool, optional): Reverse the X direction.
+    flip_z_dir (bool, optional): Reverse the Z direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+</pre> 
 </div>
 </div>
 <a id="a2288a2ebddfb7ceb669ded1de7d5d490" name="a2288a2ebddfb7ceb669ded1de7d5d490"></a>
@@ -287,7 +309,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Create a coordinate system aligned with a plane and Y direction.
 
+Args:
+    origin (Point): Coordinate-system origin.
+    plane (DisplayableObject): Reference plane.
+    y_dir (Direction): Y-axis direction.
+    flip_y_dir (bool, optional): Reverse the Y direction.
+    flip_z_dir (bool, optional): Reverse the Z direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+</pre> 
 </div>
 </div>
 <a id="a4a41562f69dcbd446bb583e22931318e" name="a4a41562f69dcbd446bb583e22931318e"></a>
@@ -318,7 +351,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Create a datum coordinate system from three reference planes.
 
+Args:
+    plane1 (ISurface): First reference plane.
+    plane2 (ISurface): Second reference plane.
+    plane3 (ISurface): Third reference plane.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+</pre> 
 </div>
 </div>
 <a id="a3030aee0a51f3c93528b7e25deca08e1" name="a3030aee0a51f3c93528b7e25deca08e1"></a>
@@ -349,7 +391,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Create a datum coordinate system from origin and X/Y vectors.
 
+Args:
+    origin (Point3d): Coordinate-system origin.
+    x_vector (Vector3d): X-axis vector.
+    y_vector (Vector3d): Y-axis vector.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+</pre> 
 </div>
 </div>
 <a id="a118589815e940a98036cc938ff303ba3" name="a118589815e940a98036cc938ff303ba3"></a>
@@ -380,7 +431,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Create a datum coordinate system from origin, X direction, and Z direction.
 
+Args:
+    origin (Point): Coordinate-system origin.
+    x_dir (Direction): X-axis direction.
+    z_dir (Direction): Z-axis direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+</pre> 
 </div>
 </div>
 <a id="a657c6b8431beb7d943c2b47d274e689e" name="a657c6b8431beb7d943c2b47d274e689e"></a>
@@ -411,7 +471,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Create a datum coordinate system from origin, Y direction, and Z direction.
 
+Args:
+    origin (Point): Coordinate-system origin.
+    y_dir (Direction): Y-axis direction.
+    z_dir (Direction): Z-axis direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+</pre> 
 </div>
 </div>
 <a id="a768942665f571afb35a04412d2a669ba" name="a768942665f571afb35a04412d2a669ba"></a>
@@ -428,7 +497,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the underlying NX datum coordinate-system builder.
 
+Returns:
+    NXOpen.Features.DatumCsysBuilder: Underlying NX builder.
+</pre> 
 </div>
 </div>
 <a id="a85db3a4048e7ca8702feaff04bf90415" name="a85db3a4048e7ca8702feaff04bf90415"></a>
@@ -454,7 +527,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Configure associativity and display scale.
 
+Args:
+    is_associative (bool, optional): Remove parameters when associative.
+        Defaults to True.
+    scale_factor (float, optional): Datum coordinate-system display scale.
+        Defaults to 1.25.
+
+Returns:
+    DatumCsysBuilder: This builder for method chaining.
+</pre> 
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>

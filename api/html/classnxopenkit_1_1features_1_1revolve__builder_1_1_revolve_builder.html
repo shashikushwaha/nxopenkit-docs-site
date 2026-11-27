@@ -186,7 +186,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3929990ffe572d43989cc7c466d8d1fc pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a3929990ffe572d43989cc7c466d8d1fc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a3929990ffe572d43989cc7c466d8d1fc">_undo_mark</a> (self)</td></tr>
 <tr class="memitem:a4f2ce6c4def9674082c04b47a6138c82 pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a4f2ce6c4def9674082c04b47a6138c82"><td class="memItemLeft">None&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a4f2ce6c4def9674082c04b47a6138c82">_validate_tolerance</a> (self, float tolerance)</td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Configure and create NX revolve features.</pre> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae0fb8cfd7f90175f8d02cda36a5cd0bf" name="ae0fb8cfd7f90175f8d02cda36a5cd0bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0fb8cfd7f90175f8d02cda36a5cd0bf">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -225,7 +226,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Initialize a revolve feature builder.
 
+Args:
+    curves (Sequence[ICurve]): Profile curves to revolve.
+    direction (DatumAxis or Direction or Vector3d): Revolution axis direction.
+    axis_point (Point): Point through which the axis passes.
+    start_angle (float or str, optional): Start angle. Defaults to 0.
+    end_angle (float or str, optional): End angle. Defaults to 360.
+
+Returns:
+    None: The builder is initialized.
+</pre> 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -253,7 +265,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Configure the revolve boolean operation.
 
+Args:
+    boolean_option (NXOpen.GeometricUtilities.BooleanOperation.BooleanType): Boolean operation.
+    boolean_target_body (Sequence[Body]): Target bodies.
+
+Returns:
+    RevolveBuilder: This builder for method chaining.
+</pre> 
 </div>
 </div>
 <a id="ab012b9b1d8b4e58971d5c3d92fae5a0f" name="ab012b9b1d8b4e58971d5c3d92fae5a0f"></a>
@@ -294,7 +314,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Create a revolve builder from profile curves and revolution axis.
 
+Args:
+    curves (Sequence[ICurve]): Profile curves.
+    direction (DatumAxis or Direction or Vector3d): Revolution axis direction.
+    axis_point (Point): Point on the revolution axis.
+    start_angle (float or str, optional): Start angle.
+    end_angle (float or str, optional): End angle.
+
+Returns:
+    RevolveBuilder: Configured revolve builder.
+</pre> 
 </div>
 </div>
 <a id="a3d82ef0bb739a9306dabcb421f097803" name="a3d82ef0bb739a9306dabcb421f097803"></a>
@@ -311,7 +342,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the underlying NX revolve builder.
 
+Returns:
+    NXOpen.Features.RevolveBuilder: Underlying NX builder.
+</pre> 
 </div>
 </div>
 <a id="af93b8259757ad43285ea406a934d43aa" name="af93b8259757ad43285ea406a934d43aa"></a>
@@ -342,7 +377,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Configure symmetric or nonsymmetric revolve offsets.
 
+Args:
+    offset_option (NXOpen.GeometricUtilities.Type): Offset mode.
+    end_offset (float or str): End offset value.
+    start_offset (float or str, optional): Start offset value.
+
+Returns:
+    RevolveBuilder: This builder for method chaining.
+</pre> 
 </div>
 </div>
 <a id="a2db68efac8c09df2871c19add219a323" name="a2db68efac8c09df2871c19add219a323"></a>
@@ -368,7 +412,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Configure revolve tolerance and body style.
+
+Args:
+    body_type (NXOpen.GeometricUtilities.FeatureOptions.BodyStyle, optional): Body style.
+    tolerance (float, optional): Modeling tolerance.
+
+Returns:
+    RevolveBuilder: This builder for method chaining.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1features_1_1revolve__builder_1_1_revolve_builder_a2db68efac8c09df2871c19add219a323_cgraph.svg" width="428" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>

@@ -47,7 +47,7 @@ NXOpen.\+Coordinate\+System \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coord
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3}{\+\_\+\+\_\+init\+\_\+\_}} (self, NXOpen.\+NXObject nxobject)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -84,6 +84,10 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wrap an NX coordinate system.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_doc-constructors}
 \Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -93,7 +97,15 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_af0569713b722b98bc43d0ed42058692f} 
 nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nx\+Csys}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize the wrapper from an NX coordinate system.
+
+Args:
+    nxCsys: Underlying NX Open coordinate-system object.
+
+Returns:
+    None: The wrapper is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -118,47 +130,117 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a1cde5b1f0fdc6183f751bc71e61603b7} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system}{Coordinate\+System}} nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+create\+\_\+by\+\_\+plane\+\_\+x\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object}{Displayable\+Object}}}]{plane}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{x\+\_\+dir}{, }\item[{bool }]{flip\+\_\+x\+\_\+dir}{ = {\ttfamily False}, }\item[{bool }]{flip\+\_\+z\+\_\+dir}{ = {\ttfamily False}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a5f3d78bf4689407807e9b5bf663434c6}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}}
+\begin{DoxyVerb}Create a coordinate system aligned with a plane and X direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    plane (DisplayableObject): Plane used to establish orientation.
+    x_dir (Direction): X-axis direction.
+    flip_x_dir (bool, optional): Reverse the X direction. Defaults to False.
+    flip_z_dir (bool, optional): Reverse the Z direction. Defaults to False.
+
+Returns:
+    CoordinateSystem: Newly created coordinate system.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a5f3d78bf4689407807e9b5bf663434c6}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}}
 \index{create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}!nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}}
 \doxysubsubsection{\texorpdfstring{create\_by\_plane\_y\_dir()}{create\_by\_plane\_y\_dir()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a5f3d78bf4689407807e9b5bf663434c6} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system}{Coordinate\+System}} nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+create\+\_\+by\+\_\+plane\+\_\+y\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object}{Displayable\+Object}}}]{plane}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{y\+\_\+dir}{, }\item[{bool }]{flip\+\_\+y\+\_\+dir}{ = {\ttfamily False}, }\item[{bool }]{flip\+\_\+z\+\_\+dir}{ = {\ttfamily False}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a066f80a1d75755aed968e20b2673a527}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_three\_planes@{create\_by\_three\_planes}}
+\begin{DoxyVerb}Create a coordinate system aligned with a plane and Y direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    plane (DisplayableObject): Plane used to establish orientation.
+    y_dir (Direction): Y-axis direction.
+    flip_y_dir (bool, optional): Reverse the Y direction. Defaults to False.
+    flip_z_dir (bool, optional): Reverse the Z direction. Defaults to False.
+
+Returns:
+    CoordinateSystem: Newly created coordinate system.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a066f80a1d75755aed968e20b2673a527}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_three\_planes@{create\_by\_three\_planes}}
 \index{create\_by\_three\_planes@{create\_by\_three\_planes}!nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}}
 \doxysubsubsection{\texorpdfstring{create\_by\_three\_planes()}{create\_by\_three\_planes()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a066f80a1d75755aed968e20b2673a527} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system}{Coordinate\+System}} nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+create\+\_\+by\+\_\+three\+\_\+planes (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1isurface_1_1_i_surface}{ISurface}}}]{plane1}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1isurface_1_1_i_surface}{ISurface}}}]{plane2}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1isurface_1_1_i_surface}{ISurface}}}]{plane3}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a76ec8b335cf23e963ffcfa5c1096a5fa}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_xy\_vector@{create\_by\_xy\_vector}}
+\begin{DoxyVerb}Create a coordinate system from three reference planes.
+
+Args:
+    plane1 (ISurface): First reference plane.
+    plane2 (ISurface): Second reference plane.
+    plane3 (ISurface): Third reference plane.
+
+Returns:
+    CoordinateSystem: Newly created coordinate system.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a76ec8b335cf23e963ffcfa5c1096a5fa}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_xy\_vector@{create\_by\_xy\_vector}}
 \index{create\_by\_xy\_vector@{create\_by\_xy\_vector}!nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}}
 \doxysubsubsection{\texorpdfstring{create\_by\_xy\_vector()}{create\_by\_xy\_vector()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a76ec8b335cf23e963ffcfa5c1096a5fa} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system}{Coordinate\+System}} nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+create\+\_\+by\+\_\+xy\+\_\+vector (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}}]{x\+\_\+vector}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}}]{y\+\_\+vector}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a4aab7d536192b62957236b53e373e8f6}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_xz\_dir@{create\_by\_xz\_dir}}
+\begin{DoxyVerb}Create a coordinate system from origin and X/Y vectors.
+
+Args:
+    origin (Point3d): Coordinate-system origin.
+    x_vector (Vector3d): X-axis direction vector.
+    y_vector (Vector3d): Y-axis direction vector.
+
+Returns:
+    CoordinateSystem: Newly created coordinate system.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a4aab7d536192b62957236b53e373e8f6}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_xz\_dir@{create\_by\_xz\_dir}}
 \index{create\_by\_xz\_dir@{create\_by\_xz\_dir}!nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}}
 \doxysubsubsection{\texorpdfstring{create\_by\_xz\_dir()}{create\_by\_xz\_dir()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a4aab7d536192b62957236b53e373e8f6} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system}{Coordinate\+System}} nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+create\+\_\+by\+\_\+xz\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{x\+\_\+dir}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{z\+\_\+dir}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_af7757f500e212beffd6083e39b5110fe}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_yz\_dir@{create\_by\_yz\_dir}}
+\begin{DoxyVerb}Create a coordinate system from origin, X direction, and Z direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    x_dir (Direction): X-axis direction.
+    z_dir (Direction): Z-axis direction.
+
+Returns:
+    CoordinateSystem: Newly created coordinate system.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_af7757f500e212beffd6083e39b5110fe}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!create\_by\_yz\_dir@{create\_by\_yz\_dir}}
 \index{create\_by\_yz\_dir@{create\_by\_yz\_dir}!nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}}
 \doxysubsubsection{\texorpdfstring{create\_by\_yz\_dir()}{create\_by\_yz\_dir()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_af7757f500e212beffd6083e39b5110fe} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system}{Coordinate\+System}} nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+create\+\_\+by\+\_\+yz\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{y\+\_\+dir}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{z\+\_\+dir}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a8829f9a5df0b010411bc9bbafe2ed3c0}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!to\_nx@{to\_nx}}
+\begin{DoxyVerb}Create a coordinate system from origin, Y direction, and Z direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    y_dir (Direction): Y-axis direction.
+    z_dir (Direction): Z-axis direction.
+
+Returns:
+    CoordinateSystem: Newly created coordinate system.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a8829f9a5df0b010411bc9bbafe2ed3c0}\index{nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}!to\_nx@{to\_nx}}
 \index{to\_nx@{to\_nx}!nxopenkit.core.coordinate\_system.CoordinateSystem@{nxopenkit.core.coordinate\_system.CoordinateSystem}}
 \doxysubsubsection{\texorpdfstring{to\_nx()}{to\_nx()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a8829f9a5df0b010411bc9bbafe2ed3c0} 
  NXOpen.\+Coordinate\+System nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX Open coordinate-system object.
 
+Returns:
+    NXOpen.CoordinateSystem: Wrapped coordinate-system object.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object_a0ecc225d2b39ea403b7182a5d69b00f9}{nxopenkit.\+core.\+displayable\+\_\+object.\+Displayable\+Object}}.
 
-Here is the caller graph for this function:\nopagebreak
+Here is the caller graph for this function:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

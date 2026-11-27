@@ -16,6 +16,10 @@ NXOpen.\+Scalar \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1utility_1_1_utili
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create common NX expressions and utility objects.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1utility_1_1_utility_doc-func-members}
 \Hypertarget{classnxopenkit_1_1core_1_1utility_1_1_utility_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -25,7 +29,17 @@ NXOpen.\+Scalar \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1utility_1_1_utili
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1utility_1_1_utility_a75ea2a4414683164295336b603918b2e} 
  NXOpen.\+Scalar nxopenkit.\+core.\+utility.\+Utility.\+create\+\_\+scalar\+\_\+expression (\begin{DoxyParamCaption}\item[{Double}]{value}{, }\item[{NXOpen.\+Scalar.\+Dimensionality\+Type }]{unit}{ = {\ttfamily NXOpen.Scalar.DimensionalityType.NotSet}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\begin{DoxyVerb}Create an NX scalar expression from a numeric value.
 
+Args:
+    value (Double): Numeric value used to create the system expression.
+    unit (NXOpen.Scalar.DimensionalityType, optional): Scalar dimensionality
+        type. Defaults to ``NotSet``.
+
+Returns:
+    NXOpen.Scalar: Created NX scalar expression object.
+\end{DoxyVerb}
+ 
 
 The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 

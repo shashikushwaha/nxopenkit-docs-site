@@ -106,6 +106,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX datum coordinate-system features.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -115,7 +119,18 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_acc62c6a9fc8463ea712c2e045af6b5ab} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}} nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1xform_1_1_xform}{Xform}}}]{xform}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialize a datum coordinate-system builder.
 
+Args:
+    xform (Xform): Transform defining the coordinate-system orientation.
+
+Returns:
+    None: The builder is initialized.
+
+Raises:
+    Exception: If NX fails to create the datum coordinate system.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_doc-func-members}
 \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_doc-func-members}
@@ -126,49 +141,129 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a6fb5754b987d035bcc6296d0e6ac655c} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}} nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+create\+\_\+by\+\_\+plane\+\_\+x\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object}{Displayable\+Object}}}]{plane}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{x\+\_\+dir}{, }\item[{bool }]{flip\+\_\+x\+\_\+dir}{ = {\ttfamily False}, }\item[{bool }]{flip\+\_\+z\+\_\+dir}{ = {\ttfamily False}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a2288a2ebddfb7ceb669ded1de7d5d490}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}}
+\begin{DoxyVerb}Create a coordinate system aligned with a plane and X direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    plane (DisplayableObject): Reference plane.
+    x_dir (Direction): X-axis direction.
+    flip_x_dir (bool, optional): Reverse the X direction.
+    flip_z_dir (bool, optional): Reverse the Z direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a2288a2ebddfb7ceb669ded1de7d5d490}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}}
 \index{create\_by\_plane\_y\_dir@{create\_by\_plane\_y\_dir}!nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_plane\_y\_dir()}{create\_by\_plane\_y\_dir()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a2288a2ebddfb7ceb669ded1de7d5d490} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}} nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+create\+\_\+by\+\_\+plane\+\_\+y\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object}{Displayable\+Object}}}]{plane}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{y\+\_\+dir}{, }\item[{bool }]{flip\+\_\+y\+\_\+dir}{ = {\ttfamily False}, }\item[{bool }]{flip\+\_\+z\+\_\+dir}{ = {\ttfamily False}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a4a41562f69dcbd446bb583e22931318e}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_three\_planes@{create\_by\_three\_planes}}
+\begin{DoxyVerb}Create a coordinate system aligned with a plane and Y direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    plane (DisplayableObject): Reference plane.
+    y_dir (Direction): Y-axis direction.
+    flip_y_dir (bool, optional): Reverse the Y direction.
+    flip_z_dir (bool, optional): Reverse the Z direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a4a41562f69dcbd446bb583e22931318e}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_three\_planes@{create\_by\_three\_planes}}
 \index{create\_by\_three\_planes@{create\_by\_three\_planes}!nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_three\_planes()}{create\_by\_three\_planes()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a4a41562f69dcbd446bb583e22931318e} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}} nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+create\+\_\+by\+\_\+three\+\_\+planes (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1isurface_1_1_i_surface}{ISurface}}}]{plane1}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1isurface_1_1_i_surface}{ISurface}}}]{plane2}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1isurface_1_1_i_surface}{ISurface}}}]{plane3}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a3030aee0a51f3c93528b7e25deca08e1}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_xy\_vector@{create\_by\_xy\_vector}}
+\begin{DoxyVerb}Create a datum coordinate system from three reference planes.
+
+Args:
+    plane1 (ISurface): First reference plane.
+    plane2 (ISurface): Second reference plane.
+    plane3 (ISurface): Third reference plane.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a3030aee0a51f3c93528b7e25deca08e1}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_xy\_vector@{create\_by\_xy\_vector}}
 \index{create\_by\_xy\_vector@{create\_by\_xy\_vector}!nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_xy\_vector()}{create\_by\_xy\_vector()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a3030aee0a51f3c93528b7e25deca08e1} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}} nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+create\+\_\+by\+\_\+xy\+\_\+vector (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}}]{x\+\_\+vector}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}}]{y\+\_\+vector}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a118589815e940a98036cc938ff303ba3}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_xz\_dir@{create\_by\_xz\_dir}}
+\begin{DoxyVerb}Create a datum coordinate system from origin and X/Y vectors.
+
+Args:
+    origin (Point3d): Coordinate-system origin.
+    x_vector (Vector3d): X-axis vector.
+    y_vector (Vector3d): Y-axis vector.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a118589815e940a98036cc938ff303ba3}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_xz\_dir@{create\_by\_xz\_dir}}
 \index{create\_by\_xz\_dir@{create\_by\_xz\_dir}!nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_xz\_dir()}{create\_by\_xz\_dir()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a118589815e940a98036cc938ff303ba3} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}} nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+create\+\_\+by\+\_\+xz\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{x\+\_\+dir}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{z\+\_\+dir}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a657c6b8431beb7d943c2b47d274e689e}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_yz\_dir@{create\_by\_yz\_dir}}
+\begin{DoxyVerb}Create a datum coordinate system from origin, X direction, and Z direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    x_dir (Direction): X-axis direction.
+    z_dir (Direction): Z-axis direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a657c6b8431beb7d943c2b47d274e689e}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!create\_by\_yz\_dir@{create\_by\_yz\_dir}}
 \index{create\_by\_yz\_dir@{create\_by\_yz\_dir}!nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_yz\_dir()}{create\_by\_yz\_dir()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a657c6b8431beb7d943c2b47d274e689e} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}} nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+create\+\_\+by\+\_\+yz\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{y\+\_\+dir}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{z\+\_\+dir}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a768942665f571afb35a04412d2a669ba}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!nx\_builder@{nx\_builder}}
+\begin{DoxyVerb}Create a datum coordinate system from origin, Y direction, and Z direction.
+
+Args:
+    origin (Point): Coordinate-system origin.
+    y_dir (Direction): Y-axis direction.
+    z_dir (Direction): Z-axis direction.
+
+Returns:
+    DatumCsysBuilder: Configured datum coordinate-system builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a768942665f571afb35a04412d2a669ba}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!nx\_builder@{nx\_builder}}
 \index{nx\_builder@{nx\_builder}!nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}}
 \doxysubsubsection{\texorpdfstring{nx\_builder()}{nx\_builder()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a768942665f571afb35a04412d2a669ba} 
  NXOpen.\+Features.\+Datum\+Csys\+Builder nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a85db3a4048e7ca8702feaff04bf90415}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!settings@{settings}}
+\begin{DoxyVerb}Get the underlying NX datum coordinate-system builder.
+
+Returns:
+    NXOpen.Features.DatumCsysBuilder: Underlying NX builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a85db3a4048e7ca8702feaff04bf90415}\index{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder@{nxopenkit.features.datum\_csys\_builder.DatumCsysBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_a85db3a4048e7ca8702feaff04bf90415} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder}{Datum\+Csys\+Builder}}  nxopenkit.\+features.\+datum\+\_\+csys\+\_\+builder.\+Datum\+Csys\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{is\+\_\+associative}{ = {\ttfamily True}, }\item[{float }]{scale\+\_\+factor}{ = {\ttfamily 1.25}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Configure associativity and display scale.
 
+Args:
+    is_associative (bool, optional): Remove parameters when associative.
+        Defaults to True.
+    scale_factor (float, optional): Datum coordinate-system display scale.
+        Defaults to 1.25.
+
+Returns:
+    DatumCsysBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_doc-variable-members}
 \Hypertarget{classnxopenkit_1_1features_1_1datum__csys__builder_1_1_datum_csys_builder_doc-variable-members}

@@ -25,7 +25,7 @@ Collaboration diagram for nxopenkit.\+core.\+named\+\_\+object.\+Named\+Object:\
 \item 
 NXOpen.\+NXObject \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a6255c685e841def0240dc4bb6d32a99c}{to\+\_\+nx}} (self)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -57,6 +57,10 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Expose name access for NX objects.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1named__object_1_1_named_object_doc-constructors}
 \Hypertarget{classnxopenkit_1_1core_1_1named__object_1_1_named_object_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -66,7 +70,15 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3} 
 nxopenkit.\+core.\+named\+\_\+object.\+Named\+Object.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+NXObject}]{nxobject}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a named NX object wrapper.
+
+Args:
+    nxobject (NXOpen.NXObject): Underlying NX named object.
+
+Returns:
+    None: The wrapper is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -85,17 +97,23 @@ Here is the caller graph for this function:\nopagebreak
 \label{classnxopenkit_1_1core_1_1named__object_1_1_named_object_doc-func-members}
 \Hypertarget{classnxopenkit_1_1core_1_1named__object_1_1_named_object_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}\index{nxopenkit.core.named\_object.NamedObject@{nxopenkit.core.named\_object.NamedObject}!name@{name}}
+\Hypertarget{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}\index{nxopenkit.core.named\_object.NamedObject@{nxopenkit.core.named\_object.NamedObject}!name@{name}}
 \index{name@{name}!nxopenkit.core.named\_object.NamedObject@{nxopenkit.core.named\_object.NamedObject}}
 \doxysubsubsection{\texorpdfstring{name()}{name()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1} 
-str  nxopenkit.\+core.\+named\+\_\+object.\+Named\+Object.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7} 
+ str nxopenkit.\+core.\+named\+\_\+object.\+Named\+Object.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Get or set the object's NX name.
+
+Returns:
+    str: Current object name.
+\end{DoxyVerb}
+ Here is the call graph for this function:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=550pt]{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1_cgraph}
+\includegraphics[height=550pt]{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}\index{nxopenkit.core.named\_object.NamedObject@{nxopenkit.core.named\_object.NamedObject}!name@{name}}
@@ -104,7 +122,15 @@ Here is the call graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07} 
 nxopenkit.\+core.\+named\+\_\+object.\+Named\+Object.\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Set the object's NX name.
+
+Args:
+    value (str): Non-empty name assigned to the object.
+
+Returns:
+    None: The NX object name is updated.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -117,7 +143,12 @@ Here is the call graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a6255c685e841def0240dc4bb6d32a99c} 
  NXOpen.\+NXObject nxopenkit.\+core.\+named\+\_\+object.\+Named\+Object.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX named object.
 
+Returns:
+    NXOpen.NXObject: Wrapped NX named object.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object_a070fa430f4e71ab6680f077ea30f5048}{nxopenkit.\+core.\+tagged\+\_\+object.\+Tagged\+Object}}.
 
@@ -125,7 +156,8 @@ Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object
 
 Reimplemented in \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body_abecb05b91115b73e600e824b1231aae3}{nxopenkit.\+core.\+body.\+Body}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1coordinate__system_1_1_coordinate_system_a8829f9a5df0b010411bc9bbafe2ed3c0}{nxopenkit.\+core.\+coordinate\+\_\+system.\+Coordinate\+System}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve_a7020f209bf89d6a663a310a416f9f7f6}{nxopenkit.\+core.\+curve.\+Curve}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis_aa65d978ab4a34ba4756454cb8c17564f}{nxopenkit.\+core.\+datum\+\_\+axis.\+Datum\+Axis}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__plane_1_1_datum_plane_aa4a02635da81820bb75654218923ee4a}{nxopenkit.\+core.\+datum\+\_\+plane.\+Datum\+Plane}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction_aca7777c32faad6c79eb220c33ec5ade9}{nxopenkit.\+core.\+direction.\+Direction}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object_a0ecc225d2b39ea403b7182a5d69b00f9}{nxopenkit.\+core.\+displayable\+\_\+object.\+Displayable\+Object}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1edge_1_1_edge_a8c54998c1017a964439225c6773f067f}{nxopenkit.\+core.\+edge.\+Edge}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1face_1_1_face_a3ae0c9b61d24c21936a5805b328bafe4}{nxopenkit.\+core.\+face.\+Face}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1feature_1_1_feature_abdad7cf5b060f06082b6df6e574ed0de}{nxopenkit.\+core.\+feature.\+Feature}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1line_1_1_line_a79cf79b648155eb2887607bedcb39802}{nxopenkit.\+core.\+line.\+Line}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1part_1_1_part_a0b880cd637565cc21ee33356917909a0}{nxopenkit.\+core.\+part.\+Part}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point_a8af35e4109ae43dca5741f42bbdbe1c2}{nxopenkit.\+core.\+point.\+Point}}, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1sketch_1_1_sketch_acac2da1af2d56e155c00b18be1b3d242}{nxopenkit.\+core.\+sketch.\+Sketch}}, and \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1xform_1_1_xform_a5d19cfd2229bdbaa2147efec311c7711}{nxopenkit.\+core.\+xform.\+Xform}}.
 
-Here is the caller graph for this function:\nopagebreak
+Here is the caller graph for this function:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

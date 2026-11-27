@@ -42,7 +42,7 @@ NXOpen.\+Line \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1line_1_1_line_a79cf
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3}{\+\_\+\+\_\+init\+\_\+\_}} (self, NXOpen.\+NXObject nxobject)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -86,6 +86,10 @@ List\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve}{Curve}}] 
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represent an NX line as a curve.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1line_1_1_line_doc-constructors}
 \Hypertarget{classnxopenkit_1_1core_1_1line_1_1_line_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -120,11 +124,17 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1line_1_1_line_a79cf79b648155eb2887607bedcb39802} 
  NXOpen.\+Line nxopenkit.\+core.\+line.\+Line.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX Open curve object.
 
+Returns:
+    NXOpen.Curve: Wrapped NX Open curve instance.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1curve_1_1_curve_a7020f209bf89d6a663a310a416f9f7f6}{nxopenkit.\+core.\+curve.\+Curve}}.
 
-Here is the caller graph for this function:\nopagebreak
+Here is the caller graph for this function:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -53,8 +53,8 @@ var NAVTREEINDEX =
 [
 "____init_____8py.html",
 "classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html#a31d9cb70bb07c0d16c0d57c0e7468fcc",
-"classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder.html#ae85ec1f66e6f3a169cb7fa51fd951489",
-"converters_8py.html"
+"classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder.html#adebbdaf47c1424e2cc71ca6b46128449",
+"classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html#aa715830f5de77b5fb4e31333823c9080"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

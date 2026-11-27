@@ -177,7 +177,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1aaa949696f2349c4d586fa6d133ddce" id="r_a1aaa949696f2349c4d586fa6d133ddce"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1aaa949696f2349c4d586fa6d133ddce">fit_view</a> (view_tag, fraction)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Convenience wrappers for commonly used NX 2007 UF methods.</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><pre class="fragment">Convenience wrappers for commonly used NX 2007 UF session methods.</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ad2ef21f92a628129d6bb649a93fa4a29" name="ad2ef21f92a628129d6bb649a93fa4a29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2ef21f92a628129d6bb649a93fa4a29">&#9670;&#160;</a></span>ask_aligned_bounding_box()</h2>
 
@@ -209,7 +209,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for a coordinate-system-aligned bounding box.
 
+        Args:
+            object_arg: NX object tag or argument.
+            csys_tag: Coordinate-system tag.
+            expand: Expansion value.
+
+        Returns:
+            Any: Aligned bounding-box coordinates.
+</pre> 
 </div>
 </div>
 <a id="ab7afff66e570383fea552977ddc91763" name="ab7afff66e570383fea552977ddc91763"></a>
@@ -234,7 +243,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for arc geometry data.
 
+        Args:
+            curve_tag: NX arc or curve tag.
+
+        Returns:
+            Any: NX arc data.
+</pre> 
 </div>
 </div>
 <a id="a943c6ef016d3561789d8874998dc38e4" name="a943c6ef016d3561789d8874998dc38e4"></a>
@@ -259,7 +275,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get a body's edge tags.
 
+        Args:
+            body: NX body tag.
+
+        Returns:
+            Any: Edge tags belonging to the body.
+</pre> 
 </div>
 </div>
 <a id="a4893d374478912099b6885560fefeeec" name="a4893d374478912099b6885560fefeeec"></a>
@@ -284,7 +307,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get a body's face tags.
 
+        Args:
+            body_tag: NX body tag.
+
+        Returns:
+            Any: Face tags belonging to the body.
+</pre> 
 </div>
 </div>
 <a id="a7da0473cb675f849760f13b7e5f88994" name="a7da0473cb675f849760f13b7e5f88994"></a>
@@ -309,7 +339,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for a body's type.
 
+        Args:
+            body_tag: NX body tag.
+
+        Returns:
+            Any: NX body type.
+</pre> 
 </div>
 </div>
 <a id="a2beaaf16c8694b2518433a9f6939a3d9" name="a2beaaf16c8694b2518433a9f6939a3d9"></a>
@@ -334,7 +371,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for an object's bounding box.
 
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Any: Bounding-box coordinates.
+</pre> 
 </div>
 </div>
 <a id="a6f0f93cd350c72fb8994d5b73fa061ca" name="a6f0f93cd350c72fb8994d5b73fa061ca"></a>
@@ -359,7 +403,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask whether a curve is closed.
 
+        Args:
+            curve_tag: NX curve tag.
+
+        Returns:
+            bool: Whether the curve is closed.
+</pre> 
 </div>
 </div>
 <a id="aeddd74f678f27f2604f4ae478e21db05" name="aeddd74f678f27f2604f4ae478e21db05"></a>
@@ -388,7 +439,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for curve properties at a parameter.
 
+        Args:
+            curve_id: NX curve tag.
+            parameter: Curve parameter value.
+
+        Returns:
+            Any: Curve property data.
+</pre> 
 </div>
 </div>
 <a id="afd291fd9a17df4e13a68b517593fc107" name="afd291fd9a17df4e13a68b517593fc107"></a>
@@ -417,7 +476,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for display color values.
 
+        Args:
+            color_number: NX color number.
+            color_model: NX color model.
+
+        Returns:
+            Any: Requested display color data.
+</pre> 
 </div>
 </div>
 <a id="a062b302fecda383e1528d1c8dd7b596c" name="a062b302fecda383e1528d1c8dd7b596c"></a>
@@ -442,7 +509,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get faces adjacent to an edge.
 
+        Args:
+            edge: NX edge tag.
+
+        Returns:
+            Any: Adjacent face tags.
+</pre> 
 </div>
 </div>
 <a id="aa188cd036fb4883588acc0c6690a4acd" name="aa188cd036fb4883588acc0c6690a4acd"></a>
@@ -467,7 +541,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for an edge type.
 
+        Args:
+            edge_id: NX edge tag.
+
+        Returns:
+            Any: NX edge type.
+</pre> 
 </div>
 </div>
 <a id="a9e0c3b7228d078ae38fece8068bc4b79" name="a9e0c3b7228d078ae38fece8068bc4b79"></a>
@@ -492,7 +573,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get an edge's vertex tags.
 
+        Args:
+            edge_tag: NX edge tag.
+
+        Returns:
+            Any: Edge vertex tags.
+</pre> 
 </div>
 </div>
 <a id="ae8c349979bfbadafdd63e863a546328c" name="ae8c349979bfbadafdd63e863a546328c"></a>
@@ -521,7 +609,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for an exact coordinate-system-aligned bounding box.
 
+        Args:
+            object_arg: NX object tag or argument.
+            csys_tag: Coordinate-system tag.
+
+        Returns:
+            Any: Exact bounding-box coordinates.
+</pre> 
 </div>
 </div>
 <a id="ae6bd3ad11202be7f2ccdbc6cc5c6646b" name="ae6bd3ad11202be7f2ccdbc6cc5c6646b"></a>
@@ -546,7 +642,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the body containing a face.
 
+        Args:
+            face: NX face tag.
+
+        Returns:
+            Any: Parent body tag.
+</pre> 
 </div>
 </div>
 <a id="a2fe9a24a9225b411b7829a1e45d29deb" name="a2fe9a24a9225b411b7829a1e45d29deb"></a>
@@ -571,7 +674,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get detailed data for an NX face.
 
+        Args:
+            face_tag: NX face tag.
+
+        Returns:
+            Any: NX face data.
+</pre> 
 </div>
 </div>
 <a id="a1e9d162104437fe14bbee1ba42589695" name="a1e9d162104437fe14bbee1ba42589695"></a>
@@ -596,7 +706,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Get an object's edge tags.
 
+        Args:
+            face_tag: NX face tag.
+
+        Returns:
+            Any: Edge tags belonging to the face.
+</pre> 
 </div>
 </div>
 <a id="a7047c28db40cb9ef96273ca2e5fcd868" name="a7047c28db40cb9ef96273ca2e5fcd868"></a>
@@ -621,7 +738,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for a face type.
 
+        Args:
+            face: NX face tag.
+
+        Returns:
+            Any: NX face type.
+</pre> 
 </div>
 </div>
 <a id="a2b6b9b5678a163d68a35ebea15011cd6" name="a2b6b9b5678a163d68a35ebea15011cd6"></a>
@@ -646,7 +770,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for line geometry data.
 
+        Args:
+            curve_tag: NX line or curve tag.
+
+        Returns:
+            Any: NX line data.
+</pre> 
 </div>
 </div>
 <a id="a026741470cc8c4c37855c9443573b101" name="a026741470cc8c4c37855c9443573b101"></a>
@@ -671,7 +802,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for the matrix associated with an object.
 
+        Args:
+            object_id: NX object tag.
+
+        Returns:
+            Any: NX object matrix.
+</pre> 
 </div>
 </div>
 <a id="ab2104da3d9e3b89519590865302d56f3" name="ab2104da3d9e3b89519590865302d56f3"></a>
@@ -720,7 +858,19 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask NX for the minimum distance between two objects.
 
+        Args:
+            object1: First NX object or point input.
+            object2: Second NX object or point input.
+            guess1_given: Whether the first guess is supplied.
+            guess1: Optional first-point guess.
+            guess2_given: Whether the second guess is supplied.
+            guess2: Optional second-point guess.
+
+        Returns:
+            Any: NX minimum-distance result.
+</pre> 
 </div>
 </div>
 <a id="af5c553ebe56e077e624f491e65230dca" name="af5c553ebe56e077e624f491e65230dca"></a>
@@ -745,7 +895,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for an object's name.
 
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Any: NX object name result.
+</pre> 
 </div>
 </div>
 <a id="a501a47cfba979b05872c855a0ff7f9eb" name="a501a47cfba979b05872c855a0ff7f9eb"></a>
@@ -770,7 +927,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for an object's status.
 
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Any: NX object status value.
+</pre> 
 </div>
 </div>
 <a id="a7b91d2acae21193d7eb87bb7b8ca4c7e" name="a7b91d2acae21193d7eb87bb7b8ca4c7e"></a>
@@ -795,7 +959,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for an object's type and subtype.
 
+        Args:
+            object_tag: NX object tag.
+
+        Returns:
+            Tuple[int, int]: Object type and subtype values.
+</pre> 
 </div>
 </div>
 <a id="a37b359208c32980d2cf6dd0441e4d452" name="a37b359208c32980d2cf6dd0441e4d452"></a>
@@ -820,7 +991,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for a part's unit setting.
 
+        Args:
+            part_tag: NX part tag.
+
+        Returns:
+            Any: NX part units.
+</pre> 
 </div>
 </div>
 <a id="a7f2c20b8e49c840e68f30edf4683b723" name="a7f2c20b8e49c840e68f30edf4683b723"></a>
@@ -849,7 +1027,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask whether a point is contained in a body.
 
+        Args:
+            point: Point coordinates or tag.
+            body_tag: NX body tag.
+
+        Returns:
+            Any: NX point-containment status.
+</pre> 
 </div>
 </div>
 <a id="a0bcc800b3dc49fd1b141fb0e1f23a659" name="a0bcc800b3dc49fd1b141fb0e1f23a659"></a>
@@ -874,7 +1060,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for point geometry data.
 
+        Args:
+            point_tag: NX point tag.
+
+        Returns:
+            Any: NX point data.
+</pre> 
 </div>
 </div>
 <a id="a5a60099ab102dec8cdf50d57d3b6a096" name="a5a60099ab102dec8cdf50d57d3b6a096"></a>
@@ -899,7 +1092,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for the active work coordinate system.
 
+        Returns:
+            Any: NX work coordinate-system tag.
+</pre> 
 </div>
 </div>
 <a id="a24adfaee1defb183028bfc89c8c7aada" name="a24adfaee1defb183028bfc89c8c7aada"></a>
@@ -924,7 +1121,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask for the active work view.
 
+        Returns:
+            Any: Active NX work-view tag.
+</pre> 
 </div>
 </div>
 <a id="a126061613b8a09aea743113e405c5440" name="a126061613b8a09aea743113e405c5440"></a>
@@ -949,7 +1150,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Close the NX listing window.
 
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="a588dce8909c95dd5e2bdb80d9c32ee14" name="a588dce8909c95dd5e2bdb80d9c32ee14"></a>
@@ -974,7 +1179,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Create an NX arc using UF curve coordinates.
 
+        Args:
+            arc_coords (NXOpen.UF.Curve.Arc): Arc coordinate structure.
+
+        Returns:
+            Any: Created NX arc tag.
+</pre> 
 </div>
 </div>
 <a id="afc133e9cd10b754e10860355149cfb76" name="afc133e9cd10b754e10860355149cfb76"></a>
@@ -999,7 +1211,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Create an NX line using UF curve coordinates.
 
+        Args:
+            line_coords (NXOpen.UF.Curve.Line): Line coordinate structure.
+
+        Returns:
+            Any: Created NX line tag.
+</pre> 
 </div>
 </div>
 <a id="ae45eab01cfd49adafab64c57c09d10f4" name="ae45eab01cfd49adafab64c57c09d10f4"></a>
@@ -1024,7 +1243,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Delete an NX object.
 
+        Args:
+            object_id: NX object tag or identifier.
+
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="a1aaa949696f2349c4d586fa6d133ddce" name="a1aaa949696f2349c4d586fa6d133ddce"></a>
@@ -1053,7 +1279,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Fit a view around a view tag.
 
+        Args:
+            view_tag: NX view tag.
+            fraction: Fit fraction or margin value.
+
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="a9e55b0be5f423f58491d8027e6249b25" name="a9e55b0be5f423f58491d8027e6249b25"></a>
@@ -1078,7 +1312,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Ask whether the NX listing window is open.
 
+        Returns:
+            bool: True when the listing window is open.
+</pre> 
 </div>
 </div>
 <a id="a59db40614ba02ef6f18002fe07afcdb9" name="a59db40614ba02ef6f18002fe07afcdb9"></a>
@@ -1103,7 +1341,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Open the NX listing window.
 
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="ac9a0dd8c48dcf9601dae626aa833bdc2" name="ac9a0dd8c48dcf9601dae626aa833bdc2"></a>
@@ -1142,7 +1384,17 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Set an NX display color.
 
+        Args:
+            color_number: NX color number.
+            color_model: NX color model.
+            color_name: Color name.
+            color_values: Color component values.
+
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="accadedd7a7f6ac63f6ca44511be37c63" name="accadedd7a7f6ac63f6ca44511be37c63"></a>
@@ -1171,7 +1423,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Set an object's blank/display status.
 
+        Args:
+            object_tag: NX object tag.
+            blank_status: Blank status value.
+
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="a889bbca013752bb7bedf94995bfe7147" name="a889bbca013752bb7bedf94995bfe7147"></a>
@@ -1200,7 +1460,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Set an object's name.
 
+        Args:
+            object_tag: NX object tag.
+            name (str): Name to assign.
+
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="a93621d94aeb0a00568755df263a4a2f8" name="a93621d94aeb0a00568755df263a4a2f8"></a>
@@ -1225,7 +1493,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Set the active work coordinate system.
 
+        Args:
+            csys_tag: NX coordinate-system tag.
+
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <a id="afc0ecb66bd1ddd2562a6c191a4942262" name="afc0ecb66bd1ddd2562a6c191a4942262"></a>
@@ -1250,7 +1525,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Write text to the NX listing window.
 
+        Args:
+            text (str): Text to write.
+
+        Returns:
+            Any: NX UF operation result.
+</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

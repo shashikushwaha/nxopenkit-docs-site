@@ -37,7 +37,7 @@ NXOpen.\+Datum\+Axis \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__axis_
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3}{\+\_\+\+\_\+init\+\_\+\_}} (self, NXOpen.\+NXObject nxobject)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -74,6 +74,10 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wrap an NX datum axis.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis_doc-constructors}
 \Hypertarget{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -83,7 +87,15 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis_a586efee700c8d7158c84e1d920b3a6a6} 
 nxopenkit.\+core.\+datum\+\_\+axis.\+Datum\+Axis.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nx\+Datum\+Axis}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize the wrapper from an NX datum axis.
+
+Args:
+    nxDatumAxis: Underlying NX Open datum-axis object.
+
+Returns:
+    None: The wrapper is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -108,7 +120,8 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis_a33a82dd4b2780ef637178114bb5e6c69} 
  \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}} nxopenkit.\+core.\+datum\+\_\+axis.\+Datum\+Axis.\+direction (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Returns the direction of the datum axis as a Vector3d.\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -121,11 +134,13 @@ Here is the call graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1datum__axis_1_1_datum_axis_aa65d978ab4a34ba4756454cb8c17564f} 
  NXOpen.\+Datum\+Axis nxopenkit.\+core.\+datum\+\_\+axis.\+Datum\+Axis.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-
+\begin{DoxyVerb}Returns the underlying NX datum axis object.\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object_a0ecc225d2b39ea403b7182a5d69b00f9}{nxopenkit.\+core.\+displayable\+\_\+object.\+Displayable\+Object}}.
 
-Here is the caller graph for this function:\nopagebreak
+Here is the caller graph for this function:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

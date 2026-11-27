@@ -106,6 +106,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX sphere features.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -115,7 +119,18 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a123a478fd890203f95f8d17398d98b60} 
 nxopenkit.\+features.\+sphere\+\_\+builder.\+Sphere\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sphere\+Type}]{spr\+\_\+type}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} \texorpdfstring{$\vert$}{|} None }]{center\+\_\+point}{ = {\ttfamily None}, }\item[{Double }]{diameter}{ = {\ttfamily 25}, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}} \texorpdfstring{$\vert$}{|} None }]{arc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialize a sphere feature builder.
 
+Args:
+    spr_type (SphereType): Sphere creation mode.
+    center_point (Point, optional): Sphere center point.
+    diameter (Double, optional): Sphere diameter. Defaults to 25.
+    arc (ICurve, optional): Arc used for arc-based spheres.
+
+Returns:
+    None: The builder is initialized.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_doc-func-members}
 \Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_doc-func-members}
@@ -126,31 +141,71 @@ nxopenkit.\+features.\+sphere\+\_\+builder.\+Sphere\+Builder.\+\_\+\+\_\+init\+\
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a9dbe84cd8b6827c0fcc25cc3441eb45a} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder}{Sphere\+Builder}} nxopenkit.\+features.\+sphere\+\_\+builder.\+Sphere\+Builder.\+boolean (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Boolean\+Type}]{boolean\+\_\+option}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]}]{boolean\+\_\+target\+\_\+body}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_afffb944e1d0412c67f5cbc14133e2a98}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!create\_by\_arc@{create\_by\_arc}}
+\begin{DoxyVerb}Configure a boolean operation for the sphere.
+
+Args:
+    boolean_option (BooleanType): Boolean operation.
+    boolean_target_body (Sequence[Body]): Target bodies.
+
+Returns:
+    SphereBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_afffb944e1d0412c67f5cbc14133e2a98}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!create\_by\_arc@{create\_by\_arc}}
 \index{create\_by\_arc@{create\_by\_arc}!nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_arc()}{create\_by\_arc()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_afffb944e1d0412c67f5cbc14133e2a98} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder}{Sphere\+Builder}}  nxopenkit.\+features.\+sphere\+\_\+builder.\+Sphere\+Builder.\+create\+\_\+by\+\_\+arc (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}}]{arc}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a50fa0d7200e99eafc3bd46d8e780a4b0}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!create\_by\_center\_point\_diameter@{create\_by\_center\_point\_diameter}}
+\begin{DoxyVerb}Create a sphere builder from an arc.
+
+Args:
+    arc (ICurve): Arc used to define the sphere.
+
+Returns:
+    SphereBuilder: Configured sphere builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a50fa0d7200e99eafc3bd46d8e780a4b0}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!create\_by\_center\_point\_diameter@{create\_by\_center\_point\_diameter}}
 \index{create\_by\_center\_point\_diameter@{create\_by\_center\_point\_diameter}!nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_center\_point\_diameter()}{create\_by\_center\_point\_diameter()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a50fa0d7200e99eafc3bd46d8e780a4b0} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder}{Sphere\+Builder}}  nxopenkit.\+features.\+sphere\+\_\+builder.\+Sphere\+Builder.\+create\+\_\+by\+\_\+center\+\_\+point\+\_\+diameter (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{center\+\_\+point}{, }\item[{}]{diameter}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a83ab7eee446aa6f65dfd194bd0a80d9c}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!nx\_builder@{nx\_builder}}
+\begin{DoxyVerb}Create a sphere builder from an arc or center point and diameter.
+
+Args:
+    arc (ICurve, optional): Arc for arc-based creation.
+    center_point (Point, optional): Sphere center point.
+    diameter (Double, optional): Sphere diameter.
+
+Returns:
+    SphereBuilder: Configured sphere builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a83ab7eee446aa6f65dfd194bd0a80d9c}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!nx\_builder@{nx\_builder}}
 \index{nx\_builder@{nx\_builder}!nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}}
 \doxysubsubsection{\texorpdfstring{nx\_builder()}{nx\_builder()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a83ab7eee446aa6f65dfd194bd0a80d9c} 
  NXOpen.\+Features.\+Sphere\+Builder nxopenkit.\+features.\+sphere\+\_\+builder.\+Sphere\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a733bd1cd4a6ec7a9b324f0fb043971ec}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!settings@{settings}}
+\begin{DoxyVerb}Get the underlying NX sphere builder.
+
+Returns:
+    NXOpen.Features.SphereBuilder: Underlying NX builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a733bd1cd4a6ec7a9b324f0fb043971ec}\index{nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.sphere\_builder.SphereBuilder@{nxopenkit.features.sphere\_builder.SphereBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_a733bd1cd4a6ec7a9b324f0fb043971ec} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder}{Sphere\+Builder}}  nxopenkit.\+features.\+sphere\+\_\+builder.\+Sphere\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{associate\+\_\+origin}{ = {\ttfamily True}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Set sphere origin associativity.
 
+Args:
+    associate_origin (bool, optional): Whether to associate the origin.
+
+Returns:
+    SphereBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_doc-variable-members}
 \Hypertarget{classnxopenkit_1_1features_1_1sphere__builder_1_1_sphere_builder_doc-variable-members}

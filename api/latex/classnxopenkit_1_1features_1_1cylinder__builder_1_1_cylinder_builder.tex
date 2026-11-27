@@ -110,6 +110,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX cylinder features from an arc or axis.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -119,7 +123,23 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a8529414a07734b33a96d81f1a6eb0feb} 
 nxopenkit.\+features.\+cylinder\+\_\+builder.\+Cylinder\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Cylinder\+Type}]{cly\+\_\+type}{, }\item[{Double}]{height}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} \texorpdfstring{$\vert$}{|} None }]{origin\+\_\+point}{ = {\ttfamily None}, }\item[{Vector\+Like \texorpdfstring{$\vert$}{|} None }]{vector}{ = {\ttfamily None}, }\item[{Double }]{diameter}{ = {\ttfamily 25}, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}} \texorpdfstring{$\vert$}{|} None }]{arc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialize a cylinder feature builder.
 
+Args:
+    cly_type (CylinderType): Cylinder creation mode.
+    height (Double): Cylinder height.
+    origin_point (Point, optional): Origin for axis-based cylinders.
+    vector (VectorLike, optional): Axis direction or datum vector.
+    diameter (Double, optional): Cylinder diameter. Defaults to 25.
+    arc (ICurve, optional): Arc used for arc-and-height cylinders.
+
+Returns:
+    None: The builder is initialized.
+
+Raises:
+    ValueError: If a required value is missing or invalid.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_doc-func-members}
 \Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_doc-func-members}
@@ -130,31 +150,77 @@ nxopenkit.\+features.\+cylinder\+\_\+builder.\+Cylinder\+Builder.\+\_\+\+\_\+ini
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a133bfe43960891a35c67bc0f0af6c5f8} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder}{Cylinder\+Builder}} nxopenkit.\+features.\+cylinder\+\_\+builder.\+Cylinder\+Builder.\+boolean (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Boolean\+Type}]{boolean\+\_\+option}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]}]{boolean\+\_\+target\+\_\+body}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a881a76a4467863819bbe894768611782}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!create\_by\_arc\_height@{create\_by\_arc\_height}}
+\begin{DoxyVerb}Set the cylinder boolean operation and target bodies.
+
+Args:
+    boolean_option (BooleanType): Boolean operation type.
+    boolean_target_body (Sequence[Body]): Target bodies for the operation.
+
+Returns:
+    CylinderBuilder: This builder for method chaining.
+
+Raises:
+    ValueError: If targets are missing for a non-create operation.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a881a76a4467863819bbe894768611782}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!create\_by\_arc\_height@{create\_by\_arc\_height}}
 \index{create\_by\_arc\_height@{create\_by\_arc\_height}!nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_arc\_height()}{create\_by\_arc\_height()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a881a76a4467863819bbe894768611782} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder}{Cylinder\+Builder}}  nxopenkit.\+features.\+cylinder\+\_\+builder.\+Cylinder\+Builder.\+create\+\_\+by\+\_\+arc\+\_\+height (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}}]{arc}{, }\item[{Double}]{height}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a6a3dd47a4ada64f4dc408660a938e797}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!create\_by\_axis\_diameter\_height@{create\_by\_axis\_diameter\_height}}
+\begin{DoxyVerb}Create a cylinder builder from an arc and height.
+
+Args:
+    arc (ICurve): Arc that defines the cylinder base.
+    height (Double): Cylinder height.
+
+Returns:
+    CylinderBuilder: Configured cylinder builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a6a3dd47a4ada64f4dc408660a938e797}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!create\_by\_axis\_diameter\_height@{create\_by\_axis\_diameter\_height}}
 \index{create\_by\_axis\_diameter\_height@{create\_by\_axis\_diameter\_height}!nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_axis\_diameter\_height()}{create\_by\_axis\_diameter\_height()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a6a3dd47a4ada64f4dc408660a938e797} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder}{Cylinder\+Builder}}  nxopenkit.\+features.\+cylinder\+\_\+builder.\+Cylinder\+Builder.\+create\+\_\+by\+\_\+axis\+\_\+diameter\+\_\+height (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin\+\_\+point}{, }\item[{Vector\+Like}]{vector}{, }\item[{Double}]{diameter}{, }\item[{Double}]{height}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_aa3b38d27d3f4e77dd06b8c5345cf9cbe}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!nx\_builder@{nx\_builder}}
+\begin{DoxyVerb}Create a cylinder builder from axis, origin, diameter, and height.
+
+Args:
+    origin_point (Point): Cylinder origin point.
+    vector (VectorLike): Cylinder axis direction.
+    diameter (Double): Cylinder diameter.
+    height (Double): Cylinder height.
+
+Returns:
+    CylinderBuilder: Configured cylinder builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_aa3b38d27d3f4e77dd06b8c5345cf9cbe}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!nx\_builder@{nx\_builder}}
 \index{nx\_builder@{nx\_builder}!nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}}
 \doxysubsubsection{\texorpdfstring{nx\_builder()}{nx\_builder()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_aa3b38d27d3f4e77dd06b8c5345cf9cbe} 
  NXOpen.\+Features.\+Block\+Feature\+Builder nxopenkit.\+features.\+cylinder\+\_\+builder.\+Cylinder\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a3d54e2888c4eaf950110250aceb50a1f}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!settings@{settings}}
+\begin{DoxyVerb}Get the underlying NX cylinder feature builder.
+
+Returns:
+    NXOpen.Features.CylinderFeatureBuilder: Underlying NX builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a3d54e2888c4eaf950110250aceb50a1f}\index{nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.cylinder\_builder.CylinderBuilder@{nxopenkit.features.cylinder\_builder.CylinderBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_a3d54e2888c4eaf950110250aceb50a1f} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder}{Cylinder\+Builder}}  nxopenkit.\+features.\+cylinder\+\_\+builder.\+Cylinder\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{associate\+\_\+origin}{ = {\ttfamily True}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Set cylinder origin associativity.
 
+Args:
+    associate_origin (bool, optional): Whether to associate the origin.
+        Defaults to True.
+
+Returns:
+    CylinderBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_doc-variable-members}
 \Hypertarget{classnxopenkit_1_1features_1_1cylinder__builder_1_1_cylinder_builder_doc-variable-members}

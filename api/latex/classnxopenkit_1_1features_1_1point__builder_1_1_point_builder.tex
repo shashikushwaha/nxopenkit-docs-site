@@ -114,6 +114,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create NX point features from existing or calculated points.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -123,7 +127,15 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_a124c0956f6ab9cd1d2c9a76ecbfc6a78} 
 nxopenkit.\+features.\+point\+\_\+builder.\+Point\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a point feature builder.
+
+Args:
+    point (Point): Point used to create the NX feature.
+
+Returns:
+    None: The builder is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -207,7 +219,15 @@ Help points guide NX when choosing the intended intersection.
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_a2fdc7721f00885556aaa1580c7bd40f3} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder}{Point\+Builder}} nxopenkit.\+features.\+point\+\_\+builder.\+Point\+Builder.\+create\+\_\+from\+\_\+point3d (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{point3d}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_a253238ffc1e82d861911f238efcd767e}\index{nxopenkit.features.point\_builder.PointBuilder@{nxopenkit.features.point\_builder.PointBuilder}!create\_offset\_point@{create\_offset\_point}}
+\begin{DoxyVerb}Create a PointBuilder instance from a Point3d object.
+
+Args:
+    point3d (Point3d): Point coordinates.
+
+Returns:
+    PointBuilder: Configured point feature builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_a253238ffc1e82d861911f238efcd767e}\index{nxopenkit.features.point\_builder.PointBuilder@{nxopenkit.features.point\_builder.PointBuilder}!create\_offset\_point@{create\_offset\_point}}
 \index{create\_offset\_point@{create\_offset\_point}!nxopenkit.features.point\_builder.PointBuilder@{nxopenkit.features.point\_builder.PointBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_offset\_point()}{create\_offset\_point()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_a253238ffc1e82d861911f238efcd767e} 
@@ -238,7 +258,12 @@ Help points guide NX when choosing the intended intersection.
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_a6f5741a5559cc0c1127904c3264fc859} 
  NXOpen.\+Features.\+Point\+Feature\+Builder nxopenkit.\+features.\+point\+\_\+builder.\+Point\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX point feature builder.
 
+Returns:
+    NXOpen.Features.PointFeatureBuilder: Underlying NX builder.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_doc-variable-members}
 \Hypertarget{classnxopenkit_1_1features_1_1point__builder_1_1_point_builder_doc-variable-members}

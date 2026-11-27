@@ -96,7 +96,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#aeee2a541acf9cfe1299470e0e078a5d1" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a3caa65aba06e733833812ec8c1dfe1c7" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="160.75,-120 23.25,-120 23.25,-88 160.75,-88 160.75,-120"/>
 <text xml:space="preserve" text-anchor="start" x="31.25" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">nxopenkit.core.named</text>
 <text xml:space="preserve" text-anchor="middle" x="92" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">_object.NamedObject.name</text>

@@ -162,7 +162,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3929990ffe572d43989cc7c466d8d1fc pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a3929990ffe572d43989cc7c466d8d1fc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a3929990ffe572d43989cc7c466d8d1fc">_undo_mark</a> (self)</td></tr>
 <tr class="memitem:a4f2ce6c4def9674082c04b47a6138c82 pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a4f2ce6c4def9674082c04b47a6138c82"><td class="memItemLeft">None&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a4f2ce6c4def9674082c04b47a6138c82">_validate_tolerance</a> (self, float tolerance)</td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Commit NX builders and return the objects they create.</pre> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a41da2c53e7bc4960509bc450a784d920" name="a41da2c53e7bc4960509bc450a784d920"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41da2c53e7bc4960509bc450a784d920">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -177,7 +178,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Initialize the generic NX builder base.
+
+Returns:
+    None: The builder state is initialized.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1features_1_1builder_1_1_builder_a41da2c53e7bc4960509bc450a784d920_cgraph.svg" width="186" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -205,7 +210,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Commit the NX builder and return committed objects.
+
+Returns:
+    List[NXOpen.NXObject]: Objects created or modified by the builder.
+
+Raises:
+    ValueError: If no committed NX object is returned or NX raises an
+        exception.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1features_1_1builder_1_1_builder_a14921fbd6661388180a060025573c032_cgraph.svg" width="394" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>

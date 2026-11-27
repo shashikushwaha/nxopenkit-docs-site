@@ -35,7 +35,7 @@ NXOpen.\+Datum\+Plane \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1datum__plan
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a91324ac9c89d4e6475872d4c8132f3a3}{\+\_\+\+\_\+init\+\_\+\_}} (self, NXOpen.\+NXObject nxobject)
 \item 
-str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_aeee2a541acf9cfe1299470e0e078a5d1}{name}} (self)
+str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a3caa65aba06e733833812ec8c1dfe1c7}{name}} (self)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object_a194bb2f7e779bee14e8810ee0b5d1f07}{name}} (self, value)
 \end{DoxyCompactItemize}
@@ -72,6 +72,10 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wrap an NX datum plane.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1datum__plane_1_1_datum_plane_doc-constructors}
 \Hypertarget{classnxopenkit_1_1core_1_1datum__plane_1_1_datum_plane_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -81,7 +85,15 @@ str \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_objec
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1datum__plane_1_1_datum_plane_ad41d038da307588f420b9a69cb130ab4} 
 nxopenkit.\+core.\+datum\+\_\+plane.\+Datum\+Plane.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nx\+Datum\+Plane}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize the wrapper from an NX datum plane.
+
+Args:
+    nxDatumPlane: Underlying NX Open datum-plane object.
+
+Returns:
+    None: The wrapper is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -106,11 +118,17 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1datum__plane_1_1_datum_plane_aa4a02635da81820bb75654218923ee4a} 
  NXOpen.\+Datum\+Plane nxopenkit.\+core.\+datum\+\_\+plane.\+Datum\+Plane.\+to\+\_\+nx (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the underlying NX Open datum-plane object.
 
+Returns:
+    NXOpen.DatumPlane: Wrapped datum-plane object.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1displayable__object_1_1_displayable_object_a0ecc225d2b39ea403b7182a5d69b00f9}{nxopenkit.\+core.\+displayable\+\_\+object.\+Displayable\+Object}}.
 
-Here is the caller graph for this function:\nopagebreak
+Here is the caller graph for this function:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

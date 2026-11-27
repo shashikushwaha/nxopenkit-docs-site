@@ -139,7 +139,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5e1b5d73255275c8180bc11549e4e370" id="r_a5e1b5d73255275c8180bc11549e4e370"><td class="memItemLeft"><a class="el" href="classnxopenkit_1_1core_1_1measurement_1_1_closest_object_result.html">ClosestObjectResult</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5e1b5d73255275c8180bc11549e4e370">get_closest_object</a> (Union[<a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html">TaggedObject</a>, <a class="el" href="classnxopenkit_1_1maths_1_1point3d_1_1_point3d.html">Point3d</a>] source, Sequence[<a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html">TaggedObject</a>] candidates)</td></tr>
 <tr class="memitem:a6c766695bf206628a193f3c00c2f8c86" id="r_a6c766695bf206628a193f3c00c2f8c86"><td class="memItemLeft"><a class="el" href="classnxopenkit_1_1core_1_1measurement_1_1_closest_object_result.html">ClosestObjectResult</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6c766695bf206628a193f3c00c2f8c86">get_closest_pair</a> (Sequence[<a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html">TaggedObject</a>] sources, Sequence[<a class="el" href="classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object.html">TaggedObject</a>] candidates)</td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Provide NX measurement operations.</pre> </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a5e1b5d73255275c8180bc11549e4e370" name="a5e1b5d73255275c8180bc11549e4e370"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e1b5d73255275c8180bc11549e4e370">&#9670;&#160;</a></span>get_closest_object()</h2>
 
@@ -166,7 +167,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Find the candidate object closest to a source object or point.
 
+Args:
+    source (TaggedObject or Point3d): Source object or point.
+    candidates (Sequence[TaggedObject]): Candidate NX objects.
+
+Returns:
+    ClosestObjectResult: Closest candidate and measurement points.
+</pre> 
 </div>
 </div>
 <a id="a6c766695bf206628a193f3c00c2f8c86" name="a6c766695bf206628a193f3c00c2f8c86"></a>
@@ -195,7 +204,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Find the closest pair among source and candidate collections.
 
+Args:
+    sources (Sequence[TaggedObject]): Source NX objects.
+    candidates (Sequence[TaggedObject]): Candidate NX objects.
+
+Returns:
+    ClosestObjectResult: Closest source-candidate pair and measurement points.
+</pre> 
 </div>
 </div>
 <a id="a683312dfbf53982125d84d2ea780c0aa" name="a683312dfbf53982125d84d2ea780c0aa"></a>
@@ -224,7 +241,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<pre class="fragment">Measure the minimum distance between two objects or points.
 
+Args:
+    source (TaggedObject or Point3d): Source NX object or point.
+    destination (TaggedObject or Point3d): Destination NX object or point.
+
+Returns:
+    MinimumDistanceResult: Distance and closest points on both inputs.
+</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

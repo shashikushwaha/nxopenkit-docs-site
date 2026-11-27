@@ -186,7 +186,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3929990ffe572d43989cc7c466d8d1fc pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a3929990ffe572d43989cc7c466d8d1fc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a3929990ffe572d43989cc7c466d8d1fc">_undo_mark</a> (self)</td></tr>
 <tr class="memitem:a4f2ce6c4def9674082c04b47a6138c82 pro_methods_classnxopenkit_1_1features_1_1base__builder_1_1_base_builder" id="r_a4f2ce6c4def9674082c04b47a6138c82"><td class="memItemLeft">None&#160;</td><td class="memItemRight"><a class="el" href="classnxopenkit_1_1features_1_1base__builder_1_1_base_builder.html#a4f2ce6c4def9674082c04b47a6138c82">_validate_tolerance</a> (self, float tolerance)</td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Configure and create an NX extrude feature.</pre> </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a865375fe08a50cc36c11b11a501067f5" name="a865375fe08a50cc36c11b11a501067f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a865375fe08a50cc36c11b11a501067f5">&#9670;&#160;</a></span>__init__()</h2>
 
@@ -220,7 +221,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Initialize an extrude feature builder.
 
+Args:
+    curves (Sequence[ICurve]): Profile curves to extrude.
+    start_distance (str or float): Start-limit distance.
+    end_distance (str or float, optional): End-limit distance.
+    direction (Vector3d, optional): Extrusion direction.
+
+Returns:
+    None: The builder is initialized.
+</pre> 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -247,7 +258,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Configure a boolean operation for the extrude feature.
 
+Args:
+    boolean_option (NXOpen.GeometricUtilities.BooleanOperation.BooleanType): Boolean operation.
+    boolean_target_body (Sequence[Body]): Target bodies.
+
+Returns:
+    ExtrudeBuilder: This builder for method chaining.
+</pre> 
 </div>
 </div>
 <a id="a78726b8276c5dbec8f6f9d9e516ee7f0" name="a78726b8276c5dbec8f6f9d9e516ee7f0"></a>
@@ -283,7 +302,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Factory method to create an instance of ExtrudeBuilder.
 
+Args:
+    curves (Sequence[ICurve]): Profile curves to extrude.
+    start_distance (str or float): Start-limit distance.
+    end_distance (str or float, optional): End-limit distance.
+    direction (Vector3d, optional): Extrusion direction.
+
+Returns:
+    ExtrudeBuilder: An instance of ExtrudeBuilder configured with the given parameters.
+</pre> 
 </div>
 </div>
 <a id="a7bd97ea690b2ae2c5fd5b53e51e28207" name="a7bd97ea690b2ae2c5fd5b53e51e28207"></a>
@@ -314,7 +343,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Configure draft type and angle.
 
+Args:
+    draft_type (NXOpen.GeometricUtilities.SimpleDraft.SimpleDraftType): Draft type.
+    draft_angle (float or str): Draft angle.
+    draft_option (NXOpen.GeometricUtilities.MultiDraft.AngleOption, optional): Angle option.
+
+Returns:
+    ExtrudeBuilder: This builder for method chaining.
+</pre> 
 </div>
 </div>
 <a id="a80deef273f927e48e5710e7cebaa1b04" name="a80deef273f927e48e5710e7cebaa1b04"></a>
@@ -331,7 +369,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Get the underlying NX extrude builder.
 
+Returns:
+    NXOpen.Features.ExtrudeBuilder: Underlying NX builder.
+
+Raises:
+    RuntimeError: If the NX builder has not been initialized.
+</pre> 
 </div>
 </div>
 <a id="aba7f850582676b8c1b3f06427337f1ca" name="aba7f850582676b8c1b3f06427337f1ca"></a>
@@ -362,7 +407,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<pre class="fragment">Configure symmetric or nonsymmetric extrusion offsets.
 
+Args:
+    offset_option (NXOpen.GeometricUtilities.Type): Offset mode.
+    end_offset (float or str): End offset value.
+    start_offset (float or str, optional): Start offset for nonsymmetric offset.
+
+Returns:
+    ExtrudeBuilder: This builder for method chaining.
+</pre> 
 </div>
 </div>
 <a id="afc13317b0c30109f3118c67359dc3282" name="afc13317b0c30109f3118c67359dc3282"></a>
@@ -388,7 +442,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
+<pre class="fragment">Configure extrude tolerances and body type.
+
+Args:
+    body_type (NXOpen.GeometricUtilities.FeatureOptions.BodyStyle, optional): Body style.
+    tolerance (float, optional): Modeling distance tolerance.
+
+Returns:
+    ExtrudeBuilder: This builder for method chaining.
+</pre> <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classnxopenkit_1_1features_1_1extrude__builder_1_1_extrude_builder_afc13317b0c30109f3118c67359dc3282_cgraph.svg" width="424" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>

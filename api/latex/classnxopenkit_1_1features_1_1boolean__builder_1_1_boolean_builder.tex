@@ -104,6 +104,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX Unite, Subtract, or Intersect operations.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -113,7 +117,21 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_a3877df970221d2cfac79901bd4f419ee} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder}{Boolean\+Builder}} nxopenkit.\+features.\+boolean\+\_\+builder.\+Boolean\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}}]{target\+\_\+body}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]}]{tool\+\_\+bodies}{, }\item[{NXOpen.\+Features.\+Feature.\+Boolean\+Type }]{boolean\+\_\+type}{ = {\ttfamily NXOpen.Features.Feature.BooleanType.Unite}}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a Boolean feature builder.
+
+Args:
+    target_body (Body): Body that receives the Boolean operation.
+    tool_bodies (Sequence[Body]): Bodies used as Boolean tools.
+    boolean_type (NXOpen.Features.Feature.BooleanType, optional):
+        Unite, Subtract, or Intersect operation. Defaults to Unite.
+
+Returns:
+    None: The builder is initialized.
+
+Raises:
+    ValueError: If no tool bodies are supplied or boolean_type is None.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -138,31 +156,74 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_a55406380cbf39b9b4de0b3427a1202d2} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder}{Boolean\+Builder}} nxopenkit.\+features.\+boolean\+\_\+builder.\+Boolean\+Builder.\+create\+\_\+intersect (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}}]{target\+\_\+body}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]}]{tool\+\_\+bodies}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_aa12d332882e3a9017d1919d4098e0abb}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!create\_subtract@{create\_subtract}}
+\begin{DoxyVerb}Create an Intersect Boolean feature builder.
+
+Args:
+    target_body (Body): Target body.
+    tool_bodies (Sequence[Body]): Intersecting tool bodies.
+
+Returns:
+    BooleanBuilder: Configured Intersect Boolean builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_aa12d332882e3a9017d1919d4098e0abb}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!create\_subtract@{create\_subtract}}
 \index{create\_subtract@{create\_subtract}!nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_subtract()}{create\_subtract()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_aa12d332882e3a9017d1919d4098e0abb} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder}{Boolean\+Builder}} nxopenkit.\+features.\+boolean\+\_\+builder.\+Boolean\+Builder.\+create\+\_\+subtract (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}}]{target\+\_\+body}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]}]{tool\+\_\+bodies}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_ab3757eb019598fc2e409c1c23560141b}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!create\_unit@{create\_unit}}
+\begin{DoxyVerb}Create a Subtract Boolean feature builder.
+
+Args:
+    target_body (Body): Target body.
+    tool_bodies (Sequence[Body]): Tool bodies to subtract.
+
+Returns:
+    BooleanBuilder: Configured Subtract Boolean builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_ab3757eb019598fc2e409c1c23560141b}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!create\_unit@{create\_unit}}
 \index{create\_unit@{create\_unit}!nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_unit()}{create\_unit()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_ab3757eb019598fc2e409c1c23560141b} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder}{Boolean\+Builder}} nxopenkit.\+features.\+boolean\+\_\+builder.\+Boolean\+Builder.\+create\+\_\+unit (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}}]{target\+\_\+body}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}]}]{tool\+\_\+bodies}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_ab768cd69ab972bb6e47572ca9488bb60}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!nx\_builder@{nx\_builder}}
+\begin{DoxyVerb}Create a Unite Boolean feature builder.
+
+Args:
+    target_body (Body): Target body.
+    tool_bodies (Sequence[Body]): Tool bodies to unite.
+
+Returns:
+    BooleanBuilder: Configured Unite Boolean builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_ab768cd69ab972bb6e47572ca9488bb60}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!nx\_builder@{nx\_builder}}
 \index{nx\_builder@{nx\_builder}!nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}}
 \doxysubsubsection{\texorpdfstring{nx\_builder()}{nx\_builder()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_ab768cd69ab972bb6e47572ca9488bb60} 
  NXOpen.\+Features.\+Boolean\+Builder nxopenkit.\+features.\+boolean\+\_\+builder.\+Boolean\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_a697eb749df92b2e03025fbe576fe599d}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!settings@{settings}}
+\begin{DoxyVerb}Get the underlying NX Boolean builder.
+
+Returns:
+    NXOpen.Features.BooleanBuilder: Underlying NX Boolean builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_a697eb749df92b2e03025fbe576fe599d}\index{nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.boolean\_builder.BooleanBuilder@{nxopenkit.features.boolean\_builder.BooleanBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder_a697eb749df92b2e03025fbe576fe599d} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1boolean__builder_1_1_boolean_builder}{Boolean\+Builder}} nxopenkit.\+features.\+boolean\+\_\+builder.\+Boolean\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float \texorpdfstring{$\vert$}{|} None }]{tolerance}{ = {\ttfamily None}, }\item[{bool }]{keep\+\_\+target}{ = {\ttfamily False}, }\item[{bool }]{keep\+\_\+tool}{ = {\ttfamily False}, }\item[{bool }]{convert\+\_\+to\+\_\+sew}{ = {\ttfamily False}}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Configure Boolean tolerances and copy/convert options.
+
+Args:
+    tolerance (float, optional): Modeling tolerance.
+    keep_target (bool, optional): Keep target copies. Defaults to False.
+    keep_tool (bool, optional): Keep tool copies. Defaults to False.
+    convert_to_sew (bool, optional): Convert the result to a sew result.
+
+Returns:
+    BooleanBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

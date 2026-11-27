@@ -107,6 +107,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX datum-axis features.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -116,7 +120,27 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a1a77ab1cea9be1ed96926b6331c666bf} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}} nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Features.\+Datum\+Axis\+Builder.\+Types}]{type}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}},  None]\+ }]{geometry1}{ = {\ttfamily None}, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}},  None]\+ }]{geometry2}{ = {\ttfamily None}, }\item[{Union\+[Sequence\+[NXOpen.\+Selection\+Intent\+Rule]\+, None]\+ }]{rules}{ = {\ttfamily None}, }\item[{str }]{expression}{ = {\ttfamily "{}0.0"{}}, }\item[{bool }]{percent}{ = {\ttfamily True}, }\item[{NXOpen.\+Features.\+Datum\+Axis\+Builder.\+Curve\+Orientations}]{curve\+\_\+orientation}{ = {\ttfamily NXOpen.Features.DatumAxisBuilder.CurveOrientations.Normal}, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}, None]\+ }]{orientation\+\_\+object}{ = {\ttfamily None}, }\item[{NXOpen.\+ICurve }]{seed\+\_\+curve}{ = {\ttfamily NXOpen.NXObject.Null}, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}} }]{help\+\_\+point}{ = {\ttfamily \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}(0,0,0)}}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a datum-axis feature builder.
+
+Args:
+    type (NXOpen.Features.DatumAxisBuilder.Types): Datum-axis creation mode.
+    geometry1 (NamedObject, optional): First source geometry.
+    geometry2 (NamedObject, optional): Second source geometry.
+    rules (Sequence[NXOpen.SelectionIntentRule], optional): Selection rules for curve-based axes.
+    expression (str, optional): Arc-length or percentage expression. Defaults to "0.0".
+    percent (bool, optional): Whether expression uses a percentage. Defaults to True.
+    curve_orientation (NXOpen.Features.DatumAxisBuilder.CurveOrientations, optional): Curve orientation mode.
+    orientation_object (NamedObject, optional): Object controlling orientation.
+    seed_curve (NXOpen.ICurve, optional): Seed curve for on-path axes.
+    help_point (Point3d, optional): Point used to resolve section selection.
+
+Returns:
+    None: The builder is initialized.
+
+Raises:
+    ValueError: If required geometry or rules are missing.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -141,67 +165,152 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_af6e0fd695116e608d0b5060321813d1e} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+axis\+\_\+orientation (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{reverse\+\_\+direction}{ = {\ttfamily False}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a3eeedfd72ccfbddeb93a249a68f24b74}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_along\_x\_direction@{create\_along\_x\_direction}}
+\begin{DoxyVerb}Set whether the datum-axis direction is reversed.
+
+Args:
+    reverse_direction (bool, optional): Reverse the axis direction.
+        Defaults to False.
+
+Returns:
+    DatumAxisBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a3eeedfd72ccfbddeb93a249a68f24b74}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_along\_x\_direction@{create\_along\_x\_direction}}
 \index{create\_along\_x\_direction@{create\_along\_x\_direction}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_along\_x\_direction()}{create\_along\_x\_direction()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a3eeedfd72ccfbddeb93a249a68f24b74} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+create\+\_\+along\+\_\+x\+\_\+direction (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a40d9770fb0393e7bdf5d10aa7401eff3}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_along\_y\_direction@{create\_along\_y\_direction}}
+\begin{DoxyVerb}Create a datum-axis builder along the X direction.
+
+Returns:
+    DatumAxisBuilder: Configured X-axis builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a40d9770fb0393e7bdf5d10aa7401eff3}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_along\_y\_direction@{create\_along\_y\_direction}}
 \index{create\_along\_y\_direction@{create\_along\_y\_direction}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_along\_y\_direction()}{create\_along\_y\_direction()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a40d9770fb0393e7bdf5d10aa7401eff3} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+create\+\_\+along\+\_\+y\+\_\+direction (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a696657f9302d25d9f8fce6e31c6c98f7}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_along\_z\_direction@{create\_along\_z\_direction}}
+\begin{DoxyVerb}Create a datum-axis builder along the Y direction.
+
+Returns:
+    DatumAxisBuilder: Configured Y-axis builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a696657f9302d25d9f8fce6e31c6c98f7}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_along\_z\_direction@{create\_along\_z\_direction}}
 \index{create\_along\_z\_direction@{create\_along\_z\_direction}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_along\_z\_direction()}{create\_along\_z\_direction()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a696657f9302d25d9f8fce6e31c6c98f7} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+create\+\_\+along\+\_\+z\+\_\+direction (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_ab3f1bd080c60689dc531146a50220579}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_by\_intersection@{create\_by\_intersection}}
+\begin{DoxyVerb}Create a datum-axis builder along the Z direction.
+
+Returns:
+    DatumAxisBuilder: Configured Z-axis builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_ab3f1bd080c60689dc531146a50220579}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_by\_intersection@{create\_by\_intersection}}
 \index{create\_by\_intersection@{create\_by\_intersection}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_intersection()}{create\_by\_intersection()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_ab3f1bd080c60689dc531146a50220579} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+create\+\_\+by\+\_\+intersection (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}}]{geometry1}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}}]{geometry2}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a954856fe49cb317ab182c7c22f2101f4}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_by\_point\_direction@{create\_by\_point\_direction}}
+\begin{DoxyVerb}Create a datum axis at the intersection of two objects.
+
+Args:
+    geometry1 (NamedObject): First intersection object.
+    geometry2 (NamedObject): Second intersection object.
+
+Returns:
+    DatumAxisBuilder: Configured datum-axis builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a954856fe49cb317ab182c7c22f2101f4}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_by\_point\_direction@{create\_by\_point\_direction}}
 \index{create\_by\_point\_direction@{create\_by\_point\_direction}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_point\_direction()}{create\_by\_point\_direction()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a954856fe49cb317ab182c7c22f2101f4} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+create\+\_\+by\+\_\+point\+\_\+direction (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{direction}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a132ef31bffb54057ebf0bf459ad1d821}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_on\_curve\_or\_face\_axis@{create\_on\_curve\_or\_face\_axis}}
+\begin{DoxyVerb}Create a datum axis from a point and direction.
+
+Args:
+    point (Point): Axis origin point.
+    direction (Direction): Axis direction.
+
+Returns:
+    DatumAxisBuilder: Configured datum-axis builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a132ef31bffb54057ebf0bf459ad1d821}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_on\_curve\_or\_face\_axis@{create\_on\_curve\_or\_face\_axis}}
 \index{create\_on\_curve\_or\_face\_axis@{create\_on\_curve\_or\_face\_axis}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_on\_curve\_or\_face\_axis()}{create\_on\_curve\_or\_face\_axis()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a132ef31bffb54057ebf0bf459ad1d821} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+create\+\_\+on\+\_\+curve\+\_\+or\+\_\+face\+\_\+axis (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}}]{geometry}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a1f6209afb73e63af22129f7fb9be96b5}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_on\_curves\_vector@{create\_on\_curves\_vector}}
+\begin{DoxyVerb}Create a datum axis from a curve or face axis.
+
+Args:
+    geometry (NamedObject): Source curve or face.
+
+Returns:
+    DatumAxisBuilder: Configured datum-axis builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a1f6209afb73e63af22129f7fb9be96b5}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!create\_on\_curves\_vector@{create\_on\_curves\_vector}}
 \index{create\_on\_curves\_vector@{create\_on\_curves\_vector}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_on\_curves\_vector()}{create\_on\_curves\_vector()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a1f6209afb73e63af22129f7fb9be96b5} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+create\+\_\+on\+\_\+curves\+\_\+vector (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}, Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}]\+]}]{curves}{, }\item[{Double }]{arc\+\_\+length}{ = {\ttfamily "{}0.0"{}}, }\item[{bool }]{percent}{ = {\ttfamily True}, }\item[{NXOpen.\+Features.\+Datum\+Axis\+Builder.\+Curve\+Orientations}]{curve\+\_\+orientation}{ = {\ttfamily NXOpen.Features.DatumAxisBuilder.CurveOrientations.Normal}, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}, None]\+ }]{orientation\+\_\+object}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}} }]{help\+\_\+point}{ = {\ttfamily \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}(0,0,0)}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a12ab2fa11309e23bfcbbce83fb2ca2b0}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!nx\_builder@{nx\_builder}}
+\begin{DoxyVerb}Create a datum axis on one or more curves.
+
+Args:
+    curves (ICurve or Sequence[ICurve]): Curve or curves used to locate the axis.
+    arc_length (Double, optional): On-path position or percentage. Defaults to "0.0".
+    percent (bool, optional): Whether arc_length is a percentage. Defaults to True.
+    curve_orientation (NXOpen.Features.DatumAxisBuilder.CurveOrientations, optional): Curve orientation mode.
+    orientation_object (NamedObject, optional): Optional orientation object.
+    help_point (Point3d, optional): Point used to resolve a composite curve.
+
+Returns:
+    DatumAxisBuilder: Configured datum-axis builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a12ab2fa11309e23bfcbbce83fb2ca2b0}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!nx\_builder@{nx\_builder}}
 \index{nx\_builder@{nx\_builder}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{nx\_builder()}{nx\_builder()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a12ab2fa11309e23bfcbbce83fb2ca2b0} 
  NXOpen.\+Features.\+Datum\+Axis\+Builder nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_aa4bc6b8605f94a2bce0f84702d25d707}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!resize@{resize}}
+\begin{DoxyVerb}Get the underlying NX datum-axis builder.
+
+Returns:
+    NXOpen.Features.DatumAxisBuilder: Underlying NX builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_aa4bc6b8605f94a2bce0f84702d25d707}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!resize@{resize}}
 \index{resize@{resize}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{resize()}{resize()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_aa4bc6b8605f94a2bce0f84702d25d707} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+resize (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float     }]{end\+\_\+distance}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a7a814d6d5ad9453e719454f8cc94b02a}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!settings@{settings}}
+\begin{DoxyVerb}Set the datum-axis resized end distance.
+
+Args:
+    end_distance (float): Resized end distance.
+
+Returns:
+    DatumAxisBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a7a814d6d5ad9453e719454f8cc94b02a}\index{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder@{nxopenkit.features.datum\_axis\_builder.DatumAxisBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_a7a814d6d5ad9453e719454f8cc94b02a} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder}{Datum\+Axis\+Builder}}  nxopenkit.\+features.\+datum\+\_\+axis\+\_\+builder.\+Datum\+Axis\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{is\+\_\+associative}{ = {\ttfamily True}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Set datum-axis associativity.
 
+Args:
+    is_associative (bool, optional): Whether the datum axis is associative.
+        Defaults to True.
+
+Returns:
+    DatumAxisBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_doc-variable-members}
 \Hypertarget{classnxopenkit_1_1features_1_1datum__axis__builder_1_1_datum_axis_builder_doc-variable-members}

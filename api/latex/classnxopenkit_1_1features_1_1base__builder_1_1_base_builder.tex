@@ -2,7 +2,8 @@
 \hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder}{}\label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder}\index{nxopenkit.features.base\_builder.BaseBuilder@{nxopenkit.features.base\_builder.BaseBuilder}}
 
 
-Inheritance diagram for nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder:\nopagebreak
+Inheritance diagram for nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -55,6 +56,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provide shared session, tolerance, builder, and undo-mark state.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -64,7 +69,12 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a19e291b7cac9f123265ef372185b3276} 
 nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialize the base builder state for the active NX session.
 
+Returns:
+    None: The builder state is initialized.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-func-members}
 \Hypertarget{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_doc-func-members}
@@ -75,7 +85,12 @@ nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+\+\_\+init\+\_\+\
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a53636559a5a898c910c0719ccd0ca39e} 
 nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+destroy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Here is the caller graph for this function:\nopagebreak
+\begin{DoxyVerb}Destroy the active NX builder, if one exists.
+
+Returns:
+    None: The NX builder is destroyed and cleared.
+\end{DoxyVerb}
+ Here is the caller graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -88,7 +103,12 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a90997bdb4a75fd0bb2a2428f24182b4f} 
 nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+set\+\_\+undo\+\_\+mark (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Here is the caller graph for this function:\nopagebreak
+\begin{DoxyVerb}Create a visible undo mark and store its identifier.
+
+Returns:
+    None: The undo mark identifier is updated.
+\end{DoxyVerb}
+ Here is the caller graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -101,7 +121,12 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a3929990ffe572d43989cc7c466d8d1fc} 
 nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+undo\+\_\+mark (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Here is the caller graph for this function:\nopagebreak
+\begin{DoxyVerb}Restore and remove the stored undo mark.
+
+Returns:
+    None: The work session is restored to the undo mark.
+\end{DoxyVerb}
+ Here is the caller graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -114,7 +139,18 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1base__builder_1_1_base_builder_a4f2ce6c4def9674082c04b47a6138c82} 
  None nxopenkit.\+features.\+base\+\_\+builder.\+Base\+Builder.\+\_\+validate\+\_\+tolerance (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{tolerance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-Here is the caller graph for this function:\nopagebreak
+\begin{DoxyVerb}Validate tolerance and update distance and chaining tolerances.
+
+Args:
+    tolerance (float): Positive finite modeling tolerance.
+
+Returns:
+    None: The tolerance values are updated.
+
+Raises:
+    ValueError: If tolerance is not finite or positive.
+\end{DoxyVerb}
+ Here is the caller graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

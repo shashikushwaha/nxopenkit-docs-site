@@ -2,7 +2,8 @@
 \hypertarget{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder}{}\label{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder}\index{nxopenkit.features.feature\_builder.FeatureBuilder@{nxopenkit.features.feature\_builder.FeatureBuilder}}
 
 
-Inheritance diagram for nxopenkit.\+features.\+feature\+\_\+builder.\+Feature\+Builder:\nopagebreak
+Inheritance diagram for nxopenkit.\+features.\+feature\+\_\+builder.\+Feature\+Builder:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -75,6 +76,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base builder for NX features that use CommitFeature.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -84,7 +89,12 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder_a1834f636003e4a5639926428dd7e05e4} 
 nxopenkit.\+features.\+feature\+\_\+builder.\+Feature\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialize feature-builder state.
 
+Returns:
+    None: The feature builder state is initialized.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder_doc-func-members}
 \Hypertarget{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder_doc-func-members}
@@ -95,7 +105,15 @@ nxopenkit.\+features.\+feature\+\_\+builder.\+Feature\+Builder.\+\_\+\+\_\+init\
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder_adc0f6d68108fd2db81f24f8478535e5e} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1feature_1_1_feature}{Feature}} nxopenkit.\+features.\+feature\+\_\+builder.\+Feature\+Builder.\+commit\+\_\+feature (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Commit the NX feature builder and return a feature wrapper.
 
+Returns:
+    Feature: Committed NX feature wrapper.
+
+Raises:
+    ValueError: If NX returns no feature or commit fails.
+\end{DoxyVerb}
+ 
 
 Reimplemented in \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_af4019354209502b61d645ae978c207ec}{nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder}}.
 

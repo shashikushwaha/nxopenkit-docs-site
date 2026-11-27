@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html#aa715830f5de77b5fb4e31333823c9080":[1,0,0,2,2,0,16],
+"classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html#aab3217f26c4da2c14a0e2adcf9378244":[0,0,0,2,2,0,2],
+"classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html#aab3217f26c4da2c14a0e2adcf9378244":[1,0,0,2,2,0,2],
+"classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html#ae8ec131ab65042f6ad0a1f955f76643e":[0,0,0,2,2,0,17],
+"classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html#ae8ec131ab65042f6ad0a1f955f76643e":[1,0,0,2,2,0,17],
+"composite__curve__builder_8py.html":[2,0,0,0,1,5],
 "converters_8py.html":[2,0,0,0,0,7],
 "coordinate__system_8py.html":[2,0,0,0,0,8],
 "core_2____init_____8py.html":[2,0,0,0,0,0],

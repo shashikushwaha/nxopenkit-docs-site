@@ -20,6 +20,10 @@ Collaboration diagram for nxopenkit.\+core.\+measurement.\+Measurement:\nopagebr
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provide NX measurement operations.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1core_1_1measurement_1_1_measurement_doc-func-members}
 \Hypertarget{classnxopenkit_1_1core_1_1measurement_1_1_measurement_doc-func-members}
 \doxysubsection{Member Function Documentation}
@@ -29,19 +33,46 @@ Collaboration diagram for nxopenkit.\+core.\+measurement.\+Measurement:\nopagebr
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1measurement_1_1_measurement_a5e1b5d73255275c8180bc11549e4e370} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1measurement_1_1_closest_object_result}{Closest\+Object\+Result}} nxopenkit.\+core.\+measurement.\+Measurement.\+get\+\_\+closest\+\_\+object (\begin{DoxyParamCaption}\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object}{Tagged\+Object}}, \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}]}]{source}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object}{Tagged\+Object}}]}]{candidates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1measurement_1_1_measurement_a6c766695bf206628a193f3c00c2f8c86}\index{nxopenkit.core.measurement.Measurement@{nxopenkit.core.measurement.Measurement}!get\_closest\_pair@{get\_closest\_pair}}
+\begin{DoxyVerb}Find the candidate object closest to a source object or point.
+
+Args:
+    source (TaggedObject or Point3d): Source object or point.
+    candidates (Sequence[TaggedObject]): Candidate NX objects.
+
+Returns:
+    ClosestObjectResult: Closest candidate and measurement points.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1measurement_1_1_measurement_a6c766695bf206628a193f3c00c2f8c86}\index{nxopenkit.core.measurement.Measurement@{nxopenkit.core.measurement.Measurement}!get\_closest\_pair@{get\_closest\_pair}}
 \index{get\_closest\_pair@{get\_closest\_pair}!nxopenkit.core.measurement.Measurement@{nxopenkit.core.measurement.Measurement}}
 \doxysubsubsection{\texorpdfstring{get\_closest\_pair()}{get\_closest\_pair()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1measurement_1_1_measurement_a6c766695bf206628a193f3c00c2f8c86} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1measurement_1_1_closest_object_result}{Closest\+Object\+Result}} nxopenkit.\+core.\+measurement.\+Measurement.\+get\+\_\+closest\+\_\+pair (\begin{DoxyParamCaption}\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object}{Tagged\+Object}}]}]{sources}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object}{Tagged\+Object}}]}]{candidates}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classnxopenkit_1_1core_1_1measurement_1_1_measurement_a683312dfbf53982125d84d2ea780c0aa}\index{nxopenkit.core.measurement.Measurement@{nxopenkit.core.measurement.Measurement}!get\_minimum\_dist@{get\_minimum\_dist}}
+\begin{DoxyVerb}Find the closest pair among source and candidate collections.
+
+Args:
+    sources (Sequence[TaggedObject]): Source NX objects.
+    candidates (Sequence[TaggedObject]): Candidate NX objects.
+
+Returns:
+    ClosestObjectResult: Closest source-candidate pair and measurement points.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1core_1_1measurement_1_1_measurement_a683312dfbf53982125d84d2ea780c0aa}\index{nxopenkit.core.measurement.Measurement@{nxopenkit.core.measurement.Measurement}!get\_minimum\_dist@{get\_minimum\_dist}}
 \index{get\_minimum\_dist@{get\_minimum\_dist}!nxopenkit.core.measurement.Measurement@{nxopenkit.core.measurement.Measurement}}
 \doxysubsubsection{\texorpdfstring{get\_minimum\_dist()}{get\_minimum\_dist()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1core_1_1measurement_1_1_measurement_a683312dfbf53982125d84d2ea780c0aa} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1measurement_1_1_minimum_distance_result}{Minimum\+Distance\+Result}} nxopenkit.\+core.\+measurement.\+Measurement.\+get\+\_\+minimum\+\_\+dist (\begin{DoxyParamCaption}\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object}{Tagged\+Object}}, \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}]}]{source}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1tagged__object_1_1_tagged_object}{Tagged\+Object}}, \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}]}]{destination}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\begin{DoxyVerb}Measure the minimum distance between two objects or points.
 
+Args:
+    source (TaggedObject or Point3d): Source NX object or point.
+    destination (TaggedObject or Point3d): Destination NX object or point.
+
+Returns:
+    MinimumDistanceResult: Distance and closest points on both inputs.
+\end{DoxyVerb}
+ 
 
 The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
 \item 

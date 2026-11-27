@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#aeee2a541acf9cfe1299470e0e078a5d1',1,'nxopenkit.core.named_object.NamedObject.name(self)'],['../classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a194bb2f7e779bee14e8810ee0b5d1f07',1,'nxopenkit.core.named_object.NamedObject.name(self, value)']]],
+  ['name_0',['name',['../classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a3caa65aba06e733833812ec8c1dfe1c7',1,'nxopenkit.core.named_object.NamedObject.name(self)'],['../classnxopenkit_1_1core_1_1named__object_1_1_named_object.html#a194bb2f7e779bee14e8810ee0b5d1f07',1,'nxopenkit.core.named_object.NamedObject.name(self, value)']]],
   ['named_5fobject_2epy_1',['named_object.py',['../named__object_8py.html',1,'']]],
   ['namedobject_2',['NamedObject',['../classnxopenkit_1_1core_1_1named__object_1_1_named_object.html',1,'nxopenkit::core::named_object']]],
   ['normalize_3',['normalize',['../classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d.html#a449f3dc1242b94862d05efcff7442c23',1,'nxopenkit::maths::vector3d::Vector3d']]],

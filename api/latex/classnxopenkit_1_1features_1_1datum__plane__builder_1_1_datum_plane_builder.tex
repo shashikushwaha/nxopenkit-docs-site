@@ -2,7 +2,8 @@
 \hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{}\label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 
 
-Inheritance diagram for nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder:\nopagebreak
+Inheritance diagram for nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+D
 \end{figure}
 
 
-Collaboration diagram for nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder:\nopagebreak
+Collaboration diagram for nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -74,6 +76,12 @@ NXOpen.\+Features.\+Datum\+Plane\+Featrue \doxymbox{\hyperlink{classnxopenkit_1_
 \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}} \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a71a91f732ab1f14d950343ece0b4def8}{create\+\_\+along\+\_\+zx\+\_\+plane}} (cls)
 \item 
 \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}} \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a3e66522b61006f61ec03290f2dd84304}{create\+\_\+along\+\_\+vector}} (cls, \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}} origin, \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}} vector)
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}} \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a844af3551222a220b0e5d7720b82d907}{create\+\_\+by\+\_\+one\+\_\+point}} (cls, Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}]\+ point)
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}} \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_acc24047971dc232cd2c82c468e1c55d4}{create\+\_\+by\+\_\+point\+\_\+direction}} (cls, Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}]\+ point, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}} direction)
+\item 
+\doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}} \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_aeb9614d820bae4e09b5010c79d4b430a}{create\+\_\+by\+\_\+face\+\_\+point}} (cls, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1face_1_1_face}{Face}} face, \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}} point)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder}{nxopenkit.\+features.\+feature\+\_\+builder.\+Feature\+Builder}}}
 \begin{DoxyCompactItemize}
@@ -137,6 +145,10 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX datum-plane features.\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -146,7 +158,23 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a4f46cfb7be46a6d54ca8facfa222bb97} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}} nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Plane\+Types.\+Method\+Type}]{method\+\_\+type}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}, Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}]\+, None]\+ }]{geometry}{ = {\ttfamily None}, }\item[{NXOpen.\+Section }]{section}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}} }]{origin}{ = {\ttfamily \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}(0,0,0)}, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}} }]{normal}{ = {\ttfamily \doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1vector3d_1_1_vector3d}{Vector3d}}(0,0,1)}, }\item[{str }]{expression}{ = {\ttfamily "{}0.0"{}}, }\item[{bool }]{percent}{ = {\ttfamily True}, }\item[{NXOpen.\+Plane\+Types.\+Frenet\+Subtype }]{frenet\+\_\+sub\+\_\+type}{ = {\ttfamily NXOpen.PlaneTypes.FrenetSubtype.Normal}, }\item[{NXOpen.\+Plane\+Types.\+Alternate\+Type }]{alternate\+\_\+type}{ = {\ttfamily NXOpen.PlaneTypes.AlternateType.One}}\end{DoxyParamCaption})}
 
-Here is the call graph for this function:\nopagebreak
+\begin{DoxyVerb}Initialize a datum-plane feature builder.
+
+Args:
+    method_type (NXOpen.PlaneTypes.MethodType): Plane construction method.
+    geometry (NamedObject or Sequence[NamedObject], optional): Reference geometry.
+    section (NXOpen.Section, optional): Curve section used by some methods.
+    origin (Point3d, optional): Fixed plane origin.
+    normal (Vector3d, optional): Fixed plane normal.
+    expression (str, optional): Distance or angle expression.
+    percent (bool, optional): Whether the expression is percent-based.
+    frenet_sub_type (NXOpen.PlaneTypes.FrenetSubtype, optional): Frenet orientation.
+    alternate_type (NXOpen.PlaneTypes.AlternateType, optional): Alternate plane solution.
+
+Returns:
+    None: The builder is initialized.
+\end{DoxyVerb}
+ Here is the call graph for this function:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -171,7 +199,12 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_af4019354209502b61d645ae978c207ec} 
  \doxymbox{\hyperlink{classnxopenkit_1_1core_1_1feature_1_1_feature}{Feature}} nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+commit\+\_\+feature (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Evaluate and commit the datum-plane feature.
 
+Returns:
+    Feature: Committed NX datum-plane feature.
+\end{DoxyVerb}
+ 
 
 Reimplemented from \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1feature__builder_1_1_feature_builder_adc0f6d68108fd2db81f24f8478535e5e}{nxopenkit.\+features.\+feature\+\_\+builder.\+Feature\+Builder}}.
 
@@ -219,39 +252,126 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a689081cbd123540a6ac5b2bfbc40c826} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+at\+\_\+angle (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}]}]{geometry}{, }\item[{Double     }]{angle}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_ad0f644831c5837902690f3c7a2b956c7}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_at\_distance@{create\_at\_distance}}
+\begin{DoxyVerb}Create a datum plane by angle relative to reference geometry.
+
+ Args:
+     geometry (Sequence[NamedObject]): Reference geometry.
+     angle (Double): Plane angle.
+
+ Returns:
+     DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_ad0f644831c5837902690f3c7a2b956c7}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_at\_distance@{create\_at\_distance}}
 \index{create\_at\_distance@{create\_at\_distance}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_at\_distance()}{create\_at\_distance()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_ad0f644831c5837902690f3c7a2b956c7} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+at\+\_\+distance (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}}]{geometry}{, }\item[{Double     }]{number\+\_\+of\+\_\+plane}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a25ad1229e0ce65fa5b18fd47a6b51f83}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_bisector@{create\_by\_bisector}}
+\begin{DoxyVerb}Create a datum plane at a specified distance.
+
+Args:
+    geometry (NamedObject): Reference geometry.
+    number_of_plane (Double): Plane offset distance.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a25ad1229e0ce65fa5b18fd47a6b51f83}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_bisector@{create\_by\_bisector}}
 \index{create\_by\_bisector@{create\_by\_bisector}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_bisector()}{create\_by\_bisector()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a25ad1229e0ce65fa5b18fd47a6b51f83} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+bisector (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}]}]{geometry}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a6beb3ee1fd714700a94600ef5d4a6812}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_curve\_point@{create\_by\_curve\_point}}
+\begin{DoxyVerb}Create a bisector datum plane between reference objects.
+
+Args:
+    geometry (Sequence[NamedObject]): Reference objects.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a6beb3ee1fd714700a94600ef5d4a6812}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_curve\_point@{create\_by\_curve\_point}}
 \index{create\_by\_curve\_point@{create\_by\_curve\_point}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_curve\_point()}{create\_by\_curve\_point()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a6beb3ee1fd714700a94600ef5d4a6812} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+curve\+\_\+point (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1icurve_1_1_i_curve}{ICurve}}}]{curve}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_aeb9614d820bae4e09b5010c79d4b430a}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_face\_point@{create\_by\_face\_point}}
+\begin{DoxyVerb}Create a datum plane through a curve and point.
+
+Args:
+    curve (ICurve): Reference curve.
+    point (Point): Reference point.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_aeb9614d820bae4e09b5010c79d4b430a}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_face\_point@{create\_by\_face\_point}}
 \index{create\_by\_face\_point@{create\_by\_face\_point}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
-\doxysubsubsection{\texorpdfstring{create\_by\_face\_point()}{create\_by\_face\_point()}}
+\doxysubsubsection{\texorpdfstring{create\_by\_face\_point()}{create\_by\_face\_point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_aeb9614d820bae4e09b5010c79d4b430a} 
+ \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+face\+\_\+point (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1face_1_1_face}{Face}}}]{face}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a datum plane from a point and direction or face and point.
+
+Args:
+    point or face: Primary reference geometry.
+    direction or point: Secondary reference geometry.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_aeb9614d820bae4e09b5010c79d4b430a}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_face\_point@{create\_by\_face\_point}}
+\index{create\_by\_face\_point@{create\_by\_face\_point}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_by\_face\_point()}{create\_by\_face\_point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_aeb9614d820bae4e09b5010c79d4b430a} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+face\+\_\+point (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1face_1_1_face}{Face}}}]{face}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{point}{}\end{DoxyParamCaption})}
 
 \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a844af3551222a220b0e5d7720b82d907}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_one\_point@{create\_by\_one\_point}}
 \index{create\_by\_one\_point@{create\_by\_one\_point}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
-\doxysubsubsection{\texorpdfstring{create\_by\_one\_point()}{create\_by\_one\_point()}}
+\doxysubsubsection{\texorpdfstring{create\_by\_one\_point()}{create\_by\_one\_point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a844af3551222a220b0e5d7720b82d907} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+one\+\_\+point (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}]}]{point}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_acc24047971dc232cd2c82c468e1c55d4}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_point\_direction@{create\_by\_point\_direction}}
+\begin{DoxyVerb}Create a datum plane from one, two, or three points.
+
+Args:
+    point or point1/point2/point3: Reference points.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a844af3551222a220b0e5d7720b82d907}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_one\_point@{create\_by\_one\_point}}
+\index{create\_by\_one\_point@{create\_by\_one\_point}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_by\_one\_point()}{create\_by\_one\_point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a844af3551222a220b0e5d7720b82d907} 
+ \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+one\+\_\+point (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}]}]{point}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a datum plane through one or more point references.
+
+Args:
+    point or points: Reference point objects.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_acc24047971dc232cd2c82c468e1c55d4}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_point\_direction@{create\_by\_point\_direction}}
 \index{create\_by\_point\_direction@{create\_by\_point\_direction}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
-\doxysubsubsection{\texorpdfstring{create\_by\_point\_direction()}{create\_by\_point\_direction()}}
+\doxysubsubsection{\texorpdfstring{create\_by\_point\_direction()}{create\_by\_point\_direction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_acc24047971dc232cd2c82c468e1c55d4} 
+ \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+point\+\_\+direction (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}]}]{point}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{direction}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a datum plane from a point and direction or face and point.
+
+Args:
+    point or face: Primary reference geometry.
+    direction or point: Secondary reference geometry.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_acc24047971dc232cd2c82c468e1c55d4}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_point\_direction@{create\_by\_point\_direction}}
+\index{create\_by\_point\_direction@{create\_by\_point\_direction}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_by\_point\_direction()}{create\_by\_point\_direction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_acc24047971dc232cd2c82c468e1c55d4} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+point\+\_\+direction (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}]}]{point}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1direction_1_1_direction}{Direction}}}]{direction}{}\end{DoxyParamCaption})}
 
@@ -291,7 +411,15 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a6e2171782ee5a80ae1844428bb1a8269} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+create\+\_\+by\+\_\+through\+\_\+object (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}, Sequence\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1named__object_1_1_named_object}{Named\+Object}}]\+]}]{geometry}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a8d3fd5982c6fd73368c01a26f32ec672}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_two\_lines@{create\_by\_two\_lines}}
+\begin{DoxyVerb}Create a datum plane coincident with one or more objects.
+
+Args:
+    geometry (NamedObject or Sequence[NamedObject]): Reference objects.
+
+Returns:
+    DatumPlaneBuilder: Configured datum-plane builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a8d3fd5982c6fd73368c01a26f32ec672}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!create\_by\_two\_lines@{create\_by\_two\_lines}}
 \index{create\_by\_two\_lines@{create\_by\_two\_lines}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_two\_lines()}{create\_by\_two\_lines()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a8d3fd5982c6fd73368c01a26f32ec672} 
@@ -315,31 +443,73 @@ Here is the caller graph for this function:\nopagebreak
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a2f139360245967972c0e320ac4792535} 
  NXOpen.\+Features.\+Datum\+Plane\+Featrue nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a8c7410661cea0506966c02d5bc583a20}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!offset@{offset}}
+\begin{DoxyVerb}Get the underlying NX datum-plane builder.
+
+Returns:
+    NXOpen.Features.DatumPlaneFeature: Underlying NX builder.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a8c7410661cea0506966c02d5bc583a20}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!offset@{offset}}
 \index{offset@{offset}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{offset()}{offset()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a8c7410661cea0506966c02d5bc583a20} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+offset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Double}]{distance}{, }\item[{bool }]{reverse\+\_\+offset}{ = {\ttfamily False}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_ae89108d77296798d875869abb1eaa8c0}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!plane\_orientation@{plane\_orientation}}
+\begin{DoxyVerb}Configure an offset distance for the datum plane.
+
+Args:
+    distance (Double): Offset distance.
+    reverse_offset (bool, optional): Reverse the offset direction.
+
+Returns:
+    DatumPlaneBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_ae89108d77296798d875869abb1eaa8c0}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!plane\_orientation@{plane\_orientation}}
 \index{plane\_orientation@{plane\_orientation}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{plane\_orientation()}{plane\_orientation()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_ae89108d77296798d875869abb1eaa8c0} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+plane\+\_\+orientation (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{reverse\+\_\+direction}{ = {\ttfamily False}, }\item[{NXOpen.\+Plane\+Types.\+Alternate\+Type }]{alternate\+\_\+type}{ = {\ttfamily NXOpen.PlaneTypes.AlternateType.One}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a11c8a705609fd892d3dbc9fed6947432}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!set\_plane\_corner@{set\_plane\_corner}}
+\begin{DoxyVerb}Set plane direction and alternate solution.
+
+Args:
+    reverse_direction (bool, optional): Flip the plane normal.
+    alternate_type (NXOpen.PlaneTypes.AlternateType, optional): Alternate solution.
+
+Returns:
+    DatumPlaneBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a11c8a705609fd892d3dbc9fed6947432}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!set\_plane\_corner@{set\_plane\_corner}}
 \index{set\_plane\_corner@{set\_plane\_corner}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{set\_plane\_corner()}{set\_plane\_corner()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_a11c8a705609fd892d3dbc9fed6947432} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+set\+\_\+plane\+\_\+corner (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{corner1}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{corner2}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{corner3}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1maths_1_1point3d_1_1_point3d}{Point3d}}}]{corner4}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_af2789bc0b4b95bb8456188f3bd5220c5}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!settings@{settings}}
+\begin{DoxyVerb}Set the four display corner points for the datum plane.
+
+Args:
+    corner1 (Point3d): First corner.
+    corner2 (Point3d): Second corner.
+    corner3 (Point3d): Third corner.
+    corner4 (Point3d): Fourth corner.
+
+Returns:
+    DatumPlaneBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_af2789bc0b4b95bb8456188f3bd5220c5}\index{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder@{nxopenkit.features.datum\_plane\_builder.DatumPlaneBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_af2789bc0b4b95bb8456188f3bd5220c5} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder}{Datum\+Plane\+Builder}}  nxopenkit.\+features.\+datum\+\_\+plane\+\_\+builder.\+Datum\+Plane\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{is\+\_\+associative}{ = {\ttfamily True}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Set fixed-plane builder settings.
 
+Args:
+    is_associative (bool, optional): Requested associativity setting.
+
+Returns:
+    DatumPlaneBuilder: This builder for method chaining.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_doc-variable-members}
 \Hypertarget{classnxopenkit_1_1features_1_1datum__plane__builder_1_1_datum_plane_builder_doc-variable-members}

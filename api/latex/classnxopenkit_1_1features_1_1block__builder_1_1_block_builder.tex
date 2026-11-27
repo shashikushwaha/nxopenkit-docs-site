@@ -104,6 +104,15 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Configure and create NX block features.
+
+Supports origin-and-length, two-points-and-height, and diagonal-points
+construction modes. Boolean operations and origin associativity can be
+configured before committing the feature.
+\end{DoxyVerb}
+ 
+
 \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_doc-constructors}
 \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -113,7 +122,24 @@ None \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1base__builder_1_1_base_b
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_aa1e49b6deff1ebf77e4c425c315f5187} 
 nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+\_\+\+\_\+init\+\_\+\_ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Features.\+Block\+Feature\+Builder.\+Types}]{type}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin\+\_\+point}{, }\item[{Union\+[\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}, None]\+ }]{second\+\_\+point}{ = {\ttfamily None}, }\item[{Double }]{xc\+\_\+length}{ = {\ttfamily 100}, }\item[{Double }]{yc\+\_\+length}{ = {\ttfamily 100}, }\item[{Double }]{zc\+\_\+length}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialize a block feature builder.
 
+Args:
+    type (NXOpen.Features.BlockFeatureBuilder.Types): Block creation mode.
+    origin_point (Point): Origin or first diagonal point.
+    second_point (Point, optional): Second point for applicable modes.
+    xc_length (Double, optional): X edge length. Defaults to 100.
+    yc_length (Double, optional): Y edge length. Defaults to 100.
+    zc_length (Double, optional): Z edge length or height. Defaults to 100.
+
+Returns:
+    None: The builder is initialized.
+
+Raises:
+    TypeError: If a required point has the wrong type.
+    ValueError: If a required numeric value is invalid.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_doc-func-members}
 \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_doc-func-members}
@@ -124,37 +150,92 @@ nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+\_\+\+\_\+init\+\_\
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_aa502a3cc2aac4e52a45a662938de90ae} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder}{Block\+Builder}} nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+boolean (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{NXOpen.\+Features.\+Feature.\+Boolean\+Type}]{boolean\+\_\+option}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1body_1_1_body}{Body}}}]{boolean\+\_\+target\+\_\+body}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a777e1a59d2914e981b0285428e36efd9}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!create\_by\_origin\_lengths@{create\_by\_origin\_lengths}}
+\begin{DoxyVerb}Set the boolean operation for the block feature.
+
+Args:
+    boolean_option (NXOpen.Features.Feature.BooleanType): The boolean operation type.
+    boolean_target_body (Body): The target body for the boolean operation.
+
+Returns:
+    BlockBuilder: The BlockBuilder instance.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a777e1a59d2914e981b0285428e36efd9}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!create\_by\_origin\_lengths@{create\_by\_origin\_lengths}}
 \index{create\_by\_origin\_lengths@{create\_by\_origin\_lengths}!nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_origin\_lengths()}{create\_by\_origin\_lengths()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a777e1a59d2914e981b0285428e36efd9} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder}{Block\+Builder}}  nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+create\+\_\+by\+\_\+origin\+\_\+lengths (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin\+\_\+point}{, }\item[{Double }]{xc\+\_\+length}{ = {\ttfamily 100}, }\item[{Double }]{yc\+\_\+length}{ = {\ttfamily 100}, }\item[{Double }]{zc\+\_\+length}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_ae3ad8fd9dea6dab8acda1223269d165b}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!create\_by\_two\_diagonal\_points@{create\_by\_two\_diagonal\_points}}
+\begin{DoxyVerb}Create a BlockBuilder instance by origin and edge lengths.
+
+Args:
+    cls: The class type.
+    origin_point (Point): The origin point of the block.
+    xc_length (Double, optional): The length in the X direction. Defaults to 100.
+    yc_length (Double, optional): The length in the Y direction. Defaults to 100.
+    zc_length (Double, optional): The length in the Z direction. Defaults to 100.
+
+Returns:
+    BlockBuilder: The BlockBuilder instance.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_ae3ad8fd9dea6dab8acda1223269d165b}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!create\_by\_two\_diagonal\_points@{create\_by\_two\_diagonal\_points}}
 \index{create\_by\_two\_diagonal\_points@{create\_by\_two\_diagonal\_points}!nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_two\_diagonal\_points()}{create\_by\_two\_diagonal\_points()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_ae3ad8fd9dea6dab8acda1223269d165b} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder}{Block\+Builder}}  nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+create\+\_\+by\+\_\+two\+\_\+diagonal\+\_\+points (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin\+\_\+point}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{second\+\_\+point}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a7f1e97d4b0934975dc6272e79446766d}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!create\_by\_two\_points\_height@{create\_by\_two\_points\_height}}
+\begin{DoxyVerb}Create a BlockBuilder instance by two diagonal points.
+
+Args:
+    cls: The class type.
+    origin_point (Point): The origin point of the block.
+    second_point (Point): The second point for block definition.
+
+Returns:
+    BlockBuilder: The BlockBuilder instance.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a7f1e97d4b0934975dc6272e79446766d}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!create\_by\_two\_points\_height@{create\_by\_two\_points\_height}}
 \index{create\_by\_two\_points\_height@{create\_by\_two\_points\_height}!nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}}
 \doxysubsubsection{\texorpdfstring{create\_by\_two\_points\_height()}{create\_by\_two\_points\_height()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a7f1e97d4b0934975dc6272e79446766d} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder}{Block\+Builder}}  nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+create\+\_\+by\+\_\+two\+\_\+points\+\_\+height (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{origin\+\_\+point}{, }\item[{\doxymbox{\hyperlink{classnxopenkit_1_1core_1_1point_1_1_point}{Point}}}]{second\+\_\+point}{, }\item[{Double }]{height}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a919f7298ab72ec6dfb75ee7d872be086}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!nx\_builder@{nx\_builder}}
+\begin{DoxyVerb}Create a BlockBuilder instance by two points and height.
+
+Args:
+    cls: The class type.
+    origin_point (Point): The origin point of the block.
+    second_point (Point): The second point for block definition.
+    height (Double, optional): The height of the block. Defaults to 100.
+
+Returns:
+    BlockBuilder: The BlockBuilder instance.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a919f7298ab72ec6dfb75ee7d872be086}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!nx\_builder@{nx\_builder}}
 \index{nx\_builder@{nx\_builder}!nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}}
 \doxysubsubsection{\texorpdfstring{nx\_builder()}{nx\_builder()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_a919f7298ab72ec6dfb75ee7d872be086} 
  NXOpen.\+Features.\+Block\+Feature\+Builder nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+nx\+\_\+builder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_ae681d0c2bd56bad78a6d2080b72648bd}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!settings@{settings}}
+\begin{DoxyVerb}NXOpen block feature builder.
+
+Returns:
+    NXOpen.Features.BlockFeatureBuilder: The NXOpen block feature builder object.
+\end{DoxyVerb}
+ \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_ae681d0c2bd56bad78a6d2080b72648bd}\index{nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}!settings@{settings}}
 \index{settings@{settings}!nxopenkit.features.block\_builder.BlockBuilder@{nxopenkit.features.block\_builder.BlockBuilder}}
 \doxysubsubsection{\texorpdfstring{settings()}{settings()}}
 {\footnotesize\ttfamily \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_ae681d0c2bd56bad78a6d2080b72648bd} 
  \doxymbox{\hyperlink{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder}{Block\+Builder}}  nxopenkit.\+features.\+block\+\_\+builder.\+Block\+Builder.\+settings (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{associate\+\_\+origin}{ = {\ttfamily True}}\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Set the settings for the block feature.
 
+Args:
+    associate_origin (bool, optional): Whether to associate the origin. Defaults to True.
+
+Returns:
+    BlockBuilder: The BlockBuilder instance.
+\end{DoxyVerb}
+ 
 
 \label{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_doc-variable-members}
 \Hypertarget{classnxopenkit_1_1features_1_1block__builder_1_1_block_builder_doc-variable-members}
